@@ -1,0 +1,1 @@
+robocopy WebContent\content c:\Apps\xampp\htdocs\content /MIR
