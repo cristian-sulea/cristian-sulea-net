@@ -21,5 +21,3 @@ setAuthorProfileSourceForge ('cristian-sulea');
 setBlogTitle       ('Knowlegde Base');
 setBlogDescription ('An archive of my personal knowledge base.');
 setBlogKeywords    ('blog, knowlegde base');
-
-?>
