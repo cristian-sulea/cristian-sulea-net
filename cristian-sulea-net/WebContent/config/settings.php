@@ -18,6 +18,6 @@ setAuthorProfileTwitter     ('cristian_sulea');
 setAuthorProfileGitHub      ('cristian-sulea');
 setAuthorProfileSourceForge ('cristian-sulea');
 
-setBlogTitle       ('Knowlegde Base');
+setBlogTitle       ('Knowledge Base');
 setBlogDescription ('An archive of my personal knowledge base.');
 setBlogKeywords    ('blog, knowlegde base');
