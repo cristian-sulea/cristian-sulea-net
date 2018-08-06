@@ -1,22 +1,35 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-<article class="post">
+{%- include head-index.html -%}
 
-	<header class="post-header">
-		<h1 class="post-title">
-			{{ site.title | escape }}
-		</h1>
-		<p class="post-meta">
-			<span class="dt-published">
-				{{ site.description | escape }}
-			</span>
-		</p>
-	</header>
+<body>
 
-	<div class="post-content">
-		{{ content }}
+	{%- include header.html -%}
+
+	<main class="page-content" aria-label="Content">
+	<div class="wrapper">
+	<article class="post">
+
+		<header class="post-header">
+			<h1 class="post-title">{{ site.title | escape }}</h1>
+			<p class="post-meta">
+				<span class="dt-published">
+					{{ site.description | escape }}
+				</span>
+			</p>
+		</header>
+
+		<div class="post-content">
+			{{ content }}
+		</div>
+
+	</article>
 	</div>
+	</main>
 
-</article>
+	{%- include footer.html -%}
+
+</body>
+
+</html>
