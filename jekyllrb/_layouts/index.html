@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-{%- include head-index.html -%}
+{% assign page_title = site.title | append: ' - ' | append: site.subtitle %}
+{% assign page_description = site.description %}
+
+{%- include head-v2.html -%}
 
 <body>
 
