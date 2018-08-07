@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-{% assign page_title = site.title | append: ' - ' | append: site.subtitle %}
-{% assign page_description = site.description %}
+{% assign page_title = site.blog_title | append: ' - ' | append: site.blog_subtitle %}
+{% assign page_description = site.blog_description %}
 
 {%- include head-v2.html -%}
 
 <body>
 
-	{% assign menu1_href = site.blog_baseurl | relative_url %}
-	{% assign menu1_title = site.blog_title %}
+	{% assign menu1_href = "/" | relative_url %}
+	{% assign menu1_title = site.title %}
 
 	{%- include header-v2.html -%}
 
@@ -18,10 +18,10 @@
 	<article class="post">
 
 		<header class="post-header">
-			<h1 class="post-title">{{ site.title | escape }}</h1>
+			<h1 class="post-title">{{ site.blog_title | escape }}</h1>
 			<p class="post-meta">
 				<span class="dt-published">
-					{{ site.description | escape }}
+					{{ site.blog_description | escape }}
 				</span>
 			</p>
 		</header>
