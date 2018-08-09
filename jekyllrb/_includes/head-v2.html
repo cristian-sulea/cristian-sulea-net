@@ -12,6 +12,7 @@
 
 	<title>{{ page_title }}</title>
 	<meta name="description" content="{{ page_description }}" />
+
 	<link rel="canonical" href="{{ canonical_url }}">
 
 	<meta property="og:title" content="{{ page_title }}" />
@@ -22,9 +23,9 @@
 		{
 			"@context": "http://schema.org",
 			"@type": "WebSite",
-			"url": "{{ canonical_url }}",
 			"name": "{{ page_title }}",
-			"description": "{{ page_description }}"
+			"description": "{{ page_description }}",
+			"url": "{{ canonical_url }}"
 		}
 	</script>
 
