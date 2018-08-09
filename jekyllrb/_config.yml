@@ -17,7 +17,7 @@
 
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-title: Your awesome title
+title: Cristian Sulea
 subtitle: Software Architect & Developer
 description: Senior Java Developer (& Software Architect), PSS Prosoft Solutions, February 2008 - Present, Bucharest, Romania
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -25,7 +25,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 blog_title: Knowledge Base
 blog_subtitle: Cristian Sulea
 blog_description: An archive of my personal knowledge base.
-blog_baseurl: /blog/
+blog_baseurl: /blog
+
+images: /images
 
 email: your-email@example.com
 
@@ -40,7 +42,7 @@ theme: minima
 plugins:
   - jekyll-feed
 
-permalink: /blog/:year/:month/:day/:title/
+permalink: /blog/:title/
 
 
 # Exclude from processing.
