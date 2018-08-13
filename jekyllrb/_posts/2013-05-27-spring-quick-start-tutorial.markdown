@@ -8,8 +8,13 @@ description: The Spring Framework is an open source application framework and in
 
 categories: java spring framework
 
+resources:
+  - "[http://spring.io](http://spring.io)"
+  - "[http://en.wikipedia.org/wiki/Spring_Framework](http://en.wikipedia.org/wiki/Spring_Framework)"
+
 ---
 
+{{ page.my_array }}
 
 The [Spring Framework](http://spring.io) is an open source application framework and inversion of control container for the Java platform.
 The framework's core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE platform.
@@ -131,8 +136,4 @@ public class SpringQuickTutorial {
 name: Cristian Sulea
 {% endhighlight %}
 
-
-## Resources
-
-- [http://spring.io](http://spring.io)
-- [http://en.wikipedia.org/wiki/Spring_Framework](http://en.wikipedia.org/wiki/Spring_Framework)
+{% include resources.html %}

@@ -8,6 +8,10 @@ description: Each of the software development processes may change to some exten
 
 categories: software development roles
 
+resources:
+  - "a PDF file named \"Developer eBook\" and downloaded from [Internet.com](http://www.internet.com) (deleted in the meantime)"
+  - "it seems that the source for that \"Developer eBook\" is an older article from [Developer.com](http://www.developer.com/mgmt/article.php/3490871/Cracking-the-Code-Breaking-Down-the-Software-Development-Roles.htm) web site, and the author is [Robert Bogue](mailto:Robert.Bogue@CroweChizek.com)"
+
 ---
 
 
@@ -140,8 +144,4 @@ The larger the list of options (perspectives) the better the solution.
 Also known as soft skills, the ability to interact with other people and to be a part of a team is essential to nearly every role in a software development project.
 The lower the overall people skills of the team the higher the likelihood that the project will end in some explosion.
 
-
-## Resources
-
-- a PDF file named "Developer eBook" and downloaded from [Internet.com](http://www.internet.com) (deleted in the meantime)
-- it seems that the source for that "Developer eBook" is an older article from [Developer.com](http://www.developer.com/mgmt/article.php/3490871/Cracking-the-Code-Breaking-Down-the-Software-Development-Roles.htm\) web site, and the author is [Robert Bogue](mailto:Robert.Bogue@CroweChizek.com)
+{% include resources.html %}

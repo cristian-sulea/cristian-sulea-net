@@ -34,10 +34,19 @@ body {
  * Set `margin-bottom` to maintain vertical rhythm
  */
 h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
+p, blockquote, pre, hr,
 ul, ol, dl, figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
+}
+
+
+
+hr {
+  border: none;
+  height: 1px;
+  color: $grey-color-light; /* old IE */
+  background-color: $grey-color-light; /* Modern Browsers */
 }
 
 
