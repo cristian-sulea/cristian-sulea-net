@@ -1,0 +1,17 @@
+{
+
+	"title": "Regular Expressions (regex)",
+	"description": "A regular expression (regex) is a sequence of characters that define a search pattern, mainly for use in pattern matching with strings, or string matching.",
+
+	"date": "April 25 2016",
+	"date-modified": "April 25 2016",
+
+	"keywords": ["regex", "regexp", "regular expression", "regular expressions"],
+
+	"resources" : [
+		["Wikipedia - Regular expression", "https://en.wikipedia.org/wiki/Regular_expression"],
+		["RegExr", "http://regexr.com"],
+		["Stack Overflow", "http://stackoverflow.com/questions/1762150/replace-the-line-containing-the-regex"]
+	]
+
+}
