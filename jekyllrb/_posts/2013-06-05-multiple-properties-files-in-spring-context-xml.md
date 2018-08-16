@@ -2,9 +2,9 @@
 
 layout: post
 
-date:        2013-06-5
-title:       Multiple properties files in Spring context XML
-description: Spring allows to externalize string literals in its context configuration files into external properties files.
+date:        "2013-06-5"
+title:       "Multiple properties files in Spring context XML"
+description: "Spring allows to externalize string literals in its context configuration files into external properties files."
 
 categories: java spring framework
 
