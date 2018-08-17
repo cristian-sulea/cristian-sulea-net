@@ -151,7 +151,9 @@ This type of implementation recommend the use of <code>enum</code>.[Enum](http:/
 {% highlight java %}
 
 public enum EnumSingleton {
+
   INSTANCE;
+
   public void doSomething(String param) {
     // perform operation here 
   }
