@@ -48,4 +48,5 @@ These design patterns concern class and object composition. Concept of inheritan
 
 These design patterns are specifically concerned with communication between objects.
 
+
 {% include resources.html %}
