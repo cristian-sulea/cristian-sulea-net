@@ -27,13 +27,17 @@ blog_subtitle: Cristian Sulea
 blog_description: An archive of my personal knowledge base.
 blog_baseurl: /blog
 
+copyright_title: Cristian Sulea
+copyright_baseurl: http://cristian.sulea.net
+
 images: /images
 
-email: your-email@example.com
+linkedin_username: cristiansulea
+github_username: cristian-sulea
+twitter_username: cristian_sulea
+# googleplus_username: +CristianSulea79
 
-twitter_username: jekyllrb
-github_username:  jekyll
-
+rss: RSS
 
 # Build settings
 
