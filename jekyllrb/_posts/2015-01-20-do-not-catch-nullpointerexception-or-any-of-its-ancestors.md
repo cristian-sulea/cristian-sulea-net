@@ -14,17 +14,17 @@ resources:
 ---
 
 
-Handling the underlying <code>null</code> pointer dereference by catching the <code>NullPointerException</code> rather than fixing the underlying problem is inappropriate for several reasons:
-- catching <code>NullPointerException</code> adds significantly more performance overhead than simply adding the necessary <code>null</code> checks;
-- when multiple expressions in a try block are capable of throwing a <code>NullPointerException</code>, it is difficult or impossible to determine which expression is responsible for the exception because the <code>NullPointerException</code> catch block handles any <code>NullPointerException</code> thrown from any location in the try block;
-- programs rarely remain in an expected and usable state after a <code>NullPointerException</code> has been thrown; attempts to continue execution after first catching and logging (or worse, suppressing) the exception rarely succeed.
+Handling the underlying `null` pointer dereference by catching the `NullPointerException` rather than fixing the underlying problem is inappropriate for several reasons:
+- catching `NullPointerException` adds significantly more performance overhead than simply adding the necessary `null` checks;
+- when multiple expressions in a try block are capable of throwing a `NullPointerException`, it is difficult or impossible to determine which expression is responsible for the exception because the `NullPointerException` catch block handles any `NullPointerException` thrown from any location in the try block;
+- programs rarely remain in an expected and usable state after a `NullPointerException` has been thrown; attempts to continue execution after first catching and logging (or worse, suppressing) the exception rarely succeed.
 
-Likewise, programs must not catch <code>RuntimeException</code>, <code>Exception</code>, or <code>Throwable</code>. Few, if any, methods are capable of handling all possible runtime exceptions. When a method catches <code>RuntimeException</code>, it may receive exceptions unanticipated by the designer, including <code>NullPointerException</code> and <code>ArrayIndexOutOfBoundsException</code>. Many catch clauses simply log or ignore the enclosed exceptional condition and attempt to resume normal execution. Do not suppress or ignore checked exceptions. Runtime exceptions often indicate bugs in the program that should be fixed by the developer and often cause control flow vulnerabilities.
+Likewise, programs must not catch `RuntimeException`, `Exception`, or `Throwable`. Few, if any, methods are capable of handling all possible runtime exceptions. When a method catches `RuntimeException`, it may receive exceptions unanticipated by the designer, including `NullPointerException` and `ArrayIndexOutOfBoundsException`. Many catch clauses simply log or ignore the enclosed exceptional condition and attempt to resume normal execution. Do not suppress or ignore checked exceptions. Runtime exceptions often indicate bugs in the program that should be fixed by the developer and often cause control flow vulnerabilities.
 
 
 ## Noncompliant Code Example
 
-This noncompliant code example defines an <code>isName()</code> method that takes a <code>String</code> argument and returns <code>true</code> if the given string is a valid name. A valid name is defined as two capitalized words separated by one or more spaces. Rather than checking to see whether the given string is <code>null</code>, the method catches <code>NullPointerException</code> and returns <code>false</code>.
+This noncompliant code example defines an `isName()` method that takes a `String` argument and returns `true` if the given string is a valid name. A valid name is defined as two capitalized words separated by one or more spaces. Rather than checking to see whether the given string is `null`, the method catches `NullPointerException` and returns `false`.
 
 {% highlight java %}
 
@@ -50,7 +50,7 @@ public boolean isName(String s) {
 
 ## Compliant Solution
 
-This compliant solution explicitly checks the <code>String</code> argument for <code>null</code> rather than catching <code>NullPointerException</code>.
+This compliant solution explicitly checks the `String` argument for `null` rather than catching `NullPointerException`.
 
 {% highlight java %}
 
@@ -72,7 +72,7 @@ boolean isName(String s) {
 
 ## Compliant Solution
 
-This compliant solution omits an explicit check for a <code>null</code> reference and permits a <code>NullPointerException</code> to be thrown.
+This compliant solution omits an explicit check for a `null` reference and permits a `NullPointerException` to be thrown.
 
 {% highlight java %}
 

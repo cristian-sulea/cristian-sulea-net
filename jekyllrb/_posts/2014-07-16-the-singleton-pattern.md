@@ -81,7 +81,7 @@ public class EagerSingleton {
 This method has a number of advantages:
 - the instance is not constructed until the class is used;
 - there is no need to synchronize the getInstance() method, meaning all threads will see the same instance and no (expensive) locking is required;
-- the <code>final</code> keyword means that the instance cannot be redefined, ensuring that one (and only one) instance ever exists.
+- the `final` keyword means that the instance cannot be redefined, ensuring that one (and only one) instance ever exists.
 
 
 ## Static block initialization
@@ -139,12 +139,12 @@ public class BillPughSingleton {
 }
 {% endhighlight %}
 
-The <code>LazyHolder</code> is loaded on the first execution of <code>BillPughSingleton.getInstance()</code> or the first access to <code>LazyHolder.INSTANCE</code>, not before.
+The `LazyHolder` is loaded on the first execution of `BillPughSingleton.getInstance()` or the first access to `LazyHolder.INSTANCE`, not before.
 
 
 ## Using Enum
 
-This type of implementation recommend the use of <code>enum</code>.[Enum](http://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html), as written in java docs, provide implicit support for thread safety and only one instance is guaranteed. This is also a good way to have singleton with minimum effort.
+This type of implementation recommend the use of `enum`. [Enum](http://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html), as written in java docs, provide implicit support for thread safety and only one instance is guaranteed. This is also a good way to have singleton with minimum effort.
 
 *EnumSingleton.java*
 
@@ -160,9 +160,9 @@ public enum EnumSingleton {
 }
 {% endhighlight %}
 
-The public method can be written to take any desired types of arguments; a single <code>String</code> argument is used here as an example.
+The public method can be written to take any desired types of arguments; a single `String` argument is used here as an example.
 
-This approach implements the singleton by taking advantage of Java's guarantee that any <code>enum</code> value is instantiated only once in a Java program. Since Java enum values are globally accessible, so is the singleton, initialized lazily by the classloader. The drawback is that the <code>enum</code> type is somewhat inflexible.
+This approach implements the singleton by taking advantage of Java's guarantee that any `enum` value is instantiated only once in a Java program. Since Java enum values are globally accessible, so is the singleton, initialized lazily by the classloader. The drawback is that the `enum` type is somewhat inflexible.
 
 
 {% include resources.html %}

@@ -23,16 +23,16 @@ Expires: 0
 {% endhighlight %}
 
 Where:
-- <code>Cache-Control</code> is for <strong>HTTP 1.1</strong>
-- <code>Pragma</code> is for <strong>HTTP 1.0</strong>
-- <code>Expires</code> is for <strong>proxies</strong>
+- `Cache-Control` is for <strong>HTTP 1.1</strong>
+- `Pragma` is for <strong>HTTP 1.0</strong>
+- `Expires` is for <strong>proxies</strong>
 
 
 ## Web Pages (HTML)
 
-For the Web Pages (HTML) add the following <code>&lt;meta&gt;</code> tags to the page(s) you want
-to keep browsers from caching (the code must be in the <code>&lt;head&gt;</code> section of your page,
-for example right after <code>&lt;title&gt;</code> tag):
+For the Web Pages (HTML) add the following `<meta>` tags to the page(s) you want
+to keep browsers from caching (the code must be in the `<head>` section of your page,
+for example right after `<title>` tag):
 
 {% highlight html %}
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />

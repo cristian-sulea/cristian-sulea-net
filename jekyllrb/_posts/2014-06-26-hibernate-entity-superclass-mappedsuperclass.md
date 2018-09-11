@@ -11,7 +11,7 @@ categories: java hibernate
 ---
 
 
-The solution to code repetition (like for example wiring an <code>id</code>, <code>version</code> and/or <code>timestamp</code> fields in every Hibernate entity) is to inherit these properties from a superclass. This can be done using the [@MappedSuperclass](http://docs.oracle.com/javaee/7/api/javax/persistence/MappedSuperclass.html) annotation.
+The solution to code repetition (like for example wiring an `id`, `version` and/or `timestamp` fields in every Hibernate entity) is to inherit these properties from a superclass. This can be done using the [@MappedSuperclass](http://docs.oracle.com/javaee/7/api/javax/persistence/MappedSuperclass.html) annotation.
 A mapped superclass designates a class whose mapping information is applied to the entities that inherit from it.
 
 Notes:
