@@ -20,25 +20,25 @@ To make APT (`apt-get` command) work behind a proxy, `apt.conf` (which is found 
 
 Open `apt.conf` file with preferred editor:
 
-{% highlight bash %}
+```terminal
 nano /etc/apt/apt.conf
-{% endhighlight %}
+```
 
 And add a new line with the proxy settings (or update if the line is already present):
 
-{% highlight bash %}
+```
 Acquire::http::Proxy "http://user:password@server:port/";
-{% endhighlight %}
+```
 
 
 ## Protect the proxy settings
 
 By removing READ permissions for "all other users":
 
-{% highlight bash %}
+```terminal
 stat /etc/apt/apt.conf
 chmod 640 /etc/apt/apt.conf
-{% endhighlight %}
+```
 
 
 {% include resources.html %}

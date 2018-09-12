@@ -6,7 +6,7 @@ date:        "2014-03-05"
 title:       "Install bash-completion package on Linux"
 description: "The programmable completion feature in Bash permits typing a partial command, then pressing the [Tab] key to auto-complete the command sequence."
 
-categories: [bash-completion, bash completion, bash, linux]
+categories: linux bash-completion
 
 resources:
   - "[http://packages.debian.org/wheezy/bash-completion](http://packages.debian.org/wheezy/bash-completion)"
@@ -25,16 +25,16 @@ If multiple completions are possible, then `[Tab]` lists them all.
 
 ## Ubuntu / Debian
 
-{% highlight bash %}
+```terminal
 apt-get install bash-completion
-{% endhighlight %}
+```
 
 
 ## Fedora
 
-{% highlight bash %}
+```terminal
 yum install bash-completion
-{% endhighlight %}
+```
 
 
 {% include resources.html %}
