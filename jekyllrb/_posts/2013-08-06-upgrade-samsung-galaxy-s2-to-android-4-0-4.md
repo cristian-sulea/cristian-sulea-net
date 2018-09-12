@@ -6,7 +6,7 @@ date:        "2013-08-06"
 title:       "Upgrade Samsung Galaxy S2 to Android 4.0.4"
 description: "The instructions in this guide are for upgrading the Samsung Galaxy S2 GT-I9100 to Android 4.0.4 build XXLQ5."
 
-categories: [samsung galaxy s2, GT-I9100, android]
+categories: samsung galaxy s2
 
 resources:
   - "[SamMobile Firmware Page](http://www.sammobile.com/firmware/?page=8&amp;view=5235)"
