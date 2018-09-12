@@ -6,7 +6,7 @@ date:        "2015-07-01"
 title:       "PHP - List Files and Directories"
 description: "The older way is scandir but DirectoryIterator is probably the best way. There's also readdir (to be used with opendir) and glob."
 
-categories: [scandir, php]
+categories: php
 
 resources:
   - "[PHP Manual](http://php.net/manual/en/index.php)"
