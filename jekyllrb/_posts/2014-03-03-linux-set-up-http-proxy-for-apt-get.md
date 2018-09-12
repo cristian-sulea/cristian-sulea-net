@@ -16,6 +16,8 @@ resources:
 ---
 
 
+To make APT (`apt-get` command) work behind a proxy, `apt.conf` (which is found in `/etc/apt/` directory) file must be edited.
+
 Open `apt.conf` file with preferred editor:
 
 {% highlight bash %}
