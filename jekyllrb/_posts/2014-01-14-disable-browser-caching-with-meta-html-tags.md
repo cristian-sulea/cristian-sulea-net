@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2014-01-14"
 title:       "Disable browser caching with meta HTML tags"
 description: "The minimum set of HTML headers to disable browser caching that works across the most important browsers: Cache-Control, Pragma, Expires."
 

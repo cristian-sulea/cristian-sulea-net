@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2013-07-06"
 title:       "Root Samsung Galaxy S2 on Android 4.0.4"
 description: "The instructions in this guide are for rooting the Samsung Galaxy S2 GT-I9100 on Android 4.0.4 build XXLQ5."
 

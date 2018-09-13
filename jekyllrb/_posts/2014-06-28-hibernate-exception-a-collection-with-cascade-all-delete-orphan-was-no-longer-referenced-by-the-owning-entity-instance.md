@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2014-06-28"
 title:       "HibernateException - A collection with cascade=\"all-delete-orphan\" was no longer referenced by the owning entity instance"
 description: "Hibernate is unable to track changes to a newly set collection (as a new object) and thus has no idea how to apply the cascading persistence to your objects."
 

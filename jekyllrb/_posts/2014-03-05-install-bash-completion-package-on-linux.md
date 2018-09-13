@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2014-03-05"
 title:       "Install bash-completion package on Linux"
 description: "The programmable completion feature in Bash permits typing a partial command, then pressing the [Tab] key to auto-complete the command sequence."
 

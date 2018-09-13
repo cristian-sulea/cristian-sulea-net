@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2015-03-10"
 title:       "Java Cryptography"
 description: "Cryptography is looking at techniques for encoding and verifying things securely. It tends to focus on encryption, authentication and computer protocols."
 

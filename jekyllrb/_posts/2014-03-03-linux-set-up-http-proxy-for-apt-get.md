@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2014-03-03"
 title:       "Linux - Set up HTTP proxy for APT (apt-get)"
 description: "To make APT (apt-get command) work behind a proxy, 'apt.conf' (which is found in '/etc/apt/' directory) file must be edited."
 

@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2014-03-04"
 title:       "Linux - Set up HTTP proxy for GNU Wget (wget)"
 description: "To make GNU Wget (wget command) work behind a proxy, 'wgetrc' (which is found in '/etc/' directory) file must be edited."
 

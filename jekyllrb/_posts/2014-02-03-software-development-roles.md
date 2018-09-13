@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2014-02-03"
 title:       "Software Development Roles"
 description: "Each of the software development processes may change to some extent, but fundamentally there are some roles which every process has in one form or another."
 

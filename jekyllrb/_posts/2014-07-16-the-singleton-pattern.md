@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2014-07-16"
 title:       "The Singleton Pattern"
 description: "Singleton pattern is a design solution where only one instance of a class is created, and provide a global point of access to the object."
 

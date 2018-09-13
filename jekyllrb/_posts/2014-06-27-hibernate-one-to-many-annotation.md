@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2014-06-27"
 title:       "Hibernate - One To Many (Annotation)"
 description: "One-to-many associations are declared at the property level with the annotation @OneToMany."
 

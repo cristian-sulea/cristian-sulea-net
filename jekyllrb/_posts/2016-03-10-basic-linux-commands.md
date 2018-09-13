@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2016-03-10"
 title:       "Basic Linux Commands"
 description: "A list with some basic (maybe most used) Linux commands, what they do and their syntax, and also some usage examples."
 

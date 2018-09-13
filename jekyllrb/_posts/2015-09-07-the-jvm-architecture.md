@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2015-09-07"
 title:       "The JVM Architecture"
 description: "The role of the JVM is to read the Java application through the Class Loader and execute it along with the Java API."
 

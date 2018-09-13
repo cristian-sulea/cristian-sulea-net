@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2016-02-03"
 title:       "CSS Font Size (px vs. em vs. percent vs. pt)"
 description: "The font-size property sets the size of the text. There are four different units for the font-size value: px, em, percent and pt."
 

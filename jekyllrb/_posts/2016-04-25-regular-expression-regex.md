@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2016-04-25"
 title:       "Regular Expressions (regex)"
 description: "A regular expression (regex) is a sequence of characters that define a search pattern, mainly for use in pattern matching with strings, or string matching."
 

@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2015-05-29"
 title:       "Gmail advanced search operators"
 description: "Advanced search operators are query words or symbols that perform special actions in Gmail search."
 

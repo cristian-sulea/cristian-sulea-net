@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2016-01-13"
 title:       "Options, Settings, Preferences, Configuration"
 description: "There's no one single consistent style followed by all applications, but doesn't really matter so long as the expected audience understands what you mean."
 

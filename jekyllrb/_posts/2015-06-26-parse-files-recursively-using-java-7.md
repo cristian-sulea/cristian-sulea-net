@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2015-06-26"
 title:       "Parse Files Recursively using Java 7+"
 description: "A FileVisitor can be used to recursively visit all the files in folder. The interface specifies the required behavior at key points in the traversal process."
 

@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2013-08-06"
 title:       "Upgrade Samsung Galaxy S2 to Android 4.0.4"
 description: "The instructions in this guide are for upgrading the Samsung Galaxy S2 GT-I9100 to Android 4.0.4 build XXLQ5."
 

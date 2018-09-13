@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2015-01-20"
 title:       "Do not catch NullPointerException or any of its ancestors"
 description: "A NullPointerException exception thrown at runtime indicates the existence of an underlying null pointer dereference that must be fixed in the application code."
 

@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2015-08-14"
 title:       "Design Patterns - Overview"
 description: "A design pattern is a common, well-described solution to a common software problem. Sensible use of design patterns results in increased code maintainability."
 

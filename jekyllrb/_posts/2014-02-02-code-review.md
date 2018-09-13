@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2013-02-02"
 title:       "Code Review"
 description: "Code review is a phase in the software development process to catch bugs and design errors before the code becomes part of the product."
 

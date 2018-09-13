@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2015-02-15"
 title:       "java.lang.UnsatisfiedLinkError no ***.dll in java.library.path"
 description: "The UnsatisfiedLinkError is thrown if the Java Virtual Machine cannot find an appropriate native-language definition of a method declared native."
 

@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2015-08-03"
 title:       "Cron Expressions Tutorial"
 description: "Cron expressions are used to configure the scheduling of automated processes (for example to run periodically at fixed times, dates, or intervals)."
 
