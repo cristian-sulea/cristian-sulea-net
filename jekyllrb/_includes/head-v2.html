@@ -2,7 +2,7 @@
 {% assign page_title = page_title | escape %}
 {% assign page_description = page_description | escape %}
 
-{% assign canonical_url = site.url | append: page.url | replace: 'index.html','' %}
+{% assign canonical_url = page.url | absolute_url | replace: 'index.html','' %}
 
 <head>
 

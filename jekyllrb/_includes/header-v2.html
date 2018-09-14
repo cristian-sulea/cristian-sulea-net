@@ -40,7 +40,7 @@
 	</div>
 </div>
 
-<script src="{{site.baseurl}}/assets/simple-jekyll-search.min.js"></script>
+<script src="{{ '/assets/simple-jekyll-search.min.js' | relative_url }}"></script>
 
 <script>
 
@@ -52,7 +52,7 @@ SimpleJekyllSearch({
 	fuzzy : true,
 	searchInput: searchInput,
 	resultsContainer: searchOutputContainer,
-	json: '/search.json'
+	json: "{{ '/search.json' | relative_url }}"
 })
 
 var searchContainer = document.getElementById('searchContainer');
