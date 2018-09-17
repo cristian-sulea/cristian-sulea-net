@@ -19,31 +19,31 @@ Best way to install is to add the Google Chrome PPA to repository and to install
 
 Add Linux repository public key from Google:
 
-```terminal
+```bash
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 ```
 
 When added, run the command below:
 
-```terminal
+```bash
 sudo gedit /etc/apt/sources.list.d/google.list
 ```
 
 Then copy and paste the line below into the file and save:
 
-```terminal
+```text
 deb http://dl.google.com/linux/chrome/deb/ stable main
 ```
 
 After saving the file, run the commands below to update your system:
 
-```terminal
+```bash
 sudo apt-get update
 ```
 
 Or:
 
-```terminal
+```bash
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 ```
 
@@ -52,18 +52,18 @@ sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /et
 
 Install Google Chrome stable version:
 
-```terminal
+```bash
 sudo apt-get install google-chrome-stable
 ```
 
 Install Google Chrome beta version:
 
-```terminal
+```bash
 sudo apt-get install google-chrome-beta
 ```
 
 Install Google Chrome unstable version:
 
-```terminal
+```bash
 sudo apt-get install google-chrome-unstable
 ```
