@@ -29,6 +29,15 @@ blog_subtitle: Cristian Sulea
 blog_description: An archive of my personal knowledge base.
 blog_baseurl: /blog
 
+blog:
+  title: Knowledge Base
+  subtitle: Cristian Sulea
+  description: An archive of my personal knowledge base.
+  baseurl: /blog
+  author:
+    name: Cristian Sulea
+    url: http://cristian.sulea.net
+
 copyright_title: Cristian Sulea
 copyright_baseurl: http://cristian.sulea.net
 
@@ -46,8 +55,9 @@ rss: RSS
 
 markdown: kramdown
 theme: minima
-plugins:
-  - jekyll-feed
+
+# plugins:
+#  - jekyll-feed
 
 permalink: /blog/:title/
 
