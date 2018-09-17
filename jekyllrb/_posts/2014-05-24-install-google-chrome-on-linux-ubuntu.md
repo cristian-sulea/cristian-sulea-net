@@ -2,12 +2,11 @@
 
 layout: post
 
-date:        "2014-05-24"
 title:       "Install Google Chrome on Linux Ubuntu"
 description: "Best way to install is to add the Google Chrome PPA to repository and to install using the 'apt-get' command."
 
 categories: [linux]
-tags:       [ubuntu, chrome]
+tags:       [chrome, ubuntu]
 
 ---
 

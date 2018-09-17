@@ -2,12 +2,11 @@
 
 layout: post
 
-date:        "2014-05-25"
 title:       "Install Google Chrome on Linux Fedora"
 description: "Best way to install and keep up-to-date with Google Chrome browser is to use Google's own YUM repository."
 
 categories: [linux]
-tags:       [fedora, chrome]
+tags:       [chrome, fedora]
 
 ---
 
