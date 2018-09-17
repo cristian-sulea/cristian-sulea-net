@@ -45,18 +45,18 @@ gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
 
 Install Google Chrome stable version:
 
-```bash
-yum install google-chrome-stable
+```terminal
+$ yum install google-chrome-stable
 ```
 
 Install Google Chrome beta version:
 
-```bash
-yum install google-chrome-beta
+```terminal
+$ yum install google-chrome-beta
 ```
 
 Install Google Chrome unstable version:
 
-```bash
-yum install google-chrome-unstable
+```terminal
+$ yum install google-chrome-unstable
 ```
