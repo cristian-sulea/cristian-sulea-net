@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2014-12-15"
 title:       "Extract MKV (Matroska) subtitles on Linux Ubuntu"
 description: "Use MKVToolNix (a cross-platform set of tools to create, alter and inspect Matroska files) to find and extract the subtitles (and fonts)."
 

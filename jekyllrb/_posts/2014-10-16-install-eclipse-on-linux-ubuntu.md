@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2014-10-16"
 title:       "Install Eclipse on Linux Ubuntu"
 description: "The recommended way to install Eclipse on Ubuntu is using the distribution's package manager, but the Ubuntu distribution contains a very old version."
 

@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2014-08-04"
 title:       "Install Proxy Server on Linux Debian (SQUID Web Proxy Cache)"
 description: "Squid is a caching proxy for the Web supporting HTTP, HTTPS, FTP, and more. It runs also on Windows and is licensed under the GNU GPL."
 

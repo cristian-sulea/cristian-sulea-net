@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2015-07-02"
 title:       "DokuWiki URL Rewriting in Apache"
 description: "By default, DokuWiki does no URL rewriting, resulting ugly URLs (http://server.com/doku.php?id=page) and not indexed well."
 

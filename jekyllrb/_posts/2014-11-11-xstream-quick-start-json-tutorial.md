@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2014-11-11"
 title:       "XStream - Quick start JSON tutorial"
 description: "Quick start tutorial on serializing an object to JSON (and deserializing back from JSON) using XStream, a simple java library."
 

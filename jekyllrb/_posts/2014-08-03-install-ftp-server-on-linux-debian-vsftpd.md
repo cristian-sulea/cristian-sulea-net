@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2014-08-03"
 title:       "Install FTP Server on Linux Debian (vsftpd)"
 description: "vsftpd is a GPL licensed FTP server for UNIX systems, including Linux. It is secure and extremely fast. It is stable."
 

@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2014-11-12"
 title:       "XStream - Object references"
 description: "To deal with duplicate and circular references, XStream is using XPath to allow serialized objects to be treated as graphs instead of simple trees."
 

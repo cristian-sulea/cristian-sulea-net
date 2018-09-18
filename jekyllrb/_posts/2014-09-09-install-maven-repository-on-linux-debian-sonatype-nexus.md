@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2014-09-09"
 title:       "Install Maven Repository on Linux Debian (Sonatype Nexus)"
 description: "Instructions for installing and configuring Nexus Repository Manager as a service (so it starts back up after server reboots)."
 

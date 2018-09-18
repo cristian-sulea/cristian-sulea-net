@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2014-07-11"
 title:       "Install Java (OpenJDK) on Linux"
 description: "How to download and install prebuilt OpenJDK packages (Java Runtime Environment or Java Development Kit) in various Linux distributions."
 

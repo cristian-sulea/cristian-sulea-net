@@ -2,7 +2,6 @@
 
 layout: post
 
-date:        "2014-10-26"
 title:       "Portable SVN Repository"
 description: "An easy way to transfer the code when developing on different systems is to use a flash drive (or a file hosting service) as a subversion (SVN) repository."
 
