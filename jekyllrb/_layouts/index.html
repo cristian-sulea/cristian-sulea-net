@@ -26,14 +26,68 @@
 				<h1 class="post-title">{{ site.title | escape }}</h1>
 				<p class="post-meta">
 					<span class="dt-published">
-						{{ site.description | escape }}
+						{{ site.subtitle | escape }}
 					</span>
 				</p>
 			</header>
 
 			<div class="post-content">
 
-				{{ content }}
+				<h2>Experience</h2>
+
+				<ul class="post-list">
+					{%- for position in site.data.experience -%}
+						<li>
+							
+							<p>
+								<span class="post-meta">
+									<em>{{ position.period }} | {{ position.location }}</em>
+									<br>
+									{{ position.company }}
+								</span>
+								<br>
+								<strong>
+									{{ position.title | escape }}
+								</strong>
+							</p>
+							
+							{%- if position.description -%}
+								{{ position.description }}
+							{%- endif -%}
+							
+						</li>
+					{%- endfor -%}
+				</ul>
+
+			</div>
+
+			<div class="post-content">
+
+				<h2>Experience</h2>
+
+				<ul class="post-list">
+					{%- for position in site.data.experience -%}
+						<li>
+							
+							<p>
+								<span class="post-meta">
+									<em>{{ position.period }} | {{ position.location }}</em>
+									<br>
+									{{ position.company }}
+								</span>
+								<br>
+								<strong>
+									{{ position.title | escape }}
+								</strong>
+							</p>
+							
+							{%- if position.description -%}
+								{{ position.description }}
+							{%- endif -%}
+							
+						</li>
+					{%- endfor -%}
+				</ul>
 
 			</div>
 
