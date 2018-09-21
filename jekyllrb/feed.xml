@@ -28,8 +28,8 @@ layout: null
       <updated>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</updated>
       
       <author>
-        <name>{{ site.blog.author.name | xml_escape }}</name>
-        <uri>{{ site.blog.author.url | xml_escape }}</uri>
+        <name>{{ site.author.name | xml_escape }}</name>
+        <uri>{{ site.author.url | xml_escape }}</uri>
       </author>
       
       {% if post.description and post.description != empty %}<summary type="html">{{ post.description | xml_escape }}</summary>{% endif %}

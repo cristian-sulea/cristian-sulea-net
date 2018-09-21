@@ -34,12 +34,10 @@ blog:
   subtitle: Cristian Sulea
   description: An archive of my personal knowledge base.
   baseurl: /blog
-  author:
-    name: Cristian Sulea
-    url: http://cristian.sulea.net
 
-copyright_title: Cristian Sulea
-copyright_baseurl: http://cristian.sulea.net
+author:
+  name: Cristian Sulea
+  url: http://cristian.sulea.net
 
 # images: /jekyllrb/images
 images: /images
