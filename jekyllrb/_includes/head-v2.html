@@ -2,6 +2,9 @@
 {% assign page_title = page_title | escape %}
 {% assign page_description = page_description | escape %}
 
+{% assign author_name = site.author.name | escape %}
+{% assign author_url = site.author.url %}
+
 {% assign canonical_url = page.url | absolute_url | replace: 'index.html','' %}
 
 <head>
@@ -24,16 +27,74 @@
 	<meta property="og:description" content="{{ page_description }}" />
 	<meta property="og:url" content="{{ canonical_url }}" />
 
+	<link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+
+	{% if ld_json_type == 'WebSite' %}
 	<script type="application/ld+json">
 		{
 			"@context": "http://schema.org",
 			"@type": "WebSite",
 			"name": "{{ page_title }}",
 			"description": "{{ page_description }}",
-			"url": "{{ canonical_url }}"
+			"url": "{{ canonical_url }}",
+			"author": {
+				"@type" : "Person",
+				"name" : "{{ author_name }}",
+				"url" : "{{ author_url }}"
+			}
+		}
+	</script>
+	{% endif %}
+
+	{% if ld_json_type == 'Blog' %}
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "Blog",
+			"name": "{{ page_title }}",
+			"description": "{{ page_description }}",
+			"url": "{{ canonical_url }}",
+			"author": {
+				"@type" : "Person",
+				"name" : "{{ author_name }}",
+				"url" : "{{ author_url }}"
+			}
+		}
+	</script>
+	{% endif %}
+
+	{% if ld_json_type == 'BlogPosting' %}
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "BlogPosting",
+			"mainEntityOfPage": {
+				"@type": "WebPage",
+				"@id": "{{ canonical_url }}"
+			},
+			"headline": "{{ page_title }}",
+			"description": "{{ page_description }}",
+			"url": "{{ canonical_url }}",
+			"datePublished": "{{ page.date | date: "%Y-%m-%d" }}",
+			"dateCreated": "{{ page.date | date: "%Y-%m-%d" }}",
+			"dateModified": "{{ page.date | date: "%Y-%m-%d" }}",
+			"author": {
+				"@type" : "Person",
+				"name" : "{{ author_name }}",
+				"url" : "{{ author_url }}"
+			}
+		}
+	</script>
+	{% endif %}
+
+	<script type="application/ld+json">
+		{
+			"@context" : "http://schema.org",
+			"@type" : "Person",
+			"name" : "{{ author_name }}",
+			"url" : "{{ author_url }}"
 		}
 	</script>
 
-	<link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
 
 </head>
