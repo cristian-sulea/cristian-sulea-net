@@ -32,63 +32,95 @@
 			</header>
 
 			<div class="post-content">
-
-				<h2>Experience</h2>
-
+				
+				<h2>{{ site.data.experience.title | escape }}</h2>
+				
 				<ul class="post-list">
-					{%- for position in site.data.experience -%}
-						<li>
-							
-							<p>
-								<span class="post-meta">
-									<em>{{ position.period }} | {{ position.location }}</em>
-									<br>
-									{{ position.company }}
-								</span>
+					{% for position in site.data.experience.positions %}
+					<li>
+						
+						<p>
+							<span class="post-meta">
+								<em>{{ position.period | escape }} | {{ position.location | escape }}</em>
 								<br>
-								<strong>
-									{{ position.title | escape }}
-								</strong>
+								{{ position.company | escape }}
+							</span>
+							<br>
+							<strong>
+								{{ position.title | escape }}
+							</strong>
+						</p>
+						
+						{% if position.otherRoles %}
+							<p>
+								{{ site.data.experience.otherRolesTitle | escape }}:
+								<br>
+								{% for role in position.otherRoles %}
+									- {{ role | escape }}
+									<br>
+								{% endfor %}
 							</p>
-							
-							{%- if position.description -%}
-								{{ position.description }}
-							{%- endif -%}
-							
-						</li>
-					{%- endfor -%}
+						{% endif %}
+						
+						{% if position.otherActivities %}
+							<p>
+								{{ site.data.experience.otherActivitiesTitle | escape }}:
+								<br>
+								{% for activity in position.otherActivities %}
+									- {{ activity | escape }}
+									<br>
+								{% endfor %}
+							</p>
+						{% endif %}
+					</li>
+					{% endfor %}
 				</ul>
-
 			</div>
 
 			<div class="post-content">
-
-				<h2>Experience</h2>
-
+				
+				<h2>{{ site.data.skills.title | escape }}</h2>
+				
 				<ul class="post-list">
-					{%- for position in site.data.experience -%}
-						<li>
-							
-							<p>
-								<span class="post-meta">
-									<em>{{ position.period }} | {{ position.location }}</em>
-									<br>
-									{{ position.company }}
-								</span>
-								<br>
-								<strong>
-									{{ position.title | escape }}
-								</strong>
-							</p>
-							
-							{%- if position.description -%}
-								{{ position.description }}
-							{%- endif -%}
-							
-						</li>
-					{%- endfor -%}
+					{% for group in site.data.skills.groups %}
+					<li>
+						
+						<p>
+							<strong>
+								{{ group.title | escape }}
+							</strong>
+						</p>
+						
+						<p>
+							{% for skill in group.skills %}
+							- {{ skill | escape }}<br>
+							{%- endfor -%}
+						</p>
+					</li>
+					{% endfor %}
 				</ul>
+			</div>
 
+			<div class="post-content">
+				
+				<h2>{{ site.data.languages.title | escape }}</h2>
+				
+				<ul class="post-list">
+					{% for language in site.data.languages.languages %}
+					<li>
+						
+						<p>
+							<strong>
+								{{ language.title | escape }}
+							</strong>
+						</p>
+						
+						<p>
+							- {{ language.level | escape }}
+						</p>
+					</li>
+					{% endfor %}
+				</ul>
 			</div>
 
 		</article>
