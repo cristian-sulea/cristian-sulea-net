@@ -20,16 +20,17 @@
 	<title>{{ page_title }}</title>
 	<meta name="description" content="{{ page_description }}" />
 
-	<link rel="canonical" href="{{ canonical_url }}">
+	<link rel="canonical" href="{{ canonical_url }}" />
 	<link rel="alternate" type="application/atom+xml" href="{{ 'feed.xml' | absolute_url }}" title="{{ site.blog.title }} - Feed" />
 
 	<meta property="og:title" content="{{ page_title }}" />
 	<meta property="og:description" content="{{ page_description }}" />
 	<meta property="og:url" content="{{ canonical_url }}" />
-
-	<link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+	<meta property="og:image" content="{{ page_icon | relative_url }}" />
 
 	{% if ld_json_type == 'WebSite' %}
+	<meta property="og:type" content="website" />
+	
 	<script type="application/ld+json">
 		{
 			"@context": "http://schema.org",
@@ -47,6 +48,8 @@
 	{% endif %}
 
 	{% if ld_json_type == 'Blog' %}
+	<meta property="og:type" content="website" />
+	
 	<script type="application/ld+json">
 		{
 			"@context": "http://schema.org",
@@ -64,6 +67,8 @@
 	{% endif %}
 
 	{% if ld_json_type == 'BlogPosting' %}
+	<meta property="og:type" content="article" />
+	
 	<script type="application/ld+json">
 		{
 			"@context": "http://schema.org",
@@ -96,5 +101,6 @@
 		}
 	</script>
 
+	<link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
 
 </head>
