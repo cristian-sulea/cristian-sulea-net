@@ -67,52 +67,150 @@ ErrorDocument 404 /404/
 # temporary redirects from old to new blog pages
 
 Redirect 301 /blog.php /blog/
-Redirect 301 /blog.php?p=2016-04-25-regular-expression-regex /blog/regular-expression-regex/
-Redirect 301 /blog.php?p=2016-03-10-basic-linux-commands /blog/basic-linux-commands/
-Redirect 301 /blog.php?p=2016-02-03-css-font-size-px-vs-em-vs-percent-vs-pt /blog/css-font-size-px-vs-em-vs-percent-vs-pt/
-Redirect 301 /blog.php?p=2016-01-13-options-settings-preferences-configurations /blog/options-settings-preferences-configurations/
-Redirect 301 /blog.php?p=2015-11-20-how-to-set-chrome-as-default-pdf-viewer /blog/how-to-set-chrome-as-default-pdf-viewer/
-Redirect 301 /blog.php?p=2015-10-07-async-and-defer-non-blocking-javascript-with-html5 /blog/async-and-defer-non-blocking-javascript-with-html5/
-Redirect 301 /blog.php?p=2015-10-06-how-to-change-the-logon-screen-on-windows-7 /blog/how-to-change-the-logon-screen-on-windows-7/
-Redirect 301 /blog.php?p=2015-09-07-the-jvm-architecture /blog/the-jvm-architecture/
-Redirect 301 /blog.php?p=2015-08-14-design-patterns-overview /blog/design-patterns-overview/
-Redirect 301 /blog.php?p=2015-08-07-api-vs-spi /blog/api-vs-spi/
-Redirect 301 /blog.php?p=2015-08-03-cron-expressions-tutorial /blog/cron-expressions-tutorial/
-Redirect 301 /blog.php?p=2015-07-10-basic-package-management-on-linux-debian /blog/basic-package-management-on-linux-debian/
-Redirect 301 /blog.php?p=2015-07-02-dokuwiki-url-rewriting-in-apache /blog/dokuwiki-url-rewriting-in-apache/
-Redirect 301 /blog.php?p=2015-07-01-php-list-files-and-directories /blog/php-list-files-and-directories/
-Redirect 301 /blog.php?p=2015-06-26-parse-files-recursively-using-java-7 /blog/parse-files-recursively-using-java-7/
-Redirect 301 /blog.php?p=2015-05-29-gmail-advanced-search-operators /blog/gmail-advanced-search-operators/
-Redirect 301 /blog.php?p=2015-04-03-set-the-look-and-feel-in-java /blog/set-the-look-and-feel-in-java/
-Redirect 301 /blog.php?p=2015-03-10-java-cryptography /blog/java-cryptography/
-Redirect 301 /blog.php?p=2015-02-15-java-lang-unsatisfiedlinkerror-no-dll-in-java-library-path /blog/java-lang-unsatisfiedlinkerror-no-dll-in-java-library-path/
-Redirect 301 /blog.php?p=2015-01-20-do-not-catch-nullpointerexception-or-any-of-its-ancestors /blog/do-not-catch-nullpointerexception-or-any-of-its-ancestors/
-Redirect 301 /blog.php?p=2014-12-15-extract-mkv-matroska-subtitles-on-linux-ubuntu /blog/extract-mkv-matroska-subtitles-on-linux-ubuntu/
-Redirect 301 /blog.php?p=2014-11-12-xstream-object-references /blog/xstream-object-references/
-Redirect 301 /blog.php?p=2014-11-11-xstream-quick-start-json-tutorial /blog/xstream-quick-start-json-tutorial/
-Redirect 301 /blog.php?p=2014-11-10-xstream-quick-start-tutorial /blog/xstream-quick-start-tutorial/
-Redirect 301 /blog.php?p=2014-10-26-portable-svn-repository /blog/portable-svn-repository/
-Redirect 301 /blog.php?p=2014-10-16-install-eclipse-on-linux-ubuntu /blog/install-eclipse-on-linux-ubuntu/
-Redirect 301 /blog.php?p=2014-09-09-install-maven-repository-on-linux-debian-sonatype-nexus /blog/install-maven-repository-on-linux-debian-sonatype-nexus/
-Redirect 301 /blog.php?p=2014-08-04-install-proxy-server-on-linux-debian-squid-web-proxy-cache /blog/install-proxy-server-on-linux-debian-squid-web-proxy-cache/
-Redirect 301 /blog.php?p=2014-08-03-install-ftp-server-on-linux-debian-vsftpd /blog/install-ftp-server-on-linux-debian-vsftpd/
-Redirect 301 /blog.php?p=2014-07-16-the-singleton-pattern /blog/the-singleton-pattern/
-Redirect 301 /blog.php?p=2014-07-11-install-java-openjdk-on-linux /blog/install-java-openjdk-on-linux/
-Redirect 301 /blog.php?p=2014-07-10-install-java-oracle-on-linux-ubuntu /blog/install-java-oracle-on-linux-ubuntu/
-Redirect 301 /blog.php?p=2014-06-28-hibernate-exception-a-collection-with-cascade-all-delete-orphan-was-no-longer-referenced-by-the-owning-entity-instance /blog/hibernate-exception-a-collection-with-cascade-all-delete-orphan-was-no-longer-referenced-by-the-owning-entity-instance/
-Redirect 301 /blog.php?p=2014-06-27-hibernate-one-to-many-annotation /blog/hibernate-one-to-many-annotation/
-Redirect 301 /blog.php?p=2014-06-26-hibernate-entity-superclass-mappedsuperclass /blog/hibernate-entity-superclass-mappedsuperclass/
-Redirect 301 /blog.php?p=2014-05-25-install-google-chrome-on-linux-fedora /blog/install-google-chrome-on-linux-fedora/
-Redirect 301 /blog.php?p=2014-05-24-install-google-chrome-on-linux-ubuntu /blog/install-google-chrome-on-linux-ubuntu/
-Redirect 301 /blog.php?p=2014-04-15-mount-virtualbox-shared-folders-on-linux /blog/mount-virtualbox-shared-folders-on-linux/
-Redirect 301 /blog.php?p=2014-04-14-linux-mount-cd-rom-or-dvd /blog/linux-mount-cd-rom-or-dvd/
-Redirect 301 /blog.php?p=2014-03-05-install-bash-completion-package-on-linux /blog/install-bash-completion-package-on-linux/
-Redirect 301 /blog.php?p=2014-03-04-linux-set-up-http-proxy-for-gnuwget /blog/linux-set-up-http-proxy-for-gnuwget/
-Redirect 301 /blog.php?p=2014-03-03-linux-set-up-http-proxy-for-apt-get /blog/linux-set-up-http-proxy-for-apt-get/
-Redirect 301 /blog.php?p=2014-02-03-software-development-roles /blog/software-development-roles/
-Redirect 301 /blog.php?p=2014-02-02-code-review /blog/code-review/
-Redirect 301 /blog.php?p=2014-01-14-disable-browser-caching-with-meta-html-tags /blog/disable-browser-caching-with-meta-html-tags/
-Redirect 301 /blog.php?p=2013-08-06-upgrade-samsung-galaxy-s2-to-android-4-0-4 /blog/upgrade-samsung-galaxy-s2-to-android-4-0-4/
-Redirect 301 /blog.php?p=2013-07-06-root-samsung-galaxy-s2-on-android-4-0-4 /blog/root-samsung-galaxy-s2-on-android-4-0-4/
-Redirect 301 /blog.php?p=2013-06-05-multiple-properties-files-in-spring-context-xml /blog/multiple-properties-files-in-spring-context-xml/
-Redirect 301 /blog.php?p=2013-05-27-spring-quick-start-tutorial /blog/spring-quick-start-tutorial/
+
+RewriteCond %{QUERY_STRING} p=2016-04-25-regular-expression-regex [NC]
+RewriteRule ^blog\.php$ /blog/regular-expression-regex/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2016-03-10-basic-linux-commands [NC]
+RewriteRule ^blog\.php$ /blog/basic-linux-commands/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2016-02-03-css-font-size-px-vs-em-vs-percent-vs-pt [NC]
+RewriteRule ^blog\.php$ /blog/css-font-size-px-vs-em-vs-percent-vs-pt/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2016-01-13-options-settings-preferences-configurations [NC]
+RewriteRule ^blog\.php$ /blog/options-settings-preferences-configurations/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2015-11-20-how-to-set-chrome-as-default-pdf-viewer [NC]
+RewriteRule ^blog\.php$ /blog/how-to-set-chrome-as-default-pdf-viewer/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2015-10-07-async-and-defer-non-blocking-javascript-with-html5 [NC]
+RewriteRule ^blog\.php$ /blog/async-and-defer-non-blocking-javascript-with-html5/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2015-10-06-how-to-change-the-logon-screen-on-windows-7 [NC]
+RewriteRule ^blog\.php$ /blog/how-to-change-the-logon-screen-on-windows-7/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2015-09-07-the-jvm-architecture [NC]
+RewriteRule ^blog\.php$ /blog/the-jvm-architecture/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2015-08-14-design-patterns-overview [NC]
+RewriteRule ^blog\.php$ /blog/design-patterns-overview/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2015-08-07-api-vs-spi [NC]
+RewriteRule ^blog\.php$ /blog/api-vs-spi/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2015-08-03-cron-expressions-tutorial [NC]
+RewriteRule ^blog\.php$ /blog/cron-expressions-tutorial/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2015-07-10-basic-package-management-on-linux-debian [NC]
+RewriteRule ^blog\.php$ /blog/basic-package-management-on-linux-debian/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2015-07-02-dokuwiki-url-rewriting-in-apache [NC]
+RewriteRule ^blog\.php$ /blog/dokuwiki-url-rewriting-in-apache/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2015-07-01-php-list-files-and-directories [NC]
+RewriteRule ^blog\.php$ /blog/php-list-files-and-directories/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2015-06-26-parse-files-recursively-using-java-7 [NC]
+RewriteRule ^blog\.php$ /blog/parse-files-recursively-using-java-7/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2015-05-29-gmail-advanced-search-operators [NC]
+RewriteRule ^blog\.php$ /blog/gmail-advanced-search-operators/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2015-04-03-set-the-look-and-feel-in-java [NC]
+RewriteRule ^blog\.php$ /blog/set-the-look-and-feel-in-java/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2015-03-10-java-cryptography [NC]
+RewriteRule ^blog\.php$ /blog/java-cryptography/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2015-02-15-java-lang-unsatisfiedlinkerror-no-dll-in-java-library-path [NC]
+RewriteRule ^blog\.php$ /blog/java-lang-unsatisfiedlinkerror-no-dll-in-java-library-path/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2015-01-20-do-not-catch-nullpointerexception-or-any-of-its-ancestors [NC]
+RewriteRule ^blog\.php$ /blog/do-not-catch-nullpointerexception-or-any-of-its-ancestors/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-12-15-extract-mkv-matroska-subtitles-on-linux-ubuntu [NC]
+RewriteRule ^blog\.php$ /blog/extract-mkv-matroska-subtitles-on-linux-ubuntu/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-11-12-xstream-object-references [NC]
+RewriteRule ^blog\.php$ /blog/xstream-object-references/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-11-11-xstream-quick-start-json-tutorial [NC]
+RewriteRule ^blog\.php$ /blog/xstream-quick-start-json-tutorial/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-11-10-xstream-quick-start-tutorial [NC]
+RewriteRule ^blog\.php$ /blog/xstream-quick-start-tutorial/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-10-26-portable-svn-repository [NC]
+RewriteRule ^blog\.php$ /blog/portable-svn-repository/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-10-16-install-eclipse-on-linux-ubuntu [NC]
+RewriteRule ^blog\.php$ /blog/install-eclipse-on-linux-ubuntu/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-09-09-install-maven-repository-on-linux-debian-sonatype-nexus [NC]
+RewriteRule ^blog\.php$ /blog/install-maven-repository-on-linux-debian-sonatype-nexus/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-08-04-install-proxy-server-on-linux-debian-squid-web-proxy-cache [NC]
+RewriteRule ^blog\.php$ /blog/install-proxy-server-on-linux-debian-squid-web-proxy-cache/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-08-03-install-ftp-server-on-linux-debian-vsftpd [NC]
+RewriteRule ^blog\.php$ /blog/install-ftp-server-on-linux-debian-vsftpd/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-07-16-the-singleton-pattern [NC]
+RewriteRule ^blog\.php$ /blog/the-singleton-pattern/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-07-11-install-java-openjdk-on-linux [NC]
+RewriteRule ^blog\.php$ /blog/install-java-openjdk-on-linux/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-07-10-install-java-oracle-on-linux-ubuntu [NC]
+RewriteRule ^blog\.php$ /blog/install-java-oracle-on-linux-ubuntu/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-06-28-hibernate-exception-a-collection-with-cascade-all-delete-orphan-was-no-longer-referenced-by-the-owning-entity-instance [NC]
+RewriteRule ^blog\.php$ /blog/hibernate-exception-a-collection-with-cascade-all-delete-orphan-was-no-longer-referenced-by-the-owning-entity-instance/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-06-27-hibernate-one-to-many-annotation [NC]
+RewriteRule ^blog\.php$ /blog/hibernate-one-to-many-annotation/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-06-26-hibernate-entity-superclass-mappedsuperclass [NC]
+RewriteRule ^blog\.php$ /blog/hibernate-entity-superclass-mappedsuperclass/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-05-25-install-google-chrome-on-linux-fedora [NC]
+RewriteRule ^blog\.php$ /blog/install-google-chrome-on-linux-fedora/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-05-24-install-google-chrome-on-linux-ubuntu [NC]
+RewriteRule ^blog\.php$ /blog/install-google-chrome-on-linux-ubuntu/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-04-15-mount-virtualbox-shared-folders-on-linux [NC]
+RewriteRule ^blog\.php$ /blog/mount-virtualbox-shared-folders-on-linux/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-04-14-linux-mount-cd-rom-or-dvd [NC]
+RewriteRule ^blog\.php$ /blog/linux-mount-cd-rom-or-dvd/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-03-05-install-bash-completion-package-on-linux [NC]
+RewriteRule ^blog\.php$ /blog/install-bash-completion-package-on-linux/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-03-04-linux-set-up-http-proxy-for-gnuwget [NC]
+RewriteRule ^blog\.php$ /blog/linux-set-up-http-proxy-for-gnuwget/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-03-03-linux-set-up-http-proxy-for-apt-get [NC]
+RewriteRule ^blog\.php$ /blog/linux-set-up-http-proxy-for-apt-get/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-02-03-software-development-roles [NC]
+RewriteRule ^blog\.php$ /blog/software-development-roles/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-02-02-code-review [NC]
+RewriteRule ^blog\.php$ /blog/code-review/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2014-01-14-disable-browser-caching-with-meta-html-tags [NC]
+RewriteRule ^blog\.php$ /blog/disable-browser-caching-with-meta-html-tags/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2013-08-06-upgrade-samsung-galaxy-s2-to-android-4-0-4 [NC]
+RewriteRule ^blog\.php$ /blog/upgrade-samsung-galaxy-s2-to-android-4-0-4/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2013-07-06-root-samsung-galaxy-s2-on-android-4-0-4 [NC]
+RewriteRule ^blog\.php$ /blog/root-samsung-galaxy-s2-on-android-4-0-4/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2013-06-05-multiple-properties-files-in-spring-context-xml [NC]
+RewriteRule ^blog\.php$ /blog/multiple-properties-files-in-spring-context-xml/ [L,R=301,QSD]
+
+RewriteCond %{QUERY_STRING} p=2013-05-27-spring-quick-start-tutorial [NC]
+RewriteRule ^blog\.php$ /blog/spring-quick-start-tutorial/ [L,R=301,QSD]
