@@ -15,13 +15,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-# url: "http://cristian.sulea.net" # the base hostname & protocol for your site, e.g. http://example.com
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://cristian.sulea.net" # the base hostname & protocol for your site, e.g. http://example.com
+# url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 title: Cristian Sulea
 subtitle: Software Architect & Developer
 description: Senior Java Developer (& Software Architect), PSS Prosoft Solutions, February 2008 - Present, Bucharest, Romania
-# baseurl: "/jekyllrb" # the subpath of your site, e.g. /blog
 baseurl: "" # the subpath of your site, e.g. /blog
 
 blog_title: Knowledge Base
@@ -39,7 +38,6 @@ author:
   name: Cristian Sulea
   url: http://cristian.sulea.net
 
-# images: /jekyllrb/images
 images: /images
 
 linkedin_username: cristiansulea
