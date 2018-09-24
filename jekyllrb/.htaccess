@@ -1,0 +1,116 @@
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^www\.cristian\.sulea\.net [NC]
+RewriteRule ^(.*)$ http://cristian.sulea.net/$1 [L,R=301]
+
+<IfModule mod_mime.c>
+
+  # Web fonts
+    AddType application/font-woff                       woff
+    AddType application/font-woff2                      woff2
+    AddType application/vnd.ms-fontobject               eot
+
+    # Browsers usually ignore the font media types and simply sniff
+    # the bytes to figure out the font type.
+    # http://mimesniff.spec.whatwg.org/#matching-a-font-type-pattern
+
+    # Chrome however, shows a warning if any other media types are used
+    # for the following two font types.
+
+    AddType application/x-font-ttf                      ttc ttf
+    AddType font/opentype                               otf
+
+    AddType image/svg+xml                               svg svgz
+
+</IfModule>
+
+<IfModule mod_expires.c>
+
+    ExpiresActive on
+    ExpiresDefault                                      "access plus 1 month"
+
+  # HTML
+    ExpiresByType text/html                             "access plus 0 seconds"
+
+  # Favicon (cannot be renamed!) and cursor images
+    ExpiresByType image/x-icon                          "access plus 1 week"
+
+  # CSS
+    ExpiresByType text/css                              "access plus 1 year"
+
+  # Web feeds
+    ExpiresByType application/atom+xml                  "access plus 1 hour"
+    ExpiresByType application/rss+xml                   "access plus 1 hour"
+
+  # Web fonts
+    ExpiresByType application/font-woff                 "access plus 1 month"
+    ExpiresByType application/font-woff2                "access plus 1 month"
+    ExpiresByType application/vnd.ms-fontobject         "access plus 1 month"
+    ExpiresByType application/x-font-ttf                "access plus 1 month"
+    ExpiresByType font/opentype                         "access plus 1 month"
+    ExpiresByType image/svg+xml                         "access plus 1 month"
+
+  # Data interchange
+    ExpiresByType application/json                      "access plus 0 seconds"
+    ExpiresByType application/ld+json                   "access plus 0 seconds"
+    ExpiresByType application/vnd.geo+json              "access plus 0 seconds"
+    ExpiresByType application/xml                       "access plus 0 seconds"
+    ExpiresByType text/xml                              "access plus 0 seconds"
+
+</IfModule>
+
+
+#
+# temporary redirects from old to new blog pages
+
+Redirect 301 /blog.php /blog/
+Redirect 301 /blog.php?p=2016-04-25-regular-expression-regex /blog/regular-expression-regex/
+Redirect 301 /blog.php?p=2016-03-10-basic-linux-commands /blog/basic-linux-commands/
+Redirect 301 /blog.php?p=2016-02-03-css-font-size-px-vs-em-vs-percent-vs-pt /blog/css-font-size-px-vs-em-vs-percent-vs-pt/
+Redirect 301 /blog.php?p=2016-01-13-options-settings-preferences-configurations /blog/options-settings-preferences-configurations/
+Redirect 301 /blog.php?p=2015-11-20-how-to-set-chrome-as-default-pdf-viewer /blog/how-to-set-chrome-as-default-pdf-viewer/
+Redirect 301 /blog.php?p=2015-10-07-async-and-defer-non-blocking-javascript-with-html5 /blog/async-and-defer-non-blocking-javascript-with-html5/
+Redirect 301 /blog.php?p=2015-10-06-how-to-change-the-logon-screen-on-windows-7 /blog/how-to-change-the-logon-screen-on-windows-7/
+Redirect 301 /blog.php?p=2015-09-07-the-jvm-architecture /blog/the-jvm-architecture/
+Redirect 301 /blog.php?p=2015-08-14-design-patterns-overview /blog/design-patterns-overview/
+Redirect 301 /blog.php?p=2015-08-07-api-vs-spi /blog/api-vs-spi/
+Redirect 301 /blog.php?p=2015-08-03-cron-expressions-tutorial /blog/cron-expressions-tutorial/
+Redirect 301 /blog.php?p=2015-07-10-basic-package-management-on-linux-debian /blog/basic-package-management-on-linux-debian/
+Redirect 301 /blog.php?p=2015-07-02-dokuwiki-url-rewriting-in-apache /blog/dokuwiki-url-rewriting-in-apache/
+Redirect 301 /blog.php?p=2015-07-01-php-list-files-and-directories /blog/php-list-files-and-directories/
+Redirect 301 /blog.php?p=2015-06-26-parse-files-recursively-using-java-7 /blog/parse-files-recursively-using-java-7/
+Redirect 301 /blog.php?p=2015-05-29-gmail-advanced-search-operators /blog/gmail-advanced-search-operators/
+Redirect 301 /blog.php?p=2015-04-03-set-the-look-and-feel-in-java /blog/set-the-look-and-feel-in-java/
+Redirect 301 /blog.php?p=2015-03-10-java-cryptography /blog/java-cryptography/
+Redirect 301 /blog.php?p=2015-02-15-java-lang-unsatisfiedlinkerror-no-dll-in-java-library-path /blog/java-lang-unsatisfiedlinkerror-no-dll-in-java-library-path/
+Redirect 301 /blog.php?p=2015-01-20-do-not-catch-nullpointerexception-or-any-of-its-ancestors /blog/do-not-catch-nullpointerexception-or-any-of-its-ancestors/
+Redirect 301 /blog.php?p=2014-12-15-extract-mkv-matroska-subtitles-on-linux-ubuntu /blog/extract-mkv-matroska-subtitles-on-linux-ubuntu/
+Redirect 301 /blog.php?p=2014-11-12-xstream-object-references /blog/xstream-object-references/
+Redirect 301 /blog.php?p=2014-11-11-xstream-quick-start-json-tutorial /blog/xstream-quick-start-json-tutorial/
+Redirect 301 /blog.php?p=2014-11-10-xstream-quick-start-tutorial /blog/xstream-quick-start-tutorial/
+Redirect 301 /blog.php?p=2014-10-26-portable-svn-repository /blog/portable-svn-repository/
+Redirect 301 /blog.php?p=2014-10-16-install-eclipse-on-linux-ubuntu /blog/install-eclipse-on-linux-ubuntu/
+Redirect 301 /blog.php?p=2014-09-09-install-maven-repository-on-linux-debian-sonatype-nexus /blog/install-maven-repository-on-linux-debian-sonatype-nexus/
+Redirect 301 /blog.php?p=2014-08-04-install-proxy-server-on-linux-debian-squid-web-proxy-cache /blog/install-proxy-server-on-linux-debian-squid-web-proxy-cache/
+Redirect 301 /blog.php?p=2014-08-03-install-ftp-server-on-linux-debian-vsftpd /blog/install-ftp-server-on-linux-debian-vsftpd/
+Redirect 301 /blog.php?p=2014-07-16-the-singleton-pattern /blog/the-singleton-pattern/
+Redirect 301 /blog.php?p=2014-07-11-install-java-openjdk-on-linux /blog/install-java-openjdk-on-linux/
+Redirect 301 /blog.php?p=2014-07-10-install-java-oracle-on-linux-ubuntu /blog/install-java-oracle-on-linux-ubuntu/
+Redirect 301 /blog.php?p=2014-06-28-hibernate-exception-a-collection-with-cascade-all-delete-orphan-was-no-longer-referenced-by-the-owning-entity-instance /blog/hibernate-exception-a-collection-with-cascade-all-delete-orphan-was-no-longer-referenced-by-the-owning-entity-instance/
+Redirect 301 /blog.php?p=2014-06-27-hibernate-one-to-many-annotation /blog/hibernate-one-to-many-annotation/
+Redirect 301 /blog.php?p=2014-06-26-hibernate-entity-superclass-mappedsuperclass /blog/hibernate-entity-superclass-mappedsuperclass/
+Redirect 301 /blog.php?p=2014-05-25-install-google-chrome-on-linux-fedora /blog/install-google-chrome-on-linux-fedora/
+Redirect 301 /blog.php?p=2014-05-24-install-google-chrome-on-linux-ubuntu /blog/install-google-chrome-on-linux-ubuntu/
+Redirect 301 /blog.php?p=2014-04-15-mount-virtualbox-shared-folders-on-linux /blog/mount-virtualbox-shared-folders-on-linux/
+Redirect 301 /blog.php?p=2014-04-14-linux-mount-cd-rom-or-dvd /blog/linux-mount-cd-rom-or-dvd/
+Redirect 301 /blog.php?p=2014-03-05-install-bash-completion-package-on-linux /blog/install-bash-completion-package-on-linux/
+Redirect 301 /blog.php?p=2014-03-04-linux-set-up-http-proxy-for-gnuwget /blog/linux-set-up-http-proxy-for-gnuwget/
+Redirect 301 /blog.php?p=2014-03-03-linux-set-up-http-proxy-for-apt-get /blog/linux-set-up-http-proxy-for-apt-get/
+Redirect 301 /blog.php?p=2014-02-03-software-development-roles /blog/software-development-roles/
+Redirect 301 /blog.php?p=2014-02-02-code-review /blog/code-review/
+Redirect 301 /blog.php?p=2014-01-14-disable-browser-caching-with-meta-html-tags /blog/disable-browser-caching-with-meta-html-tags/
+Redirect 301 /blog.php?p=2013-08-06-upgrade-samsung-galaxy-s2-to-android-4-0-4 /blog/upgrade-samsung-galaxy-s2-to-android-4-0-4/
+Redirect 301 /blog.php?p=2013-07-06-root-samsung-galaxy-s2-on-android-4-0-4 /blog/root-samsung-galaxy-s2-on-android-4-0-4/
+Redirect 301 /blog.php?p=2013-06-05-multiple-properties-files-in-spring-context-xml /blog/multiple-properties-files-in-spring-context-xml/
+Redirect 301 /blog.php?p=2013-05-27-spring-quick-start-tutorial /blog/spring-quick-start-tutorial/
