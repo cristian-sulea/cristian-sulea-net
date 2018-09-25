@@ -41,6 +41,17 @@ author:
 
 images: /images
 
+google:
+  analytics: |
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56392483-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-56392483-1');
+    </script>
+
 linkedin_username: cristiansulea
 github_username: cristian-sulea
 twitter_username: cristian_sulea
@@ -48,18 +59,20 @@ twitter_username: cristian_sulea
 
 rss: RSS
 
+
 # Build settings
 
 markdown: kramdown
 theme: minima
 
-# plugins:
-#  - jekyll-feed
-
 permalink: /blog/:title/
 
 sass:
   style: compressed
+
+# plugins:
+#  - jekyll-feed
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
