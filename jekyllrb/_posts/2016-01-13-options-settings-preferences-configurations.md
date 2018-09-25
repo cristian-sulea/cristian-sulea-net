@@ -5,7 +5,8 @@ layout: post
 title:       "Options, Settings, Preferences, Configuration"
 description: "There's no one single consistent style followed by all applications, but doesn't really matter so long as the expected audience understands what you mean."
 
-categories: software development options settings preferences configuration
+categories: [software development]
+tags:       [options, settings, preferences, configuration]
 
 resources:
   - "[Ubuntu Forums](http://ubuntuforums.org/showthread.php?t=695848)"

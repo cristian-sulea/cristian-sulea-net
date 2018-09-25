@@ -5,7 +5,8 @@ layout: post
 title:       "Software Development Roles"
 description: "Each of the software development processes may change to some extent, but fundamentally there are some roles which every process has in one form or another."
 
-categories: software development roles
+categories: [software development]
+tags:       [roles]
 
 resources:
   - "a PDF file named \"Developer eBook\" and downloaded from [Internet.com](http://www.internet.com) (deleted in the meantime)"

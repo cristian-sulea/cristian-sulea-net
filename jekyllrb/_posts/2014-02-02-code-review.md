@@ -5,7 +5,8 @@ layout: post
 title:       "Code Review"
 description: "Code review is a phase in the software development process to catch bugs and design errors before the code becomes part of the product."
 
-categories: software development code review
+categories: [software development]
+tags:       [code review]
 
 resources:
   - "[Effective Code Review](http://alexgaynor.net/2013/sep/26/effective-code-review/)"

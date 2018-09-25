@@ -5,7 +5,8 @@ layout: post
 title:       "Regular Expressions (regex)"
 description: "A regular expression (regex) is a sequence of characters that define a search pattern, mainly for use in pattern matching with strings, or string matching."
 
-categories: regex
+categories: [software development]
+tags:       [regex]
 
 resources:
   - "[Wikipedia - Regular expression](https://en.wikipedia.org/wiki/Regular_expression)"

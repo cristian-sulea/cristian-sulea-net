@@ -5,7 +5,8 @@ layout: post
 title:       "Design Patterns - Overview"
 description: "A design pattern is a common, well-described solution to a common software problem. Sensible use of design patterns results in increased code maintainability."
 
-categories: software development design patterns
+categories: [software development]
+tags:       [design patterns]
 
 resources:
   - "[AVAJAVA Web Tutorials](http://www.avajava.com/tutorials/categories/design-patterns)"
