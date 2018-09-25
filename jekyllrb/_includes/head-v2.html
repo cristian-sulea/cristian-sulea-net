@@ -18,12 +18,12 @@
 	{% endif %}
 
 	<title>{{ page_title }}</title>
-	<meta name="description" content="{{ page_description }}" />
+	<meta name="description" content="{{ page_description }}">
 
 	<meta name="author" content="{{ author_name }}">
 
-	<link rel="canonical" href="{{ canonical_url }}" />
-	<link rel="alternate" type="application/atom+xml" href="{{ 'feed.xml' | absolute_url }}" title="{{ site.blog.title }} - Feed" />
+	<link rel="canonical" href="{{ canonical_url }}">
+	<link rel="alternate" type="application/atom+xml" href="{{ 'feed.xml' | absolute_url }}" title="{{ site.blog.title }} - Feed">
 
 	<meta property="og:title" content="{{ page_title }}" />
 	<meta property="og:description" content="{{ page_description }}" />
@@ -33,7 +33,7 @@
 	{% if ld_json_type == 'WebSite' %}
 	<meta property="og:type" content="website" />
 	
-	<meta name="keywords" content="{{ site.keywords }}" />
+	<meta name="keywords" content="{{ site.keywords }}">
 	
 	<script type="application/ld+json">
 		{
@@ -54,7 +54,7 @@
 	{% if ld_json_type == 'Blog' %}
 	<meta property="og:type" content="website" />
 	
-	<meta name="keywords" content="{{ site.blog.keywords }}, {{ site.keywords }}" />
+	<meta name="keywords" content="{{ site.blog.keywords }}, {{ site.keywords }}">
 	
 	<script type="application/ld+json">
 		{
@@ -75,7 +75,7 @@
 	{% if ld_json_type == 'BlogPosting' %}
 	<meta property="og:type" content="article" />
 	
-	<meta name="keywords" content="{{ page.categories | join: ', ' }}, {{ page.tags | join: ', ' }}" />
+	<meta name="keywords" content="{{ page.categories | join: ', ' }}, {{ page.tags | join: ', ' }}">
 	
 	<script type="application/ld+json">
 		{
