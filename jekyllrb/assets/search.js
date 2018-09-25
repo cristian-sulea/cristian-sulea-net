@@ -6,7 +6,7 @@ SimpleJekyllSearch({
 	fuzzy : true,
 	searchInput: searchInput,
 	resultsContainer: searchOutputContainer,
-	json: "/search.json.js"
+	json: "/search-json.min.js"
 })
 
 var searchContainer = document.getElementById('searchContainer');
