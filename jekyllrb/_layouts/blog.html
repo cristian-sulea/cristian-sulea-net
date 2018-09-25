@@ -3,7 +3,7 @@
 
 {% assign page_icon = '/assets/icon-blog.png' %}
 {% assign page_title = site.blog_title | append: ' - ' | append: site.blog_subtitle %}
-{% assign page_description = site.blog_description %}
+{% assign page_description = site.blog.description %}
 
 {% assign ld_json_type = 'Blog' %}
 
@@ -28,7 +28,7 @@
 				<h1 class="post-title">{{ site.blog_title | escape }}</h1>
 				<p class="post-meta">
 					<span class="dt-published">
-						{{ site.blog_description | escape }}
+						{{ site.blog.description | escape }}
 					</span>
 				</p>
 			</header>
