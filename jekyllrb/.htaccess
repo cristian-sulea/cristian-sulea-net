@@ -4,6 +4,8 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^www\.cristian\.sulea\.net [NC]
 RewriteRule ^(.*)$ http://cristian.sulea.net/$1 [L,R=301]
 
+AddDefaultCharset utf-8
+
 ErrorDocument 404 /404/
 
 <IfModule mod_mime.c>
