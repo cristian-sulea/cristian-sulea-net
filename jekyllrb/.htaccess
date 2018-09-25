@@ -68,7 +68,8 @@ ErrorDocument 404 /404/
 #
 # temporary redirects from old to new blog pages
 
-Redirect 301 /blog.php /blog/
+# chestia asta buleste tot
+# Redirect 301 /blog.php /blog/
 
 RewriteCond %{QUERY_STRING} p=2016-04-25-regular-expression-regex [NC]
 RewriteRule ^blog\.php$ /blog/regular-expression-regex/ [L,R=301,QSD]
