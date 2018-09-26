@@ -34,8 +34,13 @@ layout: null
       
       {% if post.description and post.description != empty %}<summary type="html">{{ post.description | xml_escape }}</summary>{% endif %}
       
-      <content type="html" xml:base="{{ post.url | absolute_url | xml_escape }}"><![CDATA[{{ post.excerpt }}]]></content>
-            
+      <content type="html" xml:base="{{ post.url | absolute_url | xml_escape }}">
+        <![CDATA[
+          {{ post.excerpt }}
+          <p><a href="{{ post.url | absolute_url }}">Read more...</a></p>
+        ]]>
+      </content>
+      
     </entry>
   {% endfor %}
   
