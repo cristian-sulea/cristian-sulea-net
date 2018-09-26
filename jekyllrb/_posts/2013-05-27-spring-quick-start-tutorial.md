@@ -5,7 +5,8 @@ layout: post
 title:       "Spring - Quick start tutorial"
 description: "The Spring Framework is an open source application framework and inversion of control container for the Java platform."
 
-categories: java spring framework
+categories: [java]
+tags:       [spring]
 
 resources:
   - "[http://spring.io](http://spring.io)"

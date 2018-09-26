@@ -5,7 +5,8 @@ layout: post
 title:       "Hibernate - One To Many (Annotation)"
 description: "One-to-many associations are declared at the property level with the annotation @OneToMany."
 
-categories: java hibernate
+categories: [java]
+tags:       [hibernate]
 
 ---
 

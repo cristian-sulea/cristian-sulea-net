@@ -5,7 +5,8 @@ layout: post
 title:       "Java Cryptography"
 description: "Cryptography is looking at techniques for encoding and verifying things securely. It tends to focus on encryption, authentication and computer protocols."
 
-categories: java cryptography
+categories: [java]
+tags:       [cryptography]
 
 ---
 

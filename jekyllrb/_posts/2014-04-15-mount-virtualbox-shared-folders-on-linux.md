@@ -5,12 +5,14 @@ layout: post
 title:       "Mount VirtualBox shared folders on Linux"
 description: "A shared VirtualBox folder allows to easily share files between host OS and guest OS. This guide shows how to mount the VirtualBox shared folder on Linux."
 
-categories: linux virtualbox
+categories: [linux]
+tags:       [virtualbox]
 
 ---
 
 
 A shared VirtualBox folder allows to easily share files between host OS and guest OS. This guide shows how to mount the VirtualBox shared folder on Linux.
+
 
 Define a shared folder:
 

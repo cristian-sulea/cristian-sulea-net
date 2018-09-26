@@ -5,7 +5,8 @@ layout: post
 title:       "Hibernate - Entity Superclass (@MappedSuperclass)"
 description: "The solution to code repetition (like for example wiring an id field in every Hibernate entity) is to inherit these properties from a superclass."
 
-categories: java hibernate
+categories: [java]
+tags:       [hibernate]
 
 ---
 

@@ -5,7 +5,8 @@ layout: post
 title:       "Root Samsung Galaxy S2 on Android 4.0.4"
 description: "The instructions in this guide are for rooting the Samsung Galaxy S2 GT-I9100 on Android 4.0.4 build XXLQ5."
 
-categories: samsung galaxy s2
+categories: [android]
+tags:       [samsung, galaxy, s2]
 
 resources:
   - "[XDA Developers Android and Mobile Development Forum](http://forum.xda-developers.com/showthread.php?t=1103399)"

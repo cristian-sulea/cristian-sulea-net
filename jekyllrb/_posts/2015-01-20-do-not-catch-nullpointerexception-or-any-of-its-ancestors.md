@@ -5,7 +5,8 @@ layout: post
 title:       "Do not catch NullPointerException or any of its ancestors"
 description: "A NullPointerException exception thrown at runtime indicates the existence of an underlying null pointer dereference that must be fixed in the application code."
 
-categories: java
+categories: [java]
+tags:       [NullPointerException]
 
 resources:
   - "[CERT Secure Coding Standards](https://www.securecoding.cert.org/confluence/display/java/ERR08-J.+Do+not+catch+NullPointerException+or+any+of+its+ancestors)"
