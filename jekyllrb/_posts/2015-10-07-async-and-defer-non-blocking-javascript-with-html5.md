@@ -19,12 +19,12 @@ Loading JavaScript is one of the biggest performance bottlenecks.
 A script tag causes the browser to halt rendering, load a file, and run the code (the script will be executed before parsing is resumed).
 For slow servers and heavy scripts this means that displaying the webpage will be delayed.
 
-<table>
+<table role="presentation">
 	<colgroup>
-		<col width="35%" />
-		<col width="20%" />
-		<col width="10%" />
-		<col width="35%" />
+		<col style="width: 35%" />
+		<col style="width: 20%" />
+		<col style="width: 10%" />
+		<col style="width: 35%" />
 	</colgroup>
 	<tbody >
 		<tr>
@@ -49,7 +49,7 @@ For slow servers and heavy scripts this means that displaying the webpage will b
 
 Legend:
 
-<table>
+<table role="presentation">
 	<tbody>
 		<tr>
 			<td style="background-color: lime; min-width: 1.5em;"></td>
@@ -83,12 +83,12 @@ The browser will begin to download the deferred scripts in parallel without stop
 
 The scripts downloaded with `defer` are also guaranteed to execute in the order that they appear in the document.
 
-<table>
+<table role="presentation">
 	<colgroup>
-		<col width="35%" />
-		<col width="20%" />
-		<col width="35%" />
-		<col width="10%" />
+		<col style="width: 35%" />
+		<col style="width: 20%" />
+		<col style="width: 35%" />
+		<col style="width: 10%" />
 	</colgroup>
 	<tbody>
 		<tr>
@@ -117,12 +117,12 @@ The scripts downloaded with `defer` are also guaranteed to execute in the order 
 
 The `async` is identical to `defer`, except that the script executes at the first opportunity after download (will pause the HTML parser to execute it when it has finished downloading).
 
-<table>
+<table role="presentation">
 	<colgroup>
-		<col width="35%" />
-		<col width="20%" />
-		<col width="10%" />
-		<col width="35%" />
+		<col style="width: 35%" />
+		<col style="width: 20%" />
+		<col style="width: 10%" />
+		<col style="width: 35%" />
 	</colgroup>
 	<tbody>
 		<tr>
