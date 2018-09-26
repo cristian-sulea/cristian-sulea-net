@@ -36,7 +36,7 @@ layout: null
       
       <content type="html" xml:base="{{ post.url | absolute_url | xml_escape }}">
         <![CDATA[
-          {{ post.excerpt }}
+          <p>{{ post.description }}</p>
           <p><a href="{{ post.url | absolute_url }}">Read more...</a></p>
         ]]>
       </content>
