@@ -54,8 +54,9 @@
 										</a>
 									</h2>
 
-									{{ post.description }}
+									{{ post.excerpt }}
 
+									<p><a href="{{ post.url | absolute_url }}">Read more...</a></p>
 								</li>
 							{%- endfor -%}
 						</ul>
