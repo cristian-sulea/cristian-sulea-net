@@ -18,9 +18,19 @@
   margin-bottom: 0;
   float: left;
 
+  //&,
+  //&:visited {
+  //  color: $grey-color-dark;
+  //}
+
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: $brand-color;
+  }
+
+  &:hover {
+    color: $text-color;
+    text-decoration: underline;
   }
 }
 
@@ -37,8 +47,18 @@
   }
 
   .page-link {
-    color: $text-color;
+    //color: $text-color;
     line-height: $base-line-height;
+
+  &,
+  &:visited {
+    color: $brand-color;
+  }
+
+  &:hover {
+    color: $text-color;
+    text-decoration: underline;
+  }
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
