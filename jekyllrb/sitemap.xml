@@ -12,7 +12,7 @@ layout: null
     </url>
     
     <url>
-        <loc>{{ site.blog_baseurl | append: '/' | absolute_url }}</loc>
+        <loc>{{ site.blog.baseurl | absolute_url }}</loc>
     </url>
 
     {% for post in site.posts %}
