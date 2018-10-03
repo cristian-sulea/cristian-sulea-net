@@ -2,7 +2,7 @@
 
 layout: post
 
-title:       "SMTP, IMAP and POP3 Email Ports and Servers 2"
+title:       "SMTP, IMAP and POP3 Email Ports and Servers"
 description: "A list of default (and for some specific providers) SMTP, IMAP and POP3 email settings (ports and servers)."
 
 categories: [email]
