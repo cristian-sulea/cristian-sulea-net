@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{% assign page_icon = '/assets/icon-index.png' %}
+{% assign page_title = site.title | append: ' - ' | append: site.subtitle %}
+{% assign page_description = site.description %}
+
+{% assign ld_json_type = 'WebSite' %}
+
+{% include head-v2.html %}
+
+<body>
+
+	{% assign header_link_href = null %}
+	{% assign header_link_text = null %}
+
+	{% assign menu1_href = site.blog_baseurl | relative_url %}
+	{% assign menu1_text = site.blog_title %}
+
+	{% include header-v2.html %}
+
+	<main class="page-content" aria-label="Content">
+	<div class="wrapper">
+
+		<article class="post">
+
+			<header class="post-header">
+				<h1 class="post-title">{{ site.title | escape }}</h1>
+				<p class="post-meta">
+					<span class="dt-published">
+						{{ site.subtitle | escape }}
+					</span>
+				</p>
+			</header>
+
+			<div class="post-content">
+				
+				<h2>{{ site.data.experience.title | escape }}</h2>
+				
+				<ul class="post-list">
+					{% for position in site.data.experience.positions %}
+					<li>
+						
+						<p>
+							<span class="post-meta">
+								<em>{{ position.period | escape }} | {{ position.location | escape }}</em>
+								<br>
+								{{ position.company | escape }}
+							</span>
+							<br>
+							<strong>
+								{{ position.title | escape }}
+							</strong>
+						</p>
+						
+						{% if position.otherRoles %}
+							<p>
+								{{ site.data.experience.otherRolesTitle | escape }}:
+								<br>
+								{% for role in position.otherRoles %}
+									- {{ role | escape }}
+									<br>
+								{% endfor %}
+							</p>
+						{% endif %}
+						
+						{% if position.otherActivities %}
+							<p>
+								{{ site.data.experience.otherActivitiesTitle | escape }}:
+								<br>
+								{% for activity in position.otherActivities %}
+									- {{ activity | escape }}
+									<br>
+								{% endfor %}
+							</p>
+						{% endif %}
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+
+			<div class="post-content">
+				
+				<h2>{{ site.data.skills.title | escape }}</h2>
+				
+				<ul class="post-list">
+					{% for group in site.data.skills.groups %}
+					<li>
+						
+						<p>
+							<strong>
+								{{ group.title | escape }}
+							</strong>
+						</p>
+						
+						<p>
+							{% for skill in group.skills %}
+							- {{ skill | escape }}<br>
+							{%- endfor -%}
+						</p>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+
+			<div class="post-content">
+				
+				<h2>{{ site.data.languages.title | escape }}</h2>
+				
+				<ul class="post-list">
+					{% for language in site.data.languages.languages %}
+					<li>
+						
+						<p>
+							<strong>
+								{{ language.title | escape }}
+							</strong>
+						</p>
+						
+						<p>
+							- {{ language.level | escape }}
+						</p>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+
+		</article>
+
+	</div>
+	</main>
+
+	{%- include footer.html -%}
+
+</body>
+
+</html>
