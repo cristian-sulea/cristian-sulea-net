@@ -5,6 +5,9 @@
 {% assign author_name = site.author.name | escape %}
 {% assign author_url = site.author.url %}
 
+{% assign publisher_name = site.blog_title | append: ' - ' | append: site.blog_subtitle %}
+{% assign publisher_url = site.blog_baseurl | relative_url %}
+
 {% assign canonical_url = page.url | absolute_url | replace: 'index.html','' %}
 
 <head>
@@ -39,9 +42,11 @@
 		{
 			"@context": "http://schema.org",
 			"@type": "WebSite",
+
 			"name": "{{ page_title }}",
 			"description": "{{ page_description }}",
 			"url": "{{ canonical_url }}",
+
 			"author": {
 				"@type" : "Person",
 				"name" : "{{ author_name }}",
@@ -60,9 +65,11 @@
 		{
 			"@context": "http://schema.org",
 			"@type": "Blog",
+
 			"name": "{{ page_title }}",
 			"description": "{{ page_description }}",
 			"url": "{{ canonical_url }}",
+
 			"author": {
 				"@type" : "Person",
 				"name" : "{{ author_name }}",
@@ -81,20 +88,43 @@
 		{
 			"@context": "http://schema.org",
 			"@type": "BlogPosting",
+
 			"mainEntityOfPage": {
 				"@type": "WebPage",
 				"@id": "{{ canonical_url }}"
 			},
+
 			"headline": "{{ page_title }}",
 			"description": "{{ page_description }}",
 			"url": "{{ canonical_url }}",
+
 			"datePublished": "{{ page.date | date: "%Y-%m-%d" }}",
 			"dateCreated": "{{ page.date | date: "%Y-%m-%d" }}",
 			"dateModified": "{{ page.date | date: "%Y-%m-%d" }}",
+
+			"image": {
+				"@type": "ImageObject",
+				"url":   "{{ '/assets/blog-logo-696.png' | absolute_url }}",
+				"width":  696,
+				"height": 696
+			},
+
 			"author": {
 				"@type" : "Person",
 				"name" : "{{ author_name }}",
 				"url" : "{{ author_url }}"
+			},
+
+			"publisher": {
+				"@type": "Organization",
+				"name" : "{{ publisher_name }}",
+				"url" : "{{ publisher_url }}",
+				"logo": {
+					"@type": "ImageObject",
+					"url":   "{{ '/assets/blog-logo-060.png' | absolute_url }}",
+					"width":  60,
+					"height": 60
+				}
 			}
 		}
 	</script>
