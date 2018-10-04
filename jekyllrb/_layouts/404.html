@@ -2,7 +2,7 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
 {% assign page_icon = '/assets/icon-index.png' %}
-{% assign page_title = site.title | append: ' - ' | append: site.subtitle %}
+{% assign page_title = '404 (Page Not Found) - ' | append: site.blog_title | append: ' - ' | append: site.blog_subtitle %}
 {% assign page_description = site.description %}
 
 {% assign ld_json_type = 'WebSite' %}
@@ -28,13 +28,23 @@
 				<h1 class="post-title">404</h1>
 				<p class="post-meta">
 					<span class="dt-published">
-						Page not found :(
+						Page not found
 					</span>
 				</p>
 			</header>
 
 			<div class="post-content">
+				
 				<p>The requested page could not be found.</p>
+				
+				<h2>Posts</h2>
+				
+				<ul>
+					{%- for post in site.posts -%}
+						<li><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
+					{%- endfor -%}
+				</ul>
+				
 			</div>
 		</article>
 
