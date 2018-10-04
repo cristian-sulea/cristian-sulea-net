@@ -9,15 +9,18 @@ layout: null
 
     <url>
         <loc>{{ '/' | absolute_url }}</loc>
+        <priority>1.00</priority>
     </url>
-    
+
     <url>
         <loc>{{ site.blog.baseurl | absolute_url }}</loc>
+        <priority>1.00</priority>
     </url>
 
     {% for post in site.posts %}
     <url>
         <loc>{{ post.url | absolute_url | remove: 'index.html' }}</loc>
+        <priority>0.80</priority>
     </url>
     {% endfor %}
 
