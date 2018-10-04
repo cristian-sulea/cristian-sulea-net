@@ -31,10 +31,13 @@
 	<meta property="og:title" content="{{ page_title }}" />
 	<meta property="og:description" content="{{ page_description }}" />
 	<meta property="og:url" content="{{ canonical_url }}" />
-	<meta property="og:image" content="{{ page_icon | relative_url }}" />
 
 	{% if ld_json_type == 'WebSite' %}
+	
 	<meta property="og:type" content="website" />
+	<meta property="og:image" content="{{ '/assets/author-256.png' | absolute_url }}" />
+	<meta property="og:image:width" content="256" />
+	<meta property="og:image:height" content="256" />
 	
 	<meta name="keywords" content="{{ site.keywords }}">
 	
@@ -57,7 +60,11 @@
 	{% endif %}
 
 	{% if ld_json_type == 'Blog' %}
+	
 	<meta property="og:type" content="website" />
+	<meta property="og:image" content="{{ '/assets/blog-logo-256.png' | absolute_url }}" />
+	<meta property="og:image:width" content="256" />
+	<meta property="og:image:height" content="256" />
 	
 	<meta name="keywords" content="{{ site.blog.keywords }}, {{ site.keywords }}">
 	
@@ -80,7 +87,11 @@
 	{% endif %}
 
 	{% if ld_json_type == 'BlogPosting' %}
+	
 	<meta property="og:type" content="article" />
+	<meta property="og:image" content="{{ '/assets/blog-logo-256.png' | absolute_url }}" />
+	<meta property="og:image:width" content="256" />
+	<meta property="og:image:height" content="256" />
 	
 	<meta name="keywords" content="{{ page.categories | join: ', ' }}, {{ page.tags | join: ', ' }}">
 	
