@@ -52,7 +52,7 @@ The implementation must be annotated with the `@Provider` annotation (to tell th
 JAX-RS supports exception inheritance as well. When an exception is thrown, JAX-RS will first try to find an [ExceptionMapper] for that exception’s type. If it cannot find one, it will look for a mapper that can handle the exception’s superclass. It will continue this process until there are no more superclasses to match against.
 
 
-# javax.ws.rs.WebApplicationException
+## javax.ws.rs.WebApplicationException
 
 JAX-RS has a built-in unchecked exception that applications can throw. This exception is preinitialized with either a [Response] or a particular status code:
 
@@ -98,7 +98,7 @@ public class TestResource {
 ```
 
 
-# Exception Hierarchy
+## Exception Hierarchy
 
 JAX-RS 2.0 has added a nice exception hierarchy for various HTTP error conditions.
 So, instead of creating an instance of [WebApplicationException] and initializing it with a specific status code, you can use one of these exceptions instead.
