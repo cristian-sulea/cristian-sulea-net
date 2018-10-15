@@ -33,6 +33,17 @@
 				</p>
 			</header>
 
+<div class="post-content">
+	<a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}">
+		<img class="social-icon" width="24" height="24" alt="Search" src="{{ '/assets/social-linkedin.png' | relative_url }}"> LinkedIn</a>
+	<br>
+	<a href="https://github.com/{{ site.github_username| cgi_escape | escape }}">
+		<img class="social-icon" width="24" height="24" alt="Search" src="{{ '/assets/social-github.png' | relative_url }}"> GitHub</a>
+	<br>
+	<a href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}">
+		<img class="social-icon" width="24" height="24" alt="Search" src="{{ '/assets/social-twitter.png' | relative_url }}"> Twitter</a>
+</div>
+
 			<div class="post-content">
 				
 				<h2>{{ site.data.experience.title | escape }}</h2>
