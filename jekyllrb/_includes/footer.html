@@ -2,14 +2,10 @@
 	<div class="wrapper">
 
 		<div class="footer-heading">
-			&copy; <a href="{{ site.author.url }}">{{ site.author.name | escape }}</a>. Design: <a href="https://github.com/jekyll/minima">Minima Jekyll Theme</a>.
+			&copy; <a href="{{ site.author.url }}">{{ site.author.name | escape }}</a>
+			<br>
+			Design: <a href="https://github.com/jekyll/minima">Minima Jekyll Theme</a>
 		</div>
-
-		{%- include social.html -%}
-
-		<ul class="social-media-list">
-			<li><a href="{{ 'feed.xml' | relative_url }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg> <span>RSS</span></a></li>
-		</ul>
 
 	</div>
 </footer>
