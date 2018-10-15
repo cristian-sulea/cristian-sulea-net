@@ -10,16 +10,13 @@
 			<label for="nav-trigger">
 				<span hidden>Menu</span>
 				<span class="menu-icon">
-					<img alt="Menu" src="{{ '/assets/menu-icon-menu.png' | relative_url }}">
+					<img width="24" height="24" alt="Menu" src="{{ '/assets/menu-icon-menu.png' | relative_url }}">
 				</span>
 			</label>
 
 			<div class="trigger">
 				<a class="page-link" href="{{ menu1_href }}">{{	menu1_text | escape }}</a>
-				<a class="page-link" id="searchLauncher" title="Search" href="#">
-					<img alt="Search" src="{{ '/assets/menu-icon-search.png' | relative_url }}">
-					<span hidden>Search</span>
-				</a>
+				<a class="page-link" id="searchLauncher" title="Search" href="#"><img width="24" height="24" alt="Search" src="{{ '/assets/menu-icon-search.png' | relative_url }}"><span hidden>Search</span></a>
 			</div>
 
 		</nav>
