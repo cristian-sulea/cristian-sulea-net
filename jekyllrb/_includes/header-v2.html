@@ -10,14 +10,13 @@
 			<input type="checkbox" id="nav-trigger" class="nav-trigger" />
 			<label for="nav-trigger">
 				<span class="menu-icon">
-					<img width="24" height="24" alt="Menu" src="{{ '/assets/menu-icon-menu.png' | relative_url }}">
+					<span class="css-sprites-icon-menu"><span>Menu</span></span>
 				</span>
-				<span hidden>Menu</span>
 			</label>
 
 			<div class="trigger">
 				<a class="page-link" href="{{ menu1_href }}">{{	menu1_text | escape }}</a>
-				<a class="page-link" title="Search" href="{{ '/search/' | relative_url }}"><img width="24" height="24" alt="Search" src="{{ '/assets/menu-icon-search.png' | relative_url }}"></a>
+				<a class="page-link" title="Search" href="{{ '/search/' | relative_url }}"><span class="css-sprites-icon-search"><span>Search</span></span></a>
 			</div>
 
 		</nav>

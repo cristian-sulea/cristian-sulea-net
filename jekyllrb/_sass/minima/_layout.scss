@@ -278,3 +278,51 @@
     }
   }
 }
+
+.css-sprites-icon-menu {
+    width: 24px; height: 24px;
+    background: url('css-sprites.png') -0 -0 no-repeat;
+    display: inline-block;
+}
+.css-sprites-icon-menu > span {
+    display: none;
+}
+
+.css-sprites-icon-search {
+    width: 24px; height: 24px;
+    background: url('css-sprites.png') -0 -24px no-repeat;
+    display: inline-block;
+}
+.css-sprites-icon-search > span {
+    visibility: hidden;
+}
+
+.css-sprites-social-linkedin {
+    width: 24px; height: 24px;
+    padding-left: 30px;
+    background: url('css-sprites.png') -0 -48px no-repeat;
+    display: block;
+    &:not(:last-child) {
+    	margin-bottom: 6px;
+    }
+}
+
+.css-sprites-social-github {
+    width: 24px; height: 24px;
+    padding-left: 30px;
+    background: url('css-sprites.png') -0 -72px no-repeat;
+    display: block;
+    &:not(:last-child) {
+    	margin-bottom: 6px;
+    }
+}
+
+.css-sprites-social-twitter {
+    width: 24px; height: 24px;
+    padding-left: 30px;
+    background: url('css-sprites.png') -0 -96px no-repeat;
+    display: block;
+    &:not(:last-child) {
+    	margin-bottom: 6px;
+    }
+}
