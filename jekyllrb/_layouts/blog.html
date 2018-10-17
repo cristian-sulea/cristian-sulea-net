@@ -26,7 +26,7 @@
 
 			<header class="post-header">
 				<h1 class="post-title">{{ site.blog_title | escape }}</h1>
-				<p class="post-meta">
+				<p class="post-subtitle">
 					<span class="dt-published">
 						{{ site.blog.description | escape }}
 					</span>
@@ -54,7 +54,7 @@
 										</a>
 									</h2>
 
-									<p>{{ post.description }}</p>
+									<p>{{ post.description | escape }}</p>
 								</li>
 							{%- endfor -%}
 						</ul>

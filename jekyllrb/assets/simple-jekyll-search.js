@@ -117,8 +117,19 @@ function LiteralSearchStrategy () {
     if (typeof str !== 'string') {
       return false
     }
+    
     str = str.trim()
-    return str.toLowerCase().indexOf(crit.toLowerCase()) >= 0
+    crit = crit.trim()
+    
+    var keys = crit.split(' ')
+    for (var i = 0; i < keys.length; i++) {
+    	keys[i] = keys[i].trim();
+    	if (str.toLowerCase().indexOf(keys[i].toLowerCase()) < 0) {
+    		return false;
+    	}
+    }
+    
+    return true;
   }
 }
 

@@ -246,6 +246,11 @@
   }
 }
 
+.post-subtitle {
+  @include relative-font-size(0.9375);
+  color: $grey-color;
+}
+
 .post-content {
   margin-bottom: $spacing-unit;
 
