@@ -64,8 +64,7 @@
 								{{ site.data.experience.otherRolesTitle | escape }}:
 								<br>
 								{% for role in position.otherRoles %}
-									- {{ role | escape }}
-									<br>
+									- {{ role | escape }}<br>
 								{% endfor %}
 							</p>
 						{% endif %}
@@ -75,8 +74,7 @@
 								{{ site.data.experience.otherActivitiesTitle | escape }}:
 								<br>
 								{% for activity in position.otherActivities %}
-									- {{ activity | escape }}
-									<br>
+									- {{ activity | escape }}<br>
 								{% endfor %}
 							</p>
 						{% endif %}
@@ -92,13 +90,11 @@
 				<ul class="post-list">
 					{% for group in site.data.skills.groups %}
 					<li>
-						
 						<p>
 							<strong>
 								{{ group.title | escape }}
 							</strong>
 						</p>
-						
 						<p>
 							{% for skill in group.skills %}
 							- {{ skill | escape }}<br>
@@ -116,13 +112,11 @@
 				<ul class="post-list">
 					{% for language in site.data.languages.languages %}
 					<li>
-						
 						<p>
 							<strong>
 								{{ language.title | escape }}
 							</strong>
 						</p>
-						
 						<p>
 							- {{ language.level | escape }}
 						</p>
