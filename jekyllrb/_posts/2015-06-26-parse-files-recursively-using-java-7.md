@@ -10,7 +10,7 @@ categories: java
 ---
 
 
-To walk a file tree is a relatively simple task. It can be done with the <a href="http://docs.oracle.com/javase/7/docs/api/java/nio/file/FileVisitor.html">FileVisitor</a> interface.
+To walk a file tree is a relatively simple task. It can be done with the [FileVisitor](http://docs.oracle.com/javase/7/docs/api/java/nio/file/FileVisitor.html) interface.
 A `FileVisitor` specifies the required behavior at key points in the traversal process:
 when a file is visited, before a directory is accessed, after a directory is accessed, or when a failure occurs.
 

@@ -9,7 +9,7 @@ categories: [java]
 tags:       [jax-rs, rest, exception]
 
 resources:
-  - "<https://dennis-xlc.gitbooks.io/restful-java-with-jax-rs-2-0-en/cn/>"
+  - "[RESTful Java with JAX-RS 2.0](https://dennis-xlc.gitbooks.io/restful-java-with-jax-rs-2-0-en/cn/)"
 
 ---
 
