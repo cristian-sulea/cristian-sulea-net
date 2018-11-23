@@ -20,6 +20,11 @@
 		<link rel="icon" href="{{ page_icon | relative_url }}">
 	{% endif %}
 
+	{% if apple_touch_icon_120 and apple_touch_icon_152 %}
+		<link rel="apple-touch-icon" sizes="120x120" href="{{ apple_touch_icon_120 | relative_url }}" />
+		<link rel="apple-touch-icon" sizes="152x152" href="{{ apple_touch_icon_152 | relative_url }}" />
+	{% endif %}
+
 	<title>{{ page_title }}</title>
 	<meta name="description" content="{{ page_description }}">
 
