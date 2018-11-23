@@ -16,7 +16,7 @@
 # in the templates via {{ site.myvariable }}.
 
 url: "http://cristian.sulea.net" # the base hostname & protocol for your site, e.g. http://example.com
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+#url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 title: Cristian Sulea
 subtitle: Software Architect & Developer
@@ -24,7 +24,7 @@ description: Senior Java Developer (& Software Architect), PSS Prosoft Solutions
 baseurl: "" # the subpath of your site, e.g. /blog
 keywords: "cristian, sulea, cristian sulea, sulea cristian"
 
-version: 3.2
+version: 3.3
 
 blog_title: Knowledge Base
 blog_subtitle: Cristian Sulea
