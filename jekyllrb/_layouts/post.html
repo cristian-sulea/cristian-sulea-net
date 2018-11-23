@@ -1,3 +1,7 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
@@ -42,6 +46,9 @@
 
 				{% capture resources %}{% include resources.html %}{% endcapture %}
 				{{ resources | markdownify }}
+
+				<hr />
+				<p><a href="https://twitter.com/intent/tweet?text={{ page_title | url_encode }}&url={{ canonical_url | url_encode }}"><span class="social-icon-twitter"></span>Share on Twitter</a></p>
 
 			</div>
 			

@@ -1,3 +1,7 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
@@ -32,6 +36,12 @@
 					</span>
 				</p>
 			</header>
+
+<div class="post-content">
+	<ul class="social-links">
+		<li><a href="https://twitter.com/intent/tweet?text={{ page_title | url_encode }}&url={{ canonical_url | url_encode }}"><span class="social-icon-twitter"></span>Share on Twitter</a></li>
+	</ul>
+</div>
 
 			<div class="post-content">
 
