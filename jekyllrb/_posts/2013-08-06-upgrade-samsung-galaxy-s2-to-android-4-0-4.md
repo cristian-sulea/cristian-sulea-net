@@ -49,7 +49,3 @@ The instructions in this guide are for upgrading the **Samsung Galaxy S2 GT-I910
 10. Click on the Start button in Odin to start flashing the firmware to your phone
 11. After the flashing completes, your phone will automatically reboot. You should be able to get a "PASS" message on the top left part of Odin (if you get a FAIL message or Odin gets stuck, disconnect your phone from the PC and close Odin, remove the battery from your phone, re-insert it, and do the procedure again)
 12. Once you see the Samsung logo on your phone's screen, you can safely disconnect your phone from the PC
-
-
-{% include resources.html %}
-

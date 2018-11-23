@@ -134,6 +134,3 @@ public class SpringQuickTutorial {
 {% highlight txt %}
 name: Cristian Sulea
 {% endhighlight %}
-
-
-{% include resources.html %}

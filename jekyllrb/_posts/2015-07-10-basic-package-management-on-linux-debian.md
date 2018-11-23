@@ -103,6 +103,3 @@ explain the reason why matching packages should be installed
 
 explain the reason why matching packages can not be installed
 - `aptitude why-not <regex>`
-
-
-{% include resources.html %}

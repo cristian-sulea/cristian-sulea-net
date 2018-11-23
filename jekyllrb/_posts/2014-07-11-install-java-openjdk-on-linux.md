@@ -64,6 +64,3 @@ $ su -c "yum install java-1.7.0-openjdk"
 
 The `java-1.7.0-openjdk` package contains just the Java Runtime Environment.
 If you want to develop Java programs then install the `java-1.7.0-openjdk-devel` package.
-
-
-{% include resources.html %}

@@ -154,6 +154,3 @@ Some general rules to follow:
 - if the script is modular and does not rely on any scripts then use `async`;
 - if the script relies upon or is relied upon by another script then use `defer`;
 - if the script is small and is relied upon by an `async` script then use an inline script with no attributes placed above the `async` scripts.
-
-
-{% include resources.html %}

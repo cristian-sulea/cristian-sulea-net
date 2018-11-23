@@ -34,6 +34,3 @@ apt-get install bash-completion
 ```terminal
 yum install bash-completion
 ```
-
-
-{% include resources.html %}

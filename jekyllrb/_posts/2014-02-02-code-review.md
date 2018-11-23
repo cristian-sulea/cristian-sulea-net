@@ -42,6 +42,3 @@ The <a href="http://en.wikipedia.org/wiki/Bus_factor">bus factor</a> is the tota
 ## Ensuring readability
 
 By getting someone else to provide feedback based on reading, rather than writing, the code you verify that the code is readable, and give an opportunity for someone with fresh eyes to suggest improvements. Also the code becomes more maintainable.
-
-
-{% include resources.html %}

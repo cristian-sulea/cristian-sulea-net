@@ -93,6 +93,3 @@ Note:
 | SMTP Server (Outgoing Messages) | smtp.mail.com | StartTLS       | 587         |
 | IMAP Server (Incoming Messages) | pop.mail.com  | SSL            | 993         |
 | POP3 Server (Incoming Messages) | pop.mail.com  | SSL            | 995         |
-
-
-{% include resources.html %}

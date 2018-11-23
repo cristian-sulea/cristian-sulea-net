@@ -69,6 +69,3 @@ otherwise rewrite rules will not be useful.
 [DokuWiki]: https://www.dokuwiki.org
 [Apache 1]: http://httpd.apache.org/docs/1.3/mod/mod_rewrite.html
 [Apache 2]: http://httpd.apache.org/docs/2.0/mod/mod_rewrite.html
-
-
-{% include resources.html %}

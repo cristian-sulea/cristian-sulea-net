@@ -38,6 +38,3 @@ Preferences are options with more then one relevant choice in each catagory.
 ## Configuration
 
 Configurations are entire sets of options, settings, and preferences saved in a file and loaded by the program on startup.
-
-
-{% include resources.html %}

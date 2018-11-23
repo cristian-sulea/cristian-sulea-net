@@ -64,6 +64,3 @@ cache_dir ufs c:/squid/var/cache 500 16 256
 
 
 [Squid]: http://www.squid-cache.org
-
-
-{% include resources.html %}

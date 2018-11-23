@@ -139,6 +139,3 @@ byte[] decryptedData = cipher.doFinal(dataToDecrypt);
 System.out.println(new String(decryptedData));
 
 {% endhighlight %}
-
-
-{% include resources.html %}

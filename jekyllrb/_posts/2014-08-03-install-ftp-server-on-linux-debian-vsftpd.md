@@ -78,6 +78,3 @@ force_local_data_ssl=YES
 
 
 [vsftpd]: https://security.appspot.com/vsftpd.html
-
-
-{% include resources.html %}

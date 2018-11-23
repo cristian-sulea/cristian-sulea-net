@@ -49,6 +49,3 @@ One point is equal to 1/72 of an inch. Points are much like pixels, in that they
 ## Font Size Conversion Chart
 
 [![font size conversion chart]({{site.images}}{{page.url}}font-size-conversion-chart.png)]({{site.images}}{{page.url}}font-size-conversion-chart.png)
-
-
-{% include resources.html %}

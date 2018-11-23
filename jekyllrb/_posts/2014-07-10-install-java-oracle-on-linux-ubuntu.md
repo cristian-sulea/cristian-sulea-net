@@ -58,6 +58,3 @@ For this you can use the following command (see step 3 of Manual Install to see 
 ```terminal
 $ export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 ```
-
-
-{% include resources.html %}

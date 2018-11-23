@@ -69,6 +69,3 @@ foreach (glob("*") as $file) {
 ```
 
 - <http://php.net/manual/en/function.glob.php>
-
-
-{% include resources.html %}

@@ -143,6 +143,3 @@ The larger the list of options (perspectives) the better the solution.
 
 Also known as soft skills, the ability to interact with other people and to be a part of a team is essential to nearly every role in a software development project.
 The lower the overall people skills of the team the higher the likelihood that the project will end in some explosion.
-
-
-{% include resources.html %}

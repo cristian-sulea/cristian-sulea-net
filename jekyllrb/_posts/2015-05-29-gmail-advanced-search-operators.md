@@ -86,6 +86,3 @@ Note:
 Example:
 - `"i'm feeling lucky"` - messages containing the phrase "i'm feeling lucky" or "I'm feeling lucky"
 - `subject:"dinner and a movie"` - messages containing the phrase "dinner and a movie" in the subject
-
-
-{% include resources.html %}

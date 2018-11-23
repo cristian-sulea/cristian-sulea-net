@@ -119,6 +119,3 @@ So, instead of creating an instance of [WebApplicationException] and initializin
 [Response]: https://docs.oracle.com/javaee/7/api/javax/ws/rs/core/Response.html
 [ExceptionMapper]: https://docs.oracle.com/javaee/7/api/javax/ws/rs/ext/ExceptionMapper.html
 [WebApplicationException]: https://docs.oracle.com/javaee/7/api/javax/ws/rs/WebApplicationException.html
-
-
-{% include resources.html %}

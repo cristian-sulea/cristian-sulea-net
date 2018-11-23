@@ -94,6 +94,3 @@ The execution engine comprises of the following:
 - **Just in Time Compiler (JIT)** - compiles the byte code to machine language instructions at run time;
 - **Virtual Processor** - is responsible for processing the operation codes and executing them sequentially;
 - **Interpreter** - is responsible for reading the stream of byte code, interpreting the instructions, and then executing them through the virtual processor.
-
-
-{% include resources.html %}

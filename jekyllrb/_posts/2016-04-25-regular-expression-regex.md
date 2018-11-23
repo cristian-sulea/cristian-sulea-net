@@ -120,6 +120,3 @@ Non-Acceptable
 - abc/@insta.com
 - abc@insta-.com
 - ABC.ABC.ABC.ABC0046@domain.com.com.com
-
-
-{% include resources.html %}

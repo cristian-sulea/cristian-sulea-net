@@ -86,6 +86,3 @@ boolean isName(String s) /* throws NullPointerException */ {
     return (isCapitalized(names[0]) && isCapitalized(names[1]));
 }
 {% endhighlight %}
-
-
-{% include resources.html %}

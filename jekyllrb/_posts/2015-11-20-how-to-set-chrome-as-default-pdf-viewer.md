@@ -38,6 +38,3 @@ If is not working open <a>chrome://plugins/</a> in Google Chrome and make sure t
 > `chrome://plugins/` > Chrome PDF Viewer > Enabled
 
 [![chrome://plugins/ > Chrome PDF Viewer > Enabled]({{site.images}}{{page.url}}google-chrome-pdf-view.png)]({{site.images}}{{page.url}}google-chrome-pdf-view.png)
-
-
-{% include resources.html %}

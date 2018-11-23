@@ -38,6 +38,3 @@ By removing READ permissions for "all other users":
 stat /etc/apt/apt.conf
 chmod 640 /etc/apt/apt.conf
 ```
-
-
-{% include resources.html %}

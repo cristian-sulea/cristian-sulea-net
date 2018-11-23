@@ -89,6 +89,3 @@ The fields are as follows:
 Notes:
 - the `L` and `W` characters can also be combined in the day-of-month field to yield `LW`, which translates to "last weekday of the month"
 - the legal characters and the names of months and days of the week are not case sensitive. So `MON` is the same as `mon`.
-
-
-{% include resources.html %}

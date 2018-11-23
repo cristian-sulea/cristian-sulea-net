@@ -50,6 +50,3 @@ A property resource configurer that resolves placeholders in bean property value
     <property name="ignoreUnresolvablePlaceholders" value="true"/>
 </bean>
 {% endhighlight %}
-
-
-{% include resources.html %}

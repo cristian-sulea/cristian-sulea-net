@@ -47,6 +47,3 @@ These design patterns concern class and object composition. Concept of inheritan
 ### Behavioral Patterns
 
 These design patterns are specifically concerned with communication between objects.
-
-
-{% include resources.html %}

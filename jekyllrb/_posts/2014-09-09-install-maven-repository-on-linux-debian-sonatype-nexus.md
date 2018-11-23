@@ -80,6 +80,3 @@ service nexus start
 ```
 
 [Nexus Repository Manager]: https://www.sonatype.com/nexus-repository-oss
-
-
-{% include resources.html %}
