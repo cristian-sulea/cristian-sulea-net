@@ -2,8 +2,15 @@
 	<div class="wrapper">
 
 		<div class="footer-heading">
-			<div>&copy; <a href="{{ site.author.url }}">{{ site.author.name | escape }}</a></div>
-			<div>Design: <a href="https://github.com/jekyll/minima">Minima Jekyll Theme</a></div>
+			<p>&copy; <a href="{{ site.author.url }}">{{ site.author.name | escape }}</a></p>
+		</div>
+		<ul class="social-links">
+			<li><a href="{{ site.social.linkedin.link }}"><span class="social-icon-linkedin"></span>{{ site.social.linkedin.title }}</a></li>
+			<li><a href="{{ site.social.github.link }}"><span class="social-icon-github"></span>{{ site.social.github.title }}</a></li>
+			<li><a href="{{ site.social.twitter.link }}"><span class="social-icon-twitter"></span>{{ site.social.twitter.title }}</a></li>
+		</ul>
+		<div class="footer-heading">
+			Design: <a href="https://github.com/jekyll/minima">Minima Jekyll Theme</a>
 		</div>
 
 	</div>
