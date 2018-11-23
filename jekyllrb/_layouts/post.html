@@ -43,6 +43,9 @@
 				{% capture resources %}{% include resources.html %}{% endcapture %}
 				{{ resources | markdownify }}
 
+https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/overview.html
+				<hr />
+				<a href="https://twitter.com/intent/tweet?text={{ page_title | url_encode }}&url={{ canonical_url | url_encode }}"><span class="social-icon-twitter"></span>Share on Tweeter</a>
 			</div>
 			
 			{%- if site.disqus.shortname -%}

@@ -196,7 +196,8 @@
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
+  // padding: $spacing-unit 0;
+  padding: $spacing-unit 0 0 0;
   flex: 1;
 }
 
@@ -320,9 +321,39 @@
 .css-sprites-social-twitter {
     width: 24px; height: 24px;
     padding-left: 30px;
+    border-radius: 6px;
     background: url('css-sprites.png') -0 -96px no-repeat;
     display: block;
     &:not(:last-child) {
     	margin-bottom: 6px;
     }
+}
+
+.social-links {
+    list-style: none;
+}
+.social-links > li {
+    &:not(:last-child) {
+    	margin-bottom: 6px;
+    }
+}
+
+.social-icon {
+    width: 24px; height: 24px;
+    border-radius: 3px;
+    margin-right: 6px;
+    vertical-align: bottom;
+    display: inline-block;
+}
+.social-icon-linkedin {
+	@extend .social-icon; 
+    background: url('css-sprites.png') -0 -48px no-repeat;
+}
+.social-icon-github {
+	@extend .social-icon; 
+    background: url('css-sprites.png') -0 -72px no-repeat;
+}
+.social-icon-twitter {
+	@extend .social-icon; 
+    background: url('css-sprites.png') -0 -96px no-repeat;
 }

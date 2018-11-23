@@ -16,7 +16,7 @@
 # in the templates via {{ site.myvariable }}.
 
 url: "http://cristian.sulea.net" # the base hostname & protocol for your site, e.g. http://example.com
-# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 title: Cristian Sulea
 subtitle: Software Architect & Developer
@@ -54,9 +54,16 @@ google:
       gtag('config', 'UA-56392483-1');
     </script>
 
-linkedin_username: cristiansulea
-github_username: cristian-sulea
-twitter_username: cristian_sulea
+social:
+  linkedin:
+    title: LinkedIn
+    link: https://www.linkedin.com/in/cristiansulea
+  github:
+    title: GitHub
+    link: https://github.com/cristian-sulea
+  twitter:
+    title: Twitter
+    link: https://www.twitter.com/cristian_sulea
 
 
 # Build settings
@@ -66,8 +73,8 @@ theme: minima
 
 permalink: /blog/:title/
 
-sass:
-  style: compressed
+#sass:
+#  style: compressed
 
 # plugins:
 #  - jekyll-feed
