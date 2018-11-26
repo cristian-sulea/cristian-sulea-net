@@ -338,6 +338,11 @@
     }
 }
 
+.social-links-share {
+	@extend .social-links;
+	margin-left: 0;
+}
+
 .social-icon {
     width: 24px; height: 24px;
     border-radius: 3px;
@@ -346,14 +351,14 @@
     display: inline-block;
 }
 .social-icon-linkedin {
-	@extend .social-icon; 
+	@extend .social-icon;
     background: url('css-sprites.png') -0 -48px no-repeat;
 }
 .social-icon-github {
-	@extend .social-icon; 
+	@extend .social-icon;
     background: url('css-sprites.png') -0 -72px no-repeat;
 }
 .social-icon-twitter {
-	@extend .social-icon; 
+	@extend .social-icon;
     background: url('css-sprites.png') -0 -96px no-repeat;
 }

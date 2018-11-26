@@ -44,11 +44,21 @@ layout: compress
 
 				{{ content }}
 
-				{% capture resources %}{% include resources.html %}{% endcapture %}
-				{{ resources | markdownify }}
+				{% if page.resources %}
+					<hr />
+					<p><strong><em>Resources</em></strong></p>
+					<ul>
+					{% for resource in page.resources %}
+						<li>{{ resource | markdownify | strip_newlines | remove: '<p>' | remove: '</p>' }}</li>
+					{% endfor %}
+					</ul>
+				{% endif %}
 
 				<hr />
-				<p><a href="https://twitter.com/intent/tweet?text={{ page_title | url_encode }}&url={{ canonical_url | url_encode }}"><span class="social-icon-twitter"></span>Share on Twitter</a></p>
+				<p><strong><em>Share</em></strong></p>
+				<ul class="social-links-share">
+					<li><a href="https://twitter.com/intent/tweet?text={{ page_title | url_encode }}&url={{ canonical_url | url_encode }}"><span class="social-icon-twitter"></span>on Twitter</a></li>
+				</ul>
 
 			</div>
 			
