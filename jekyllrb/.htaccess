@@ -48,6 +48,11 @@ ErrorDocument 404 /404/
     ExpiresByType image/jpg                             "access plus 1 week"
     ExpiresByType image/jpeg                            "access plus 1 week"
 
+  # Images
+    ExpiresByType image/png                             "access plus 1 year"
+    ExpiresByType image/jpg                             "access plus 1 year"
+    ExpiresByType image/jpeg                            "access plus 1 year"
+
   # Web feeds
     ExpiresByType application/atom+xml                  "access plus 1 hour"
     ExpiresByType application/rss+xml                   "access plus 1 hour"
