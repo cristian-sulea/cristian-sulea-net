@@ -6,7 +6,7 @@ title:       "Set the Look and Feel in Java"
 description: "How to change the look and feel of Swing applications. The 'look' of an application refers to its appearance. The 'feel' refers to how the widgets behave."
 
 categories: [java]
-tags: [laf, look and feel]
+tags:       [laf, look and feel]
 
 ---
 

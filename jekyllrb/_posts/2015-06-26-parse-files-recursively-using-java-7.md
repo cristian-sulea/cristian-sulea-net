@@ -5,7 +5,8 @@ layout: post
 title:       "Parse Files Recursively using Java 7+"
 description: "A FileVisitor can be used to recursively visit all the files in folder. The interface specifies the required behavior at key points in the traversal process."
 
-categories: java
+categories: [java]
+tags:       [files]
 
 ---
 
@@ -24,7 +25,7 @@ The interface has four methods that correspond to these situations:
 
 ## Example: Recursive Listing of a Directory
 
-*RecursiveListing.java*
+`RecursiveListing.java`
 
 ```java
 

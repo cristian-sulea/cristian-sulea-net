@@ -9,8 +9,8 @@ categories: [caching]
 tags:       [browser, cache, html]
 
 resources:
-  - "[http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9)"
-  - "[http://stackoverflow.com/a/2068407](http://stackoverflow.com/a/2068407)"
+  - "[Hypertext Transfer Protocol - HTTP/1.1](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9)"
+  - "[Stack Overflow](http://stackoverflow.com/a/2068407)"
 
 ---
 
