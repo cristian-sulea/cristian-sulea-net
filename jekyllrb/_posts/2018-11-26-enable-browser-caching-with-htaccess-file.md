@@ -21,10 +21,7 @@ This module controls the setting of the `Expires` HTTP header and the `max-age` 
 
 These HTTP headers are an instruction to the client about the document's validity and persistence. If cached, the document may be fetched from the cache rather than from the source until this time has passed. After that, the cache copy is considered "expired" and invalid, and a new copy must be obtained from the source.
 
-
-## Exception Mapping
-
-Relying on the underlying servlet container to handle the exception doesn’t give much flexibility. Catching and then wrapping all these exceptions within [WebApplicationException] would become quite tedious. Alternatively, you can implement and register instances of [ExceptionMapper]. These objects know how to map a thrown application exception to a [Response] object:
+`.htaccess`
 
 ```apache
 # Enabling Browser Caching
@@ -44,10 +41,6 @@ Relying on the underlying servlet container to handle the exception doesn’t gi
   ExpiresByType application/rss+xml                 "access plus 1 hour"
   ExpiresByType application/atom+xml                "access plus 1 hour"
   ExpiresByType text/x-component                    "access plus 1 hour"
-  
-  # MANIFEST
-  ExpiresByType application/x-web-app-manifest+json "access plus 0 seconds"
-  ExpiresByType text/cache-manifest                 "access plus 0 seconds"
   
   # SCRIPTS
   ExpiresByType text/css                            "access plus 1 month" 
@@ -104,11 +97,16 @@ Relying on the underlying servlet container to handle the exception doesn’t gi
   ExpiresByType application/x-font-ttf              "access plus 1 month"
   ExpiresByType application/x-font-woff             "access plus 1 month"
   ExpiresByType application/font-woff               "access plus 1 month"
+  ExpiresByType application/font-woff2              "access plus 1 month"
   ExpiresByType application/vnd.ms-fontobject       "access plus 1 month"
   
   # FLASH
   ExpiresByType application/x-shockwave-flash       "access plus 1 month"
   ExpiresByType video/x-flv                         "access plus 1 month"
+  
+  # MANIFEST
+  ExpiresByType application/x-web-app-manifest+json "access plus 0 seconds"
+  ExpiresByType text/cache-manifest                 "access plus 0 seconds"
   
   # OTHERS
   ExpiresByType application/pdf                     "access plus 1 month"
