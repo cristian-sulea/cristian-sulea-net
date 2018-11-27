@@ -16,7 +16,7 @@
 # in the templates via {{ site.myvariable }}.
 
 url: "http://cristian.sulea.net" # the base hostname & protocol for your site, e.g. http://example.com
-#url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 title: Cristian Sulea
 subtitle: Software Architect & Developer
