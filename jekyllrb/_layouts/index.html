@@ -55,15 +55,15 @@ layout: compress
 					<li>
 						
 						<p>
-							<span class="post-meta">
-								<em>{{ position.period | escape }} | {{ position.location | escape }}</em>
-								<br>
-								{{ position.company | escape }}
-							</span>
-							<br>
 							<strong>
 								{{ position.title | escape }}
 							</strong>
+							<br>
+							<span class="post-meta">
+								{{ position.company | escape }} | {{ position.location | escape }}
+								<br>
+								<em>{{ position.period | escape }}</em>
+							</span>
 						</p>
 						
 						{% if position.otherRoles %}
