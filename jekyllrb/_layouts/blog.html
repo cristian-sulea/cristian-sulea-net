@@ -39,9 +39,6 @@ layout: compress
 						{{ site.blog.description | escape }}
 					</span>
 				</p>
-				<ul class="social-links">
-					<li><a href="https://twitter.com/intent/tweet?text={{ page_title | url_encode }}&url={{ canonical_url | url_encode }}"><span class="social-icon-twitter"></span>Share on Twitter</a></li>
-				</ul>
 			</header>
 
 			<div class="post-content">
@@ -73,6 +70,12 @@ layout: compress
 					{%- endif -%}
 
 				</div>
+
+				<hr>
+				<p><strong><em>Share</em></strong></p>
+				<ul class="social-links-share">
+					<li><a href="https://twitter.com/intent/tweet?text={{ page_title | url_encode }}&url={{ canonical_url | url_encode }}"><span class="social-icon-twitter"></span>on Twitter</a></li>
+				</ul>
 
 			</div>
 
