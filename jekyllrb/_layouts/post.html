@@ -22,7 +22,7 @@ layout: compress
 	{% assign header_link_href = site.blog_baseurl %}
 	{% assign header_link_text = site.blog_title %}
 
-	{% assign menu1_href = "/" | relative_url %}
+	{% assign menu1_href = '/' | relative_url %}
 	{% assign menu1_text = site.title %}
 
 	{% include header-v2.html %}
@@ -31,17 +31,23 @@ layout: compress
 	<div class="wrapper">
 
 		<article class="post h-entry">
-
+			
 			<header class="post-header">
-			  <h1 class="post-title p-name">{{ page.title | escape }}</h1>
-			  <p class="post-meta">
-			    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
-			      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-			      {{ page.date | date: date_format }}
-			    </time>
-			    {%- if page.author -%}
-			      • <span><span class="p-author h-card">{{ page.author }}</span></span>
-			    {%- endif -%}</p>
+				<h1 class="post-title p-name">{{ page.title | escape }}</h1>
+				<p class="post-meta">
+					<time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
+						{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+						{{ page.date | date: date_format }}
+					</time>
+
+					{% assign post_author_name = site.author.name %}
+					{% assign post_author_url  = site.author.url %}
+					{%- if page.author.name and page.author.url -%}
+						{% assign post_author_name = page.author.name %}
+						{% assign post_author_url  = page.author.url %}
+					{%- endif -%}
+					• <a href="{{ post_author_url }}"><span class="p-author h-card">{{ post_author_name }}</span></a>
+				</p>
 			</header>
 
 			<div class="post-content e-content">
@@ -49,7 +55,7 @@ layout: compress
 				{{ content }}
 
 				{% if page.resources %}
-					<hr />
+					<hr>
 					<p><strong><em>Resources</em></strong></p>
 					<ul>
 					{% for resource in page.resources %}
@@ -58,7 +64,42 @@ layout: compress
 					</ul>
 				{% endif %}
 
-				<hr />
+				{% if page.categories %}
+					
+					{% assign firstCategory = page.categories | first %}
+					{% assign relatedPosts = "" | split: ',' %}
+					
+					{% for relatedPost in site.categories[firstCategory] %}
+						{% unless relatedPost.url == page.url %}
+							
+							{% for pageTag in page.tags %}
+							{% for relatedTag in relatedPost.tags %}
+								
+								{% if pageTag == relatedTag %}
+									{% assign relatedPosts = relatedPosts | push: relatedPost %}
+									{% break %}
+								{% endif %}
+								
+							{% endfor %}
+							{% endfor %}
+							
+						{% endunless %}
+					{% endfor %}
+					
+					{% assign relatedPosts = relatedPosts | uniq %}
+					
+					{% if relatedPosts.size > 0 %}
+						<hr>
+						<p><strong><em>Related</em></strong></p>
+						<ul>
+						{% for relatedPost in relatedPosts %}
+							<li><a href="{{ relatedPost.url | relative_url }}">{{ relatedPost.title }}</a></li>
+						{% endfor %}
+						</ul>
+					{% endif %}
+				{% endif %}
+
+				<hr>
 				<p><strong><em>Share</em></strong></p>
 				<ul class="social-links-share">
 					<li><a href="https://twitter.com/intent/tweet?text={{ page_title | url_encode }}&url={{ canonical_url | url_encode }}"><span class="social-icon-twitter"></span>on Twitter</a></li>
