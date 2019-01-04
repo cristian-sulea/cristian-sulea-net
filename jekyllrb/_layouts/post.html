@@ -64,6 +64,19 @@ layout: compress
 					</ul>
 				{% endif %}
 
+				{% if page.categories or page.tags %}
+					<hr>
+					<p><strong><em>Categories &amp; Tags</em></strong></p>
+					<ul>
+						{% for category in page.categories %}
+							<li><a href="{{ '/blog/categories/' | relative_url }}#{{ category | replace: ' ', '-' }}">{{ category }}</a></li>
+						{% endfor %}
+						{% for tag in page.tags %}
+							<li><a href="{{ '/blog/tags/' | relative_url }}#{{ tag | replace: ' ', '-' }}">{{ tag }}</a></li>
+						{% endfor %}
+					</ul>
+				{% endif %}
+
 				{% if page.categories %}
 					
 					{% assign firstCategory = page.categories | first %}
