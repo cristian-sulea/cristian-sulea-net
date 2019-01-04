@@ -5,7 +5,8 @@ layout: post
 title:       "Gmail advanced search operators"
 description: "Advanced search operators are query words or symbols that perform special actions in Gmail search."
 
-categories: [gmail]
+categories: [email]
+tags:       [gmail]
 
 resources:
   - "[Gmail Help / Advanced search](https://support.google.com/mail/answer/7190)"

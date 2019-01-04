@@ -5,7 +5,8 @@ layout: post
 title:       "How to Change the Logon Screen on Windows 7"
 description: "It is possible to change the welcome screen that appears when you start your computer also without any third-party software, but this setting is well hidden."
 
-categories: [logon screen, logon, windows 7, windows]
+categories: [windows]
+tags:       [logon screen]
 
 ---
 

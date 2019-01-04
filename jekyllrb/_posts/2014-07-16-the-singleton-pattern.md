@@ -5,7 +5,7 @@ layout: post
 title:       "The Singleton Pattern"
 description: "Singleton pattern is a design solution where only one instance of a class is created, and provide a global point of access to the object."
 
-categories: [java]
+categories: [software development, java]
 tags:       [pattern, singleton]
 
 resources:

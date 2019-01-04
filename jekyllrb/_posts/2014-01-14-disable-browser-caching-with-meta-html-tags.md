@@ -5,8 +5,8 @@ layout: post
 title:       "Disable browser caching with meta HTML tags"
 description: "The minimum set of HTML headers to disable browser caching that works across the most important browsers: Cache-Control, Pragma, Expires."
 
-categories: [caching]
-tags:       [browser, cache, html]
+category: [website]
+tags:     [browser, cache, html]
 
 resources:
   - "[Hypertext Transfer Protocol - HTTP/1.1](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9)"

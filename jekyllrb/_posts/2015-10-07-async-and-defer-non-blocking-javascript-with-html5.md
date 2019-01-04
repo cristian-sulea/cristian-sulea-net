@@ -5,7 +5,8 @@ layout: post
 title:       "Async and Defer (non-blocking JavaScript with HTML5)"
 description: "A script tag causes the browser to halt rendering, load a file, and run the code (the script will be executed before parsing is resumed)."
 
-categories: [async, defer, javascript]
+categories: [javascript]
+tags:       [async, defer]
 
 resources:
   - "[async vs defer attributes](http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html)"

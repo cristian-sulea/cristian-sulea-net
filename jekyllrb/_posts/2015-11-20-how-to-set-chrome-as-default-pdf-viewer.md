@@ -5,7 +5,8 @@ layout: post
 title:       "How to Set Chrome As Default PDF Viewer"
 description: "Right click on any PDF file, and select the 'Open with' item on the menu."
 
-categories: [chrome, pdf]
+categories: [windows]
+tags:       [chrome, pdf]
 
 resources:
   - "[How-To Geek](http://www.howtogeek.com/howto/43764/how-to-enable-google-chrome-as-your-default-pdf-reader-the-easy-way/)"

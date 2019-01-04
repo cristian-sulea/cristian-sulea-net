@@ -5,8 +5,8 @@ layout: post
 title:       "RESTful Java JAX RS Exception Handling"
 description: "Errors can be reported to a client either by creating and returning the appropriate Response object or by throwing an Exception."
 
-categories: [java]
-tags:       [jax-rs, rest, exception]
+category: [java]
+tags:     [rest, jax-rs, exception]
 
 resources:
   - "[RESTful Java with JAX-RS 2.0](https://dennis-xlc.gitbooks.io/restful-java-with-jax-rs-2-0-en/cn/)"

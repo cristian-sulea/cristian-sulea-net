@@ -5,7 +5,8 @@ layout: post
 title:       "Install bash-completion package on Linux"
 description: "The programmable completion feature in Bash permits typing a partial command, then pressing the [Tab] key to auto-complete the command sequence."
 
-categories: linux bash-completion
+categories: [linux]
+tags:       [bash completion]
 
 resources:
   - "[http://packages.debian.org/wheezy/bash-completion](http://packages.debian.org/wheezy/bash-completion)"

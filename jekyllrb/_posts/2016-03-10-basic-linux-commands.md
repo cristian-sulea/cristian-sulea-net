@@ -5,7 +5,8 @@ layout: post
 title:       "Basic Linux Commands"
 description: "A list with some basic (maybe most used) Linux commands, what they do and their syntax, and also some usage examples."
 
-categories: linux commands
+categories: [linux]
+tags:       [passwd, hostname, ifconfig, openssh-server, maven, jenkins, dpkg]
 
 ---
 

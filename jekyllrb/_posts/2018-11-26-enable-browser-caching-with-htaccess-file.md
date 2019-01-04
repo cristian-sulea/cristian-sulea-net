@@ -5,8 +5,8 @@ layout: post
 title:       "Enable browser caching with .htaccess file"
 description: "Optimize the site performance by enabling browser caching with .htaccess file."
 
-categories: [caching]
-tags:       [browser, cache, htaccess]
+category: [website]
+tags:     [browser, cache, htaccess]
 
 resources:
   - "[Apache Module: mod_expires](https://httpd.apache.org/docs/current/mod/mod_expires.html)"

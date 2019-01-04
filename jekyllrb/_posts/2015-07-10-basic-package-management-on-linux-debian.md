@@ -5,8 +5,8 @@ layout: post
 title:       "Basic Package Management on Linux Debian"
 description: "Repository based package management operations on the Debian system can be performed by many APT-based package management tools (like apt-get and aptitude)."
 
-categories: [linux, debian]
-tags: [apt-get, apt-cache, aptitude]
+categories: [linux]
+tags:       [debian, apt-get, apt-cache, aptitude]
 
 resources:
   - "[http://www.debian.org/doc/manuals/debian-reference/ch02.en.html](http://www.debian.org/doc/manuals/debian-reference/ch02.en.html)"
