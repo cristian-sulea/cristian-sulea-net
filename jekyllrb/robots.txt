@@ -1,1 +1,3 @@
 User-agent: *
+
+Sitemap: http://cristian.sulea.net/sitemap.xml
