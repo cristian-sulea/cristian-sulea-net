@@ -55,7 +55,7 @@ A list of links with speed tests, tools and techniques to optimize page speed an
   <br>
   Checks any website for broken links, spelling errors, browser compatibility, accessibility, web standards validation and search engine issues.
 
-- [](https://www.ionos.com/tools/website-checker)
+- [IONOS Website Checker](https://www.ionos.com/tools/website-checker)
   <br>
   Reviews the four most important aspects for your website's online success: website presentation, search engine visibility, website security, website's performance.
 
@@ -66,7 +66,7 @@ A list of links with speed tests, tools and techniques to optimize page speed an
   <br>
   Tests how easily a visitor can use your page on a mobile device.
 
-- [Find Broken Links, Redirects and Site Crawl Tool] (https://www.internetmarketingninjas.com/seo-tools/google-sitemap-generator/)
+- [Find Broken Links, Redirects and Site Crawl Tool](https://www.internetmarketingninjas.com/seo-tools/google-sitemap-generator/)
   <br>
   Check All the Links on a Website
 
