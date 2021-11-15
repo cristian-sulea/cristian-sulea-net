@@ -1,0 +1,67 @@
+/*
+ Theme Name:   Twenty Twenty-One Child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ xDescription:  Twenty Twenty-One Child Theme
+ Author:       Cristian Sulea
+ Author URI:   https://cristian.sulea.net
+ Template:     twentytwentyone
+ Version:      1.4.7
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ xTags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentytwentyonechild
+*/
+
+:root {
+    --global--color-background: #FFF3EA;
+}
+	
+@media only screen and (min-width: 822px) {
+
+    :root {
+        --responsive--aligndefault-width: min(calc(100vw - 8 * var(--global--spacing-horizontal)), 1080px);
+        --responsive--alignwide-width: min(calc(100vw - 8 * var(--global--spacing-horizontal)), 1240px);
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    
+	.site-header.has-logo.has-title-and-tagline.has-menu .site-branding {
+		max-width: none;
+	}
+	.site-header:not(.has-logo).has-title-and-tagline .site-branding {
+		max-width: none;
+	}
+
+
+    .company-name {
+        display: block;
+    }
+    .company-location-separator {
+        display: none;
+    }
+}
+
+.page-header {
+	padding-bottom: calc(1 * var(--global--spacing-vertical));
+}
+
+.archive-description {
+	margin-top: var(--global--spacing-vertical);
+	font-size: var(--global--font-size-xs);
+	font-style: italic;
+	line-height: var(--global--line-height-heading);
+}
+
+pre {
+    border-width: thin;
+    border-style: solid;
+    
+    font-family: monospace;
+    
+	border: var(--form--border-width) solid var(--form--border-color);
+	border-radius: var(--form--border-radius);
+	color: var(--form--color-text);
+	line-height: var(--global--line-height-body);
+	padding: var(--form--spacing-unit);
+}
