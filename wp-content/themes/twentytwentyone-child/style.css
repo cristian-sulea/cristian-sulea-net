@@ -15,7 +15,7 @@
 :root {
     --global--color-background: #f5eddd;
 }
-	
+
 @media only screen and (min-width: 822px) {
 
     :root {
@@ -32,7 +32,6 @@
 	.site-header:not(.has-logo).has-title-and-tagline .site-branding {
 		max-width: none;
 	}
-
 
     .company-name {
         display: block;

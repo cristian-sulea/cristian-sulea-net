@@ -1,0 +1,25 @@
+
+<script type="application/ld+json">
+	{
+		"@context" : "http://schema.org",
+		"@type" : "Person",
+		"name" : "Cristian Sulea",
+		"url" : "https://cristian.sulea.net"
+	}
+</script>
+<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "WebSite",
+
+		"name": "Cristian Sulea",
+		"description": "Software Architect & Developer",
+		"url": "https://cristian.sulea.net",
+
+		"author": {
+			"@type" : "Person",
+			"name" : "Cristian Sulea",
+			"url" : "https://cristian.sulea.net"
+		}
+	}
+</script>
