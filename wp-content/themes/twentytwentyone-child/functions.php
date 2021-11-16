@@ -40,3 +40,22 @@ function my_custom_css() {
 }
 add_action( 'wp_head', 'my_custom_css' );
 **/
+
+
+
+    function twenty_twenty_one_child_posted_on() {
+        $time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+        
+        $time_string = sprintf(
+            $time_string,
+            esc_attr( get_the_date( DATE_W3C ) ),
+            esc_html( get_the_date() )
+            );
+        echo '<span class="posted-on">';
+        printf(
+            /* translators: %s: Publish date. */
+            esc_html__( '%s', 'twentytwentyone' ),
+            $time_string // phpcs:ignore WordPress.Security.EscapeOutput
+            );
+        echo '</span>';
+    }
