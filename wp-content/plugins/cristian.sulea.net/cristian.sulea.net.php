@@ -5,7 +5,7 @@
 * Description: Custom functionality for my personal site.
 * Author: Cristian Sulea
 * Author URI: https://cristian.sulea.net/
-* Version: 1.1
+* Version: 2.1
 **/
 
 add_filter('get_the_archive_title', function ($title) {

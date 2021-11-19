@@ -5,7 +5,7 @@
  Author:       Cristian Sulea
  Author URI:   https://cristian.sulea.net
  Template:     twentytwentyone
- Version:      1.4.7
+ Version:      2.0.1
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  xTags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
@@ -56,15 +56,34 @@
 	line-height: var(--global--line-height-heading);
 }
 
-pre {
-    border-width: thin;
-    border-style: solid;
-    
-    font-family: monospace;
-    
-	border: var(--form--border-width) solid var(--form--border-color);
-	border-radius: var(--form--border-radius);
-	color: var(--form--color-text);
-	line-height: var(--global--line-height-body);
-	padding: var(--form--spacing-unit);
+.wp-block-code {
+	max-width: var(--responsive--alignwide-width) !important;
+	color: black;
+	background-color: white;
+	border:1px solid black;
+}
+
+.wp-block-code code {
+	font-family: monospace;
+	font-size: var(--global--font-size-xs);
+/* 	line-height: initial; */
+	color: black;
+	background-color: white;
+	border: none;
+}
+
+code {
+	font-family: monospace;
+/* 	color: black; */
+/* 	background-color: white; */
+/* 	padding-left: 3px; */
+/* 	padding-right: 3px; */
+/* 	border:1px solid black; */
+	
+/* border-color: var(--global--color-border); */
+/* border-radius: 0; */
+/* border-style: solid; */
+/* border-width: 0.1rem; */
+/* padding: var(--global--spacing-unit); */
+	
 }
