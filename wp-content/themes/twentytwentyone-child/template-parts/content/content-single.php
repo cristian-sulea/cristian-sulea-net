@@ -15,7 +15,7 @@
 
 	<header class="entry-header alignwide">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		<div class="archive-description"><p><?php twenty_twenty_one_child_posted_on(); ?></p></div>
+		<div class="archive-description"><p><?php twenty_twenty_one_child_posted_on(); ?> &bull; <a href="http://cristian.sulea.net" rel="author">Cristian Sulea</a></p></div>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
