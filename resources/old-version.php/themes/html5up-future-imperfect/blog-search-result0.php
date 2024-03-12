@@ -1,4 +1,0 @@
-
-<p>
-	<?php printBlogSearchResult(); ?>
-</p>
