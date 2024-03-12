@@ -1,0 +1,117 @@
+
+:root {
+  --site-title-text-size: 1.5rem;
+}
+
+.site-header {
+  border-top: var(--default-border-size-bold) solid var(--default-text-color);
+  border-bottom: var(--default-border-size) solid var(--default-border-color);
+  height: calc(2 * var(--site-title-text-size));
+}
+
+.site-footer {
+  border-top: var(--default-border-size) solid var(--default-border-color);
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.site-wrapper {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+@media (max-width: 600px) {
+.site-wrapper {
+  padding-right: var(--default-border-size-bold);
+  padding-left: var(--default-border-size-bold);
+}
+}
+
+.site-title {
+  font-size: var(--site-title-text-size);
+  line-height: calc(2 * var(--site-title-text-size));
+}
+
+.site-nav {
+  position: absolute;
+  font-size: 0.875rem;
+  top: calc(var(--site-title-text-size) - 0.875rem + var(--default-border-size-bold) + var(--default-border-size) + 0px);
+  right: 0.5rem;
+  background-color: var(--default-text-background-color);
+  border: var(--default-border-size) solid var(--default-border-color);
+  border-radius: var(--default-border-radius);
+  text-align: right;
+  padding-top: 2px;
+
+  .site-nav-trigger {
+    display: none;
+  }
+
+  label[for="site-nav-trigger"] {
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .site-nav-menu-icon {
+
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+
+    > svg path {
+      fill: var(--default-text-color);
+    }
+  }
+
+  input ~ .site-nav-menu {
+    clear: both;
+    display: none;
+  }
+
+  input:checked ~ .site-nav-menu {
+    display: block;
+  }
+
+  .page-link {
+    display: block;
+
+    &:last-child {
+        margin-bottom: 0.4rem;
+    }
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 600px) {
+
+    /*position: static;*/
+    float: right;
+    border: 0;
+
+    label[for="site-nav-trigger"] {
+      display: none;
+    }
+
+    .site-nav-menu-icon {
+      display: none;
+    }
+
+    input ~ .site-nav-menu {
+      display: block;
+    }
+
+    .page-link {
+      display: inline;
+
+      &:not(:last-child) {
+        margin-right: 0.4rem;
+      }
+      margin-left: auto;
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+}
