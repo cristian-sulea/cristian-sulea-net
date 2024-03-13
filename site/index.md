@@ -7,19 +7,10 @@ site:
 ---
 
 # Cristian Sulea
-> Software Developer
-> - [<img src="assets/github2.svg" style="max-width: 1rem;">](http://google.com.au/) LinkedIn
-> - [<img src="assets/linkedin.svg" style="max-width: 1rem;">](http://google.com.au/) LinkedIn
 
-
-- [![GitHub](assets/github2.svgx)](https://example.com) [GitHub](https://example.com)
-- [<img src="assets/github.svg" style="max-width: 1rem;">](http://google.com.au/)
-
-> {%- include icons/linkedin.svg -%}
+<blockquote>Software Developer{%- include social-links.html -%}</blockquote>
 
 ## Experience
-
-
 
 ### Senior Java Developer (& Software Architect)
 **PSS Prosoft Solutions**\

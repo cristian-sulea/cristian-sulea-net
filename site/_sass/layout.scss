@@ -115,3 +115,28 @@
     }
   }
 }
+
+.social-links a {
+  color: var(--default-quote-color);
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.social-links span {
+  font-size: 0.75rem;
+  margin-left: var(--default-border-size-bold);
+}
+
+.social-links svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--default-quote-color);
+  vertical-align: middle;
+}
+
+h1:has(+blockquote) {
+  margin-bottom: 0;
+}
