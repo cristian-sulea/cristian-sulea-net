@@ -35,14 +35,15 @@ body,
 h1, h2, h3, h4, h5, h6, hr,
 p, blockquote, ol, ul,
 pre, code,
-dl, dd, figure {
+figure, dl, dd {
   margin: 0;
   padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6, hr,
 p, blockquote, ol, ul,
-figure, pre, code {
+pre, code,
+figure {
   margin-bottom: 1rem;
 }
 
@@ -141,6 +142,28 @@ pre {
 code {
   padding-left: 1px;
   padding-right: 1px;
+}
+
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: left;
+  border: var(--default-border-size) solid var(--default-border-color);
+  border-collapse: collapse;
+
+  th, td {
+    padding: var(--default-border-size-bold);
+    border: var(--default-border-size) solid var(--default-border-color);
+  }
+  th {
+    background-color: var(--default-code-background-color);
+  }
+
+  tr {
+    &:nth-child(even) {
+      //background-color: var(--default-code-background-color);
+    }
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
