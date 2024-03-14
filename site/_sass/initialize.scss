@@ -14,6 +14,9 @@
 
   --default-text-color: #000;
   --default-text-background-color: #FFF7E8;
+  --default-link-color: var(--default-quote-color);
+  --default-link-color-hover: var(--default-link-color);
+  --default-link-color-visited: var(--default-link-color);
   --default-code-color: #000;
   --default-code-background-color: #EADAB9;
   --default-quote-color: #919191;
@@ -87,7 +90,27 @@ ol ol,
 ul ul,
 ol ul,
 ul ol {
+  padding-left: 1rem;
   margin-bottom: 0;
+}
+
+a {
+  color: var(--default-link-color);
+  text-decoration: none;
+
+  &:visited {
+    color: var(--default-link-color-visited);
+  }
+
+  &:hover {
+    color: var(--default-link-color-hover);
+    text-decoration: underline;
+  }
+}
+
+b,
+strong {
+  font-weight: bolder;
 }
 
 pre,
@@ -118,11 +141,6 @@ pre {
 code {
   padding-left: 1px;
   padding-right: 1px;
-}
-
-b,
-strong {
-  font-weight: bolder;
 }
 
 @media (prefers-reduced-motion: no-preference) {

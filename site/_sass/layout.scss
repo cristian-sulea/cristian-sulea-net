@@ -12,7 +12,6 @@
 .site-footer {
   border-top: var(--default-border-size) solid var(--default-border-color);
   padding-top: 1rem;
-  text-align: center;
 }
 
 .site-wrapper {
@@ -37,7 +36,7 @@
 
 .site-nav {
   position: absolute;
-  font-size: 0.875rem;
+  /*font-size: 0.875rem;*/
   top: calc(var(--site-title-text-size) - 0.875rem + var(--default-border-size-bold) + var(--default-border-size) + 0px);
   right: 0.5rem;
   background-color: var(--default-text-background-color);
@@ -116,25 +115,39 @@
   }
 }
 
-.social-links a {
-  color: var(--default-quote-color);
-  text-decoration: none;
+.social-links-list {
+
+  list-style: none;
+  padding-left: 0;
+  display: table;
+
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: var(--default-quote-color);
+    vertical-align: middle;
+  }
+
+  span {
+    font-size: 0.75rem;
+    margin-left: var(--default-border-size-bold);
+  }
 }
 
-.social-links a:hover {
-  text-decoration: underline;
-}
+.site-footer .social-links-list {
 
-.social-links span {
-  font-size: 0.75rem;
-  margin-left: var(--default-border-size-bold);
-}
+  margin-left: auto;
+  margin-right: auto;
 
-.social-links svg {
-  width: 1.5rem;
-  height: 1.5rem;
-  fill: var(--default-quote-color);
-  vertical-align: middle;
+  li {
+    float: left;
+  }
+  svg {
+    margin-right: var(--default-border-size-bold);
+  }
+  span {
+    display: none;
+  }
 }
 
 h1:has(+blockquote) {
