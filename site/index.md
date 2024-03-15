@@ -80,3 +80,46 @@ Craiova, Romania\
 **Ritz**\
 Craiova, Romania\
 *January 2000 - January 2001 (1 year 1 month)*
+
+## Skills & Expertise
+
+### Technical skills and competences
+
+- Software Design
+- Software Development
+- Software Engineering
+- Spring
+- Hibernate
+- SQL
+- JUnit
+- Log4j
+- Apache Commons
+- XStream
+- Swing
+- XML
+- HTML
+- CSS
+- JavaScript
+- PHP
+
+### Computer skills and competences
+
+- Eclipse
+- Maven
+- SVN
+- Ant
+- IBM Rational
+- WebSphere
+- Tomcat
+- Jetty
+- MySQL
+- DB2
+- Linux (basic)
+
+### Languages
+
+- English\
+  \- professional working proficiency
+
+- Italian\
+  \- Limited working proficiency
