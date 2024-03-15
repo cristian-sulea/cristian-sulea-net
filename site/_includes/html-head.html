@@ -1,0 +1,43 @@
+{%- assign meta_title = page.site.title | default: site.title | escape -%}
+{%- assign meta_author = page.site.author.name | default: site.author.name | escape -%}
+{%- assign meta_description = page.site.description | default: site.description | escape -%}
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+
+  {%- if page.layout == "blog" -%}
+    <title>{{ meta_title }} | {{ meta_author }}</title>
+  {%- elsif page.layout == "xxx" -%}
+    <title>{{ meta_title }}</title>
+  {%- else -%}
+    <title>{{ meta_title }} | {{ meta_description }}</title>
+  {%- endif -%}
+
+  <meta name="author" content="{{ meta_author }}" />
+  <meta name="description" content="{{ meta_description }}" />
+
+  <meta property="og:title" content="Knowledge Base" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="An archive of my personal knowledge base (created and saved as a blog)." />
+
+  <link rel="canonical" href="http://0.0.0.0:4000/" />
+  <meta property="og:url" content="http://0.0.0.0:4000/" />
+
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Cristian Sulea"},"description":"An archive of my personal knowledge base (created and saved as a blog).","headline":"Knowledge Base","name":"Knowledge Base","url":"http://0.0.0.0:4000/"}</script>
+
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+  {%- include google-analytics.html -%}
+  {%- endif -%}
+
+  {%- include html-head-custom.html -%}
+
+</head>

@@ -1,6 +1,82 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: base
+site:
+  title: Cristian Sulea x
+  description: Software Developer x
+  title_hide: true
 ---
+
+# Cristian Sulea
+
+<blockquote>Software Developer{%- include social-links.html -%}</blockquote>
+
+## Experience
+
+### Senior Java Developer (& Software Architect)
+**PSS Prosoft Solutions**\
+Bucharest, Romania\
+*February 2008 - Present*
+
+Other roles:
+- Technical Lead
+- Development Lead
+  Other activities and responsibilities:
+- analysis and design for new projects
+- analysis and integration for the new features and change requests for current projects
+- develop and manage pilot projects
+- develop and manage prototype projects to test the integration of various technologies
+- technical proposals
+- performance improvements
+  Senior Java Developer
+  Entrust | Craiova, Romania
+  July 2007 - February 2008 (8 months)
+
+Other roles:
+- Firm Administrator (and Partner)
+- Technical Lead
+- Development Lead
+  Other activities and responsibilities:
+- analysis and design for new projects
+- analysis and integration for the new features and change requests for current projects
+
+### Senior Java Developer
+**Entrust**\
+Craiova, Romania\
+*July 2007 - February 2008 (8 months)*
+
+Other roles:
+- Firm Administrator (and Partner)
+- Technical Lead
+- Development Lead
+  Other activities and responsibilities:
+- analysis and design for new projects
+- analysis and integration for the new features and change requests for current projects
+
+### Senior Java Developer
+**echoSoft**\
+Craiova, Romania\
+*May 2005 - July 2007 (2 years 3 months)*
+
+Other roles:
+- Firm Administrator (and Owner)
+- Technical Lead
+- Development Lead
+  Other activities and responsibilities:
+- analysis and design for new projects
+- analysis and integration for the new features and change requests for current projects
+- develop and manage pilot projects
+- develop and manage prototype projects to test the integration of various technologies
+- technical proposals
+  Java Developer
+  ITtrading S.r.l. | Torino, Italy
+  June 2003 - May 2005 (2 years)
+
+### Java Developer
+**Blue Software**\
+Craiova, Romania\
+*January 2001 - June 2003 (2 years 6 months)*
+
+### Network Administrator
+**Ritz**\
+Craiova, Romania\
+*January 2000 - January 2001 (1 year 1 month)*

@@ -1,0 +1,9 @@
+<ul class="social-links-list">
+  {%- for entry in site.social_links -%}
+  <li>
+    <a rel="me" target="_blank" href="{{ entry.link }}">
+      {%- include svg/{{ entry.platform }}.svg -%}<span>{{ entry.title }}</span>
+    </a>
+  </li>
+  {%- endfor -%}
+</ul>
