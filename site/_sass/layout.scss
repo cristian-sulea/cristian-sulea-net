@@ -7,6 +7,7 @@
   border-top: var(--default-border-size-bold) solid var(--default-text-color);
   border-bottom: var(--default-border-size) solid var(--default-border-color);
   height: calc(2 * var(--site-title-text-size));
+  font-weight: calc(var(--default-text-weight) - 100);
 }
 
 .site-footer {
@@ -73,7 +74,7 @@
     display: block;
   }
 
-  .page-link {
+  .site-nav-link {
     display: block;
 
     &:last-child {
@@ -102,7 +103,7 @@
       display: block;
     }
 
-    .page-link {
+    .site-nav-link {
       display: inline;
 
       &:not(:last-child) {
