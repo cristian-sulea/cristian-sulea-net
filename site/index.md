@@ -1,8 +1,8 @@
 ---
 layout: base
 site:
-  title: Cristian Sulea x
-  description: Software Developer x
+  title: Cristian Sulea
+  description: Software Developer
   title_hide: true
 ---
 
@@ -27,17 +27,6 @@ Other roles:
 - develop and manage prototype projects to test the integration of various technologies
 - technical proposals
 - performance improvements
-  Senior Java Developer
-  Entrust | Craiova, Romania
-  July 2007 - February 2008 (8 months)
-
-Other roles:
-- Firm Administrator (and Partner)
-- Technical Lead
-- Development Lead
-  Other activities and responsibilities:
-- analysis and design for new projects
-- analysis and integration for the new features and change requests for current projects
 
 ### Senior Java Developer
 **Entrust**\
@@ -116,10 +105,24 @@ Craiova, Romania\
 - DB2
 - Linux (basic)
 
+## Education
+
+**Facultatea de Matematică și Informatică**\
+Software Engineer\
+*2000 - 2004*
+
+**Facultatea de Automatică și Calculatoare**\
+Software Engineer\
+*1998 - 2000*
+
+**Liceul de Informatică "Ștefan Odobleja"**\
+Programmer Analyst\
+*1994 - 1998*
+
 ### Languages
 
 - English\
   \- professional working proficiency
 
 - Italian\
-  \- Limited working proficiency
+  \- limited working proficiency

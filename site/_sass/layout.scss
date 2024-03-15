@@ -135,6 +135,28 @@
   }
 }
 
+.site-footer .copyright {
+
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+  color: var(--default-quote-color);
+  font-size: 0.75rem;
+  font-style: italic;
+
+  a {
+
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+
+    &:hover {
+      text-decoration-style: solid;
+    }
+  }
+}
+
 .site-footer .social-links-list {
 
   margin-left: auto;
