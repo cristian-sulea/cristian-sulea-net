@@ -1,2 +1,11 @@
 /* Placeholder to allow the override of the default styles or defining custom new ones. */
 
+.xxx {
+        xposition: -webkit-sticky;
+        position: fixed;
+        top: calc(2 * var(--site-title-text-size) + 7px + 2rem);
+        right: 2rem;
+        background-color: #666;
+        xpadding: 40px;
+        font-size: 24px;
+}
