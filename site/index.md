@@ -1,9 +1,9 @@
 ---
-layout: base
+layout: index
 site:
   title: Cristian Sulea
   description: Software Developer
-  title_hide: true
+hide_title: true
 ---
 
 # Cristian Sulea
