@@ -11,10 +11,8 @@
   <meta http-equiv='expires' content='0'>
   <meta http-equiv='pragma' content='no-cache'>
 
-  {%- if page.layout == "blog" -%}
-    <title>{{ meta_title }} | {{ meta_author }}</title>
-  {%- elsif page.layout == "xxx" -%}
-    <title>{{ meta_title }}</title>
+  {%- if page.layout == "xxx" -%}
+    <title>{{ meta_title }} | {{ meta_xxx }}</title>
   {%- else -%}
     <title>{{ meta_title }} | {{ meta_description }}</title>
   {%- endif -%}

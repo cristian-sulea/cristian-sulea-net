@@ -1,14 +1,6 @@
 ---
 layout: index
-site:
-  title: Cristian Sulea
-  description: Software Developer
-hide_title: true
 ---
-
-# Cristian Sulea
-
-<blockquote>Software Developer{%- include social-links.html -%}</blockquote>
 
 ## Experience
 
