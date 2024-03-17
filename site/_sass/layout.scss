@@ -93,6 +93,10 @@
     /*position: static;*/
     float: right;
     border: 0;
+    padding: 0;
+    position: relative;
+    top: calc(var(--site-title-text-size) - 1rem + var(--default-border-size-bold) + var(--default-border-size) + 0px);
+    right: 0;
 
     label[for="site-nav-trigger"] {
       display: none;
