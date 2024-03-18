@@ -7,15 +7,15 @@ author:
   name: Cristian Sulea
   url: https://cristian.sulea.net
 
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol, e.g. http://example.com
+baseurl: "" # the subpath, e.g. /blog
 
 #theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-copyright: >-
+copyright: >- # this means to ignore newlines until next key
   © 2024 <a href=\"https://cristian.sulea.net\">Cristian Sulea</a>.
   Powered by <a href="https://jekyllrb.com">Jekyll</a>
   and <a href="https://github.com/cristian-sulea/jekyll-theme-pwkbb">pwkbb</a>.
@@ -53,22 +53,25 @@ collections:
   blog:
     output: true
     sort_by: date
+  projects:
+    output: true
+    #sort_by: path
 
-defaults:
-  - scope:
-      path: ""
-      type: "blog"
-    values:
-      layout: "index"
-      author: "Cristian Sulea"
-      permalink: /:collection/:name
-  - scope:
-      path: "_blog/xyz"
-      type: "blog"
-    values:
-      layout: "index"
-      author: "Cri Sul"
-  - scope:
-      path: ""
-    values:
-      layout: "index"
+#defaults:
+#  - scope:
+#      path: ""
+#      type: "projects"
+#    values:
+#      layout: "index"
+#      author: "Cristian Sulea"
+#      permalink: /:collection/:name
+#  - scope:
+#      path: "_blog/xyz"
+#      type: "blog"
+#    values:
+#      layout: "index"
+#      author: "Cri Sul"
+#  - scope:
+#      path: ""
+#    values:
+#      layout: "index"
