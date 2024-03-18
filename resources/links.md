@@ -2,6 +2,7 @@
 Shell
 - https://stackoverflow.com/questions/5725296/difference-between-sh-and-bash
 - https://stackoverflow.com/questions/14065069/equivalent-of-bat-in-mac-os
+- https://linuxhandbook.com/chmod-command/
 - 
 
 Docker
