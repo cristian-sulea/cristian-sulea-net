@@ -33,6 +33,7 @@
 .site-title {
   font-size: var(--site-title-text-size);
   line-height: calc(2 * var(--site-title-text-size));
+  float: left;
 }
 
 .site-nav {
@@ -95,6 +96,7 @@
     border: 0;
     padding: 0;
     position: relative;
+    //float: right;
     top: calc(var(--site-title-text-size) - 1rem + var(--default-border-size-bold) + var(--default-border-size) + 0px);
     right: 0;
 
