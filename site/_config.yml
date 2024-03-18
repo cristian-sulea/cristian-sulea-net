@@ -3,9 +3,9 @@ title: Cristian Sulea
 description: >- # this means to ignore newlines until next key
   Software Developer
 
-#author:
-#  name: Cristian Sulea
-#  email: your-email@domain.com
+author:
+  name: Cristian Sulea
+  url: https://cristian.sulea.net
 
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -16,8 +16,8 @@ plugins:
   - jekyll-seo-tag
 
 copyright: >-
-  © 2024 <a href=\"https://cristian.sulea.net/\">Cristian Sulea</a>.
-  Powered by <a href="https://jekyllrb.com/">Jekyll</a>
+  © 2024 <a href=\"https://cristian.sulea.net\">Cristian Sulea</a>.
+  Powered by <a href="https://jekyllrb.com">Jekyll</a>
   and <a href="https://github.com/cristian-sulea/jekyll-theme-pwkbb">pwkbb</a>.
 
 social_links:
