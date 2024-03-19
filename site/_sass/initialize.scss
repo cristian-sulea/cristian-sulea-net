@@ -100,21 +100,18 @@ ul ol {
 }
 
 a {
-
   color: var(--default-link-color);
   text-decoration: underline;
   text-decoration-style: dotted;
   text-decoration-thickness: 1px;
-
-  &:visited {
-    color: var(--default-link-color-visited);
-  }
-
-  &:hover {
-    color: var(--default-link-color-hover);
-    text-decoration-style: solid;
-    text-decoration-thickness: 1px;
-  }
+}
+a:visited {
+  color: var(--default-link-color-visited);
+}
+a:hover {
+  color: var(--default-link-color-hover);
+  text-decoration-style: solid;
+  text-decoration-thickness: 1px;
 }
 
 b,

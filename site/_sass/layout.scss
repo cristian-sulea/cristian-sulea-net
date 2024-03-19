@@ -11,20 +11,17 @@
   font-weight: calc(var(--default-text-weight) - 100);
 
   a {
-
     color: var(--default-quote-color);
     text-decoration: none;
-
-    &:visited {
-      color: var(--default-quote-color);
-    }
-
-    &:hover {
-      color: var(--default-quote-color);
-      text-decoration: underline;
-      text-decoration-style: dotted;
-      text-decoration-thickness: 1px;
-    }
+  }
+  a:visited {
+    color: var(--default-quote-color);
+  }
+  a:hover {
+    color: var(--default-quote-color);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
   }
 }
 
@@ -34,16 +31,13 @@
   padding-top: 1rem;
 
   a {
-
     color: var(--default-quote-color);
-
-    &:visited {
-      color: var(--default-quote-color);
-    }
-
-    &:hover {
-      color: var(--default-quote-color);
-    }
+  }
+  a:visited {
+    color: var(--default-quote-color);
+  }
+  a:hover {
+    color: var(--default-quote-color);
   }
 }
 
@@ -173,6 +167,18 @@
   span {
     font-size: 0.75rem;
     margin-left: var(--default-border-size-bold);
+  }
+
+  a {
+    color: var(--default-quote-color);
+  }
+  a:visited {
+    color: var(--default-quote-color);
+  }
+  a:hover, a:hover span {
+    color: var(--default-quote-color);
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
   }
 }
 
