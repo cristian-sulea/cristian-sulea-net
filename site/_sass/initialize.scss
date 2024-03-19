@@ -14,7 +14,7 @@
 
   --default-text-color: #000;
   --default-text-background-color: #FFF7E8;
-  --default-link-color: var(--default-quote-color);
+  --default-link-color: var(--default-text-color);
   --default-link-color-hover: var(--default-link-color);
   --default-link-color-visited: var(--default-link-color);
   --default-code-color: #000;
@@ -100,8 +100,11 @@ ul ol {
 }
 
 a {
+
   color: var(--default-link-color);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1px;
 
   &:visited {
     color: var(--default-link-color-visited);
@@ -109,10 +112,8 @@ a {
 
   &:hover {
     color: var(--default-link-color-hover);
-    text-decoration: underline;
+    text-decoration-style: solid;
     text-decoration-thickness: 1px;
-    //text-decoration-style: dotted;
-    //text-decoration-skip-ink: none;
   }
 }
 

@@ -4,15 +4,47 @@
 }
 
 .site-header {
+
   border-top: var(--default-border-size-bold) solid var(--default-text-color);
   border-bottom: var(--default-border-size) solid var(--default-border-color);
   height: calc(2 * var(--site-title-text-size));
   font-weight: calc(var(--default-text-weight) - 100);
+
+  a {
+
+    color: var(--default-quote-color);
+    text-decoration: none;
+
+    &:visited {
+      color: var(--default-quote-color);
+    }
+
+    &:hover {
+      color: var(--default-quote-color);
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      text-decoration-thickness: 1px;
+    }
+  }
 }
 
 .site-footer {
+
   border-top: var(--default-border-size) solid var(--default-border-color);
   padding-top: 1rem;
+
+  a {
+
+    color: var(--default-quote-color);
+
+    &:visited {
+      color: var(--default-quote-color);
+    }
+
+    &:hover {
+      color: var(--default-quote-color);
+    }
+  }
 }
 
 .site-wrapper {
@@ -64,7 +96,7 @@
     > svg {
       width: 1rem;
       > path {
-        fill: var(--default-link-color);
+        fill: var(--default-quote-color);
       }
     }
   }
@@ -153,17 +185,6 @@
   color: var(--default-quote-color);
   font-size: 0.75rem;
   font-style: italic;
-
-  a {
-
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-decoration-thickness: 1px;
-
-    &:hover {
-      text-decoration-style: solid;
-    }
-  }
 }
 
 .site-footer .social-links-list {
