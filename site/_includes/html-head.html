@@ -19,7 +19,6 @@
 
   <link rel="canonical" href="{{ canonical_url }}" />
 
-  <meta property="og:type" content="website" />
   <meta property="og:title" content="Knowledge Base" />
   <meta property="og:description" content="{{ meta_description }}" />
   <meta property="og:url" content="{{ canonical_url }}" />
@@ -36,19 +35,39 @@
   {%- endif -%}
 
   {%- if page.layout == "index" or page.layout == "page" -%}
+  <meta property="og:type" content="website" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
+      "name": "{{ meta_title }}",
+      "headline": "{{ meta_title }}",
+      "description": "{{ meta_description }}",
+      "url": "{{ canonical_url }}",
       "author": {
         "@type": "Person",
         "name": "{{ meta_author }}"
         "url" : "{{ meta_author_url }}"
       },
+    }
+  </script>
+  {%- endif -%}
+
+  {%- if page.layout == "blog" -%}
+  <meta property="og:type" content="website" />
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Blog",
       "name": "{{ meta_title }}",
       "headline": "{{ meta_title }}",
       "description": "{{ meta_description }}",
-      "url": "{{ canonical_url }}"
+      "url": "{{ canonical_url }}",
+      "author": {
+        "@type" : "Person",
+        "name" : "{{ meta_author }}",
+        "url" : "{{ meta_author_url }}"
+      }
     }
   </script>
   {%- endif -%}

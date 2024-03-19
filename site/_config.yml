@@ -10,11 +10,6 @@ author:
 url: "" # the base hostname & protocol, e.g. http://example.com
 baseurl: "" # the subpath, e.g. /blog
 
-#theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-
 copyright: >- # this means to ignore newlines until next key
   © 2024 <a href=\"https://cristian.sulea.net\">Cristian Sulea</a>.
   Powered by <a href="https://jekyllrb.com">Jekyll</a>
@@ -24,6 +19,11 @@ social_links:
   - { platform: linkedin, title: LinkedIn, link: "https://www.linkedin.com/in/cristiansulea" }
   - { platform: github,   title: GitHub,   link: "https://github.com/cristian-sulea" }
   - { platform: twitter,  title: Twitter,  link: "https://twitter.com/cristian_sulea" }
+
+#theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -53,9 +53,18 @@ collections:
   blog:
     output: true
     sort_by: date
-  projects:
-    output: true
-    #sort_by: path
+    permalink: /blog/:name
+  #projects:
+  #  output: true
+  #  #sort_by: path
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "blog"
+    values:
+      layout: "post"
 
 #defaults:
 #  - scope:

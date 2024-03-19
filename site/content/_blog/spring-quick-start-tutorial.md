@@ -1,16 +1,13 @@
 ---
 
-layout: post
+date:  2013-05-27
+title: Spring - Quick start tutorial
 
-date: 2013-05-27
-toc: true
-toc_sticky: true
+description: >-
+  The Spring Framework is an open source application framework and inversion of control container for the Java platform.
 
-title:       "Spring - Quick start tutorial"
-description: "The Spring Framework is an open source application framework and inversion of control container for the Java platform."
-
-categories: [java]
-tags:       [spring]
+xcategories: [java]
+xtags:       [spring]
 
 resources:
   - "[http://spring.io](http://spring.io)"

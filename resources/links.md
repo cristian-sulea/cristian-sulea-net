@@ -40,3 +40,6 @@ Icons
 - https://www.iconfinder.com/search?q=whatsapp&family=buke-1-0-blue
 - https://www.iconfinder.com/search?designer=sweetpea&q=discord
 - 
+
+Git:
+- https://stackoverflow.com/questions/9971332/git-create-a-new-branch-with-only-a-specified-directory-and-its-history-then-pus
