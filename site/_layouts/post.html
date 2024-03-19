@@ -15,7 +15,19 @@ layout: base
   </header>
 
   <div itemprop="articleBody">
+
     {{ content }}
+
+    {% if page.resources %}
+      <hr>
+      <strong><em>Sources</em></strong>
+      <ul>
+        {% for resource in page.resources %}
+        <li>{{ resource | markdownify | strip_newlines | remove: '<p>' | remove: '</p>' }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
   </div>
 
 </article>
