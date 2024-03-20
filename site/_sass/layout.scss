@@ -3,12 +3,28 @@
   --site-title-text-size: 1.5rem;
 }
 
+.site-wrapper {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+@media (max-width: 600px) {
+  .site-wrapper {
+    padding-right: var(--default-border-size-bold);
+    padding-left: var(--default-border-size-bold);
+  }
+}
+
 .site-header {
 
   border-top: var(--default-border-size-bold) solid var(--default-text-color);
   border-bottom: var(--default-border-size) solid var(--default-border-color);
   height: calc(2 * var(--site-title-text-size));
   font-weight: calc(var(--default-text-weight) - 100);
+
+  //box-shadow: 0 0 6px var(--default-border-color);
 
   a {
     color: var(--default-quote-color);
@@ -23,37 +39,6 @@
     text-decoration-style: dotted;
     text-decoration-thickness: 1px;
   }
-}
-
-.site-footer {
-
-  border-top: var(--default-border-size) solid var(--default-border-color);
-  padding-top: 1rem;
-
-  a {
-    color: var(--default-quote-color);
-  }
-  a:visited {
-    color: var(--default-quote-color);
-  }
-  a:hover {
-    color: var(--default-quote-color);
-  }
-}
-
-.site-wrapper {
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
-@media (max-width: 600px) {
-.site-wrapper {
-  padding-right: var(--default-border-size-bold);
-  padding-left: var(--default-border-size-bold);
-}
 }
 
 .site-title {
@@ -182,6 +167,22 @@
   }
 }
 
+.site-footer {
+
+  border-top: var(--default-border-size) solid var(--default-border-color);
+  padding-top: 1rem;
+
+  a {
+    color: var(--default-quote-color);
+  }
+  a:visited {
+    color: var(--default-quote-color);
+  }
+  a:hover {
+    color: var(--default-quote-color);
+  }
+}
+
 .site-footer .copyright {
 
   margin-left: auto;
@@ -211,4 +212,14 @@
 
 h1:has(+blockquote) {
   margin-bottom: 0;
+}
+
+.post-title-link {
+  color: var(--default-text-color);
+}
+.post-title-link:visited {
+  color: var(--default-text-color);
+}
+.post-title-link:hover {
+  color: var(--default-text-color);
 }
