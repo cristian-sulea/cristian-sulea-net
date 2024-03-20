@@ -56,10 +56,10 @@ body {
   background-color: var(--default-text-background-color);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 
-  > header {
-    margin-bottom: 1rem;
-  }
+body > header {
+  margin-bottom: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -136,12 +136,10 @@ pre {
   overflow-x: auto;
 }
 
-pre {
-  > code {
-    border: 0;
-    padding-left: 0;
-    padding-right: 0;
-  }
+pre > code {
+  border: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 code {
@@ -155,20 +153,16 @@ table {
   text-align: left;
   border: var(--default-border-size) solid var(--default-border-color);
   border-collapse: collapse;
-
-  th, td {
-    padding: var(--default-border-size-bold);
-    border: var(--default-border-size) solid var(--default-border-color);
-  }
-  th {
-    background-color: var(--default-code-background-color);
-  }
-
-  tr {
-    &:nth-child(even) {
-      //background-color: var(--default-code-background-color);
-    }
-  }
+}
+table th, table td {
+  padding: var(--default-border-size-bold);
+  border: var(--default-border-size) solid var(--default-border-color);
+}
+table th {
+  background-color: var(--default-code-background-color);
+}
+table tr:nth-child(even) {
+  background-color: var(--default-code-background-color);
 }
 
 @media (prefers-reduced-motion: no-preference) {
