@@ -1,12 +1,10 @@
 ---
-
 date: 2019-01-07
 
 title:       "Website Validation, Speed and Performance Optimization"
 description: "A list of links with speed tests, tools and techniques to optimize page speed and the overall website performance."
 
-tags:       [website, test, tools]
-
+tags: [website, test, tools]
 ---
 
 A list of links with speed tests, tools and techniques to optimize page speed and the overall website performance.

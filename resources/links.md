@@ -34,6 +34,7 @@ Dev
 - https://github.com/mkdocs/catalog
 - https://stackoverflow.com/questions/2002120/citing-the-author-of-a-blockquote-using-markdown-syntax
 - https://github.blog/2010-08-24-jekyll-puts-on-smartypants/
+- https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/
 - 
 
 Icons

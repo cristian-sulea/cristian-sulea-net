@@ -214,12 +214,19 @@ h1:has(+blockquote) {
   margin-bottom: 0;
 }
 
-.post-title-link {
-  color: var(--default-text-color);
+.blog-post-title {
+  a {
+    color: var(--default-text-color);
+  }
+  a:visited {
+    color: var(--default-text-color);
+ }
+ a:hover {
+   color: var(--default-text-color);
+ }
 }
-.post-title-link:visited {
-  color: var(--default-text-color);
-}
-.post-title-link:hover {
-  color: var(--default-text-color);
+
+.blog-post-meta {
+  //font-size: smaller;
+  //color: var(--default-text-color);
 }

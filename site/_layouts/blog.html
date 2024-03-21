@@ -7,14 +7,13 @@ layout: page
 
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 
-
-    <h2>
-      <a class="post-title-link" href="{{ post.url | relative_url }}">
+    <h2 class="blog-post-title">
+      <a href="{{ post.url | relative_url }}">
         {{ post.title | escape }}
       </a>
     </h2>
 
-    <blockquote><span>{{ post.date | date: date_format }}</span></blockquote>
+    <blockquote class="blog-post-meta"><span>{{ post.date | date: date_format }}</span> •  java, xyz, etc</blockquote>
 
     {{ post.excerpt }}
 
