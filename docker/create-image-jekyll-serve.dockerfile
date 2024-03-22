@@ -1,5 +1,6 @@
 # build from the image we just built with different metadata
-FROM jekyll as jekyll-serve
+FROM cristiansulea/jekyll:1.0 as jekyll-serve
+#FROM cristiansulea/jekyll:1.1-amd64 as jekyll-serve
 
 # on every container start, check if Gemfile exists and warn if it's missing
 ENTRYPOINT [ "bash", "create-image-jekyll-serve-entrypoint.sh" ]
