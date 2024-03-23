@@ -19,7 +19,7 @@
 
   <link rel="canonical" href="{{ canonical_url }}" />
 
-  <meta property="og:title" content="Knowledge Base" />
+  <meta property="og:title" content="{{ meta_title }}" />
   <meta property="og:description" content="{{ meta_description }}" />
   <meta property="og:url" content="{{ canonical_url }}" />
 
@@ -48,7 +48,7 @@
         "@type": "Person",
         "name": "{{ meta_author }}"
         "url" : "{{ meta_author_url }}"
-      },
+      }
     }
   </script>
   {%- endif -%}
