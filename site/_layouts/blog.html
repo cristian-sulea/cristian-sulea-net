@@ -3,9 +3,7 @@ layout: page
 ---
 
 {%- if site.blog.size > 0 -%}
-  {% for post in site.blog reversed %}
-
-    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+  {%- for post in site.blog reversed -%}
 
     <h2 class="blog-post-title">
       <a href="{{ post.url | relative_url }}">
@@ -13,14 +11,13 @@ layout: page
       </a>
     </h2>
 
-    <blockquote class="blog-post-meta"><span>{{ post.date | date: date_format }}</span> •  java, xyz, etc</blockquote>
+    <blockquote class="blog-post-meta"><span>{{ post.date | date: site.date.format }}</span> •  java, xyz, etc</blockquote>
 
     {{ post.excerpt }}
 
   {%- endfor -%}
 
-
-<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 {%- endif -%}
 
 {{ content }}
