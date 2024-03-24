@@ -13,6 +13,11 @@ tags: [website, jekyll, search]
 - <https://nachtimwald.com/2020/06/10/full-text-search-with-jekyll/>
 - <https://stackoverflow.com/questions/17118551/generating-a-list-of-pages-not-posts-in-a-given-category>
 
+- <https://jekyllcodex.org/without-plugin/search-lunr/>
+- <https://jekyllcodex.org/search/>
+
+- <https://minima.jakelee.co.uk/search/>
+
 A list of links with speed tests, tools and techniques to optimize page speed and the overall website performance.
 Managing page speed (the speed at which the website loads and reacts to user input) can drastically improve user experience (UX) and search engine optimization (SEO).
 

@@ -20,6 +20,7 @@
   --default-code-color: #000;
   --default-code-background-color: #EADAB9;
   --default-quote-color: #919191;
+  --default-quote-style: italic;
   --default-border-color: #C6C6C6;
   --default-border-size: 1px;
   --default-border-size-bold: 0.25rem;
@@ -33,17 +34,21 @@ html {
 
 body,
 h1, h2, h3, h4, h5, h6, hr,
-p, blockquote, ol, ul,
+p, blockquote, ol, ul, dl,
 pre, code,
-figure, dl, dd {
+figure,
+table,
+input, button, select, optgroup, textarea {
   margin: 0;
   padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6, hr,
-p, blockquote, ol, ul,
+p, blockquote, ol, ul, dl,
 pre, code,
-figure {
+figure,
+table,
+input, button, select, optgroup, textarea {
   margin-bottom: 1rem;
 }
 
@@ -56,6 +61,7 @@ body {
   background-color: var(--default-text-background-color);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-y: scroll;
 }
 
 body > header {
@@ -80,14 +86,15 @@ hr {
 }
 
 blockquote {
-  font-style: italic;
+  font-style: var(--default-quote-style);
   color: var(--default-quote-color);
   border-left: var(--default-border-size-bold) solid var(--default-border-color);
   padding-left: 1rem;
 }
 
 ol,
-ul {
+ul,
+dl {
   padding-left: 2rem;
 }
 
@@ -149,7 +156,6 @@ code {
 }
 
 table {
-  margin-bottom: 1rem;
   width: 100%;
   text-align: left;
   border: var(--default-border-size) solid var(--default-border-color);
@@ -164,6 +170,21 @@ table th {
 }
 table tr:nth-child(even) {
   background-color: var(--default-code-background-color);
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  height: calc(var(--default-line-height) * var(--default-text-size) - 2 * var(--default-border-size));
+  border: var(--default-border-size) solid var(--default-border-color);
+  padding-left: var(--default-border-size-bold);
+  padding-right: var(--default-border-size-bold);
 }
 
 @media (prefers-reduced-motion: no-preference) {

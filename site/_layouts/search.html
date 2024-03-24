@@ -1,0 +1,37 @@
+---
+layout: base
+---
+
+<h1>{{ page.title | escape }}</h1>
+<blockquote>
+  <input type="text" id="search-input" placeholder="Type..." autofocus autocomplete="off">
+</blockquote>
+
+
+
+<!-- Html Elements for Search -->
+<div id="search-container">
+
+  <ul id="results-container"></ul>
+</div>
+
+<!-- Script pointing to search-script.js -->
+<script src="/assets/simple-jekyll-search.js" type="text/javascript"></script>
+
+<!-- Configuration -->
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    //limit: 3,
+    json: '/search.json'
+  })
+
+  function onkeypressed(evt, input) {
+    var code = evt.charCode || evt.keyCode;
+    if (code == 27) {
+        input.value = '';
+    }
+}
+
+</script>

@@ -6,28 +6,28 @@ layout: none
   {%- for page in site.pages -%}
   {
     {%- if page.layout == "index" -%}
-      "title"       : "{{ site.title | escape }}",
-      "description" : "{{ site.description | escape }}",
-      "url"         : "{{ site.baseurl }}{{ page.url }}",
-      "content"     : "{{ page.content | strip_html | strip_newlines | remove_chars | escape }}"
+      "title"   : "{{ site.title | escape }}",
+      "desc"    : "{{ site.description | escape }}",
+      "url"     : "{{ site.baseurl }}{{ page.url }}",
+      "content" : "{{ page.content | strip_html | strip_newlines | remove_chars | escape }}"
     {%- elsif page.title -%}
-      "title"       : "{{ page.title | escape }}",
-      "description" : "{{ page.description | escape }}",
-      "tags"        : "{{ page.tags | join: ', ' }}",
-      "url"         : "{{ site.baseurl }}{{ page.url }}",
-      "content"     : "{{ page.content | strip_html | strip_newlines | remove_chars | escape }}"
+      "title"   : "{{ page.title | escape }}",
+      "desc"    : "{{ page.description | escape }}",
+      "tags"    : "{{ page.tags | join: ', ' }}",
+      "url"     : "{{ site.baseurl }}{{ page.url }}",
+      "content" : "{{ page.content | strip_html | strip_newlines | remove_chars | escape }}"
     {%- endif -%}
   } {%- unless forloop.last -%},{%- endunless -%}
   {%- endfor -%}
   ,
   {%- for post in site.blog reversed -%}
   {
-      "title"       : "{{ post.title | escape }}",
-      "description" : "{{ post.description | escape }}",
-      "tags"        : "{{ post.tags | join: ', ' }}",
-      "url"         : "{{ site.baseurl }}{{ post.url }}",
-      "date"        : "{{ post.date | date: site.date.format }}",
-      "content"     : "{{ post.content | strip_html | strip_newlines | remove_chars | escape }}"
+      "title"   : "{{ post.title | escape }}",
+      "desc"    : "{{ post.description | escape }}",
+      "tags"    : "{{ post.tags | join: ', ' }}",
+      "url"     : "{{ site.baseurl }}{{ post.url }}",
+      "date"    : "{{ post.date | date: site.date.format }}",
+      "content" : "{{ post.content | strip_html | strip_newlines | remove_chars | escape }}"
   } {%- unless forloop.last -%},{%- endunless -%}
   {%- endfor -%}
 ]

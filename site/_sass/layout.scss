@@ -214,6 +214,20 @@ h1:has(+blockquote) {
   margin-bottom: 0;
 }
 
+blockquote > input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-bottom: var(--default-border-size) solid var(--default-border-color);
+  font-style: var(--default-quote-style);
+  color: var(--default-quote-color);
+  background-color: var(--default-text-background-color);
+}
+
+blockquote > input:focus {
+  outline: none;
+}
+
 .blog-post-title {
   a {
     color: var(--default-text-color);
