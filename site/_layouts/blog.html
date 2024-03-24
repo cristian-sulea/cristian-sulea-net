@@ -13,9 +13,9 @@ layout: page
 
     <blockquote class="blog-post-meta"><span>{{ post.date | date: site.date.format }}</span> •  java, xyz, etc</blockquote>
 
-    {{ post.excerpt }}
+    {{ post.excerpt | strip_html | strip_newlines | truncate: 300 }}
 
-  {%- endfor -%}
+{%- endfor -%}
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 {%- endif -%}

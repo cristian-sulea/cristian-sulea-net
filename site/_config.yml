@@ -62,8 +62,7 @@ collections:
   #  #sort_by: path
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "blog"
     values:

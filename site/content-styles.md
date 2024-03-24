@@ -122,3 +122,18 @@ lorem | lorem ipsum | lorem ipsum dolor | lorem ipsum dolor sit
 lorem ipsum dolor sit amet | lorem ipsum dolor sit amet consectetur | lorem ipsum dolor sit amet | lorem ipsum dolor sit
 lorem ipsum dolor | lorem ipsum | lorem | lorem ipsum
 lorem ipsum dolor | lorem ipsum dolor sit | lorem ipsum dolor sit amet | lorem ipsum dolor sit amet consectetur
+
+---
+
+    {{ site.collections[0].title }}
+    <br>
+    {{ site.collections[0].description }}
+
+    {% for collection in site.collections %}
+    <h2>Items from {{ collection.label }}</h2>
+    <ul>
+      {% for item in site[collection.label] reversed %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endfor %}

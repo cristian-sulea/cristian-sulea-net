@@ -1,6 +1,10 @@
 
 - https://cri.dev
 - https://gwern.net/about
+- https://stackoverflow.com/questions/31171041/listing-all-collections-in-jekyll#52219979
+- https://stackoverflow.com/questions/10218779/custom-variables-in-jekyll-front-matter
+- https://shopify.github.io/liquid/filters/sort/
+- https://weblog.west-wind.com/posts/2023/Apr/17/Preventing-iOS-Safari-Textbox-Zooming
 - 
 
 Shell
