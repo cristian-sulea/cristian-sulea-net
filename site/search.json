@@ -23,7 +23,7 @@ layout: none
   {%- for post in site.blog reversed -%}
   {
       "title"   : "{{ post.title | escape }}",
-      "desc"    : "{{ post.description | escape }}",
+      "desc"    : "{{ post.content | strip_html | strip_newlines | escape | truncate: 300 }}",
       "tags"    : "{{ post.tags | join: ', ' }}",
       "url"     : "{{ site.baseurl }}{{ post.url }}",
       "date"    : "{{ post.date | date: site.date.format }}",

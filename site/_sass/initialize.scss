@@ -19,6 +19,7 @@
   --default-link-color-visited: var(--default-link-color);
   --default-code-color: #000;
   --default-code-background-color: #EADAB9;
+  --default-code-size: 16px;
   --default-quote-color: #919191;
   --default-quote-style: italic;
   --default-border-color: #C6C6C6;
@@ -129,8 +130,6 @@ strong {
 
 pre,
 code {
-  font-family: var(--default-code-font);
-  font-size: 0.875rem;
   color: var(--default-code-color);
   background-color: var(--default-code-background-color);
   border: var(--default-border-size) solid var(--default-border-color);
@@ -138,22 +137,28 @@ code {
 }
 
 pre {
+  font-family: var(--default-code-font);
+  font-size: var(--default-code-size);
   display: block;
   overflow: auto;
-  padding: 0.875rem 0.875rem;
+  padding: var(--default-code-size) var(--default-code-size);
   overflow-x: auto;
   //box-shadow: 0 0 6px var(--default-border-color);
 }
 
+code {
+  font-family: var(--default-text-font);
+  font-size: var(--default-text-size);
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
 pre > code {
+  font-family: var(--default-code-font);
+  font-size: var(--default-code-size);
   border: 0;
   padding-left: 0;
   padding-right: 0;
-}
-
-code {
-  padding-left: 1px;
-  padding-right: 1px;
 }
 
 table {

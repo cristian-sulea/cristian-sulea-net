@@ -229,6 +229,8 @@ blockquote > input:focus {
 }
 
 .blog-post-title {
+  margin: 0;
+  line-height: 1;
   a {
     color: var(--default-text-color);
   }
@@ -241,6 +243,9 @@ blockquote > input:focus {
 }
 
 .blog-post-meta {
-  //font-size: smaller;
+  font-size: 0.75rem;
+  font-style: italic;
+  color: var(--default-quote-color);
+  //line-height: 1;
   //color: var(--default-text-color);
 }

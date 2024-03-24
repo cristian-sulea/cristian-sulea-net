@@ -7,13 +7,14 @@ layout: base
   <input type="text" id="search-input" placeholder="Type..." autofocus autocomplete="off">
 </blockquote>
 
-<ul id="search-results-container" style="min-height: 100px;"></ul>
+<div id="search-results-container" style="min-height: 100px;"></div>
 
 <script src="/assets/simple-jekyll-search.js" type="text/javascript"></script>
 <script>
   SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('search-results-container'),
+    searchResultTemplate: '<article><header><h2 class="blog-post-title"><a href="{url}">{title}</a></h2>• <time class="blog-post-meta">{date}</time></header><p>{desc}</p></article>',
     //limit: 3,
     json: '/search.json'
   })

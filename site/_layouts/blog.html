@@ -3,22 +3,31 @@ layout: page
 ---
 
 {%- if site.blog.size > 0 -%}
+
   {%- for post in site.blog reversed -%}
 
-    <h2 class="blog-post-title">
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title | escape }}
-      </a>
-    </h2>
+    <article itemscope itemtype="http://schema.org/BlogPosting">
 
-    <blockquote class="blog-post-meta"><span>{{ post.date | date: site.date.format }}</span> •  java, xyz, etc</blockquote>
+      <header>
+        <h2 itemprop="name headline" class="blog-post-title">
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h2>
+        •
+        <time itemprop="datePublished" class="blog-post-meta" datetime="{{ post.date | date_to_xmlschema }}">
+          {{ post.date | date: site.date.format }}
+        </time>
+      </header>
 
-    {{ post.excerpt | strip_html | strip_newlines | truncate: 300 }}
+      <p itemprop="description">
+        {{ post.content | strip_html | strip_newlines | truncate: 300 }}
+      </p>
 
-{%- endfor -%}
+    </article>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endfor -%}
+
+  <!--p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p-->
+
 {%- endif -%}
-
-{{ content }}
-
