@@ -1,10 +1,10 @@
 ---
-xdate: 2019-01-07
 
-title:       "Jekyll Instant Search"
-description: "A list of links with speed tests, tools and techniques to optimize page speed and the overall website performance."
+date: 2024-03-23
 
-tags: [website, jekyll, search]
+title: Jekyll Instant Search
+tags:  website, jekyll, search
+
 ---
 
 - <https://github.com/christian-fei/Simple-Jekyll-Search/?tab=readme-ov-file>

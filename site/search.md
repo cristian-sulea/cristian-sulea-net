@@ -1,9 +1,8 @@
 ---
 layout: search
 permalink: /search
+menuIndex: 900
 
 title:       "Search"
-description: "Search description..."
+xdescription: "Search description..."
 ---
-
-content - search layout test text

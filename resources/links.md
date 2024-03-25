@@ -5,6 +5,7 @@
 - https://stackoverflow.com/questions/10218779/custom-variables-in-jekyll-front-matter
 - https://shopify.github.io/liquid/filters/sort/
 - https://weblog.west-wind.com/posts/2023/Apr/17/Preventing-iOS-Safari-Textbox-Zooming
+- https://quickref.me/yaml
 - 
 
 Shell
