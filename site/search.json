@@ -4,20 +4,24 @@ layout: none
 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 [
   {%- for page in site.pages -%}
+  {%- unless page.searchExclusion and page.searchExclusion == true -%}
   {
     {%- if page.layout == "index" -%}
       "title"   : "{{ site.title | escape }}",
       "desc"    : "{{ site.description | escape }}",
       "url"     : "{{ site.baseurl }}{{ page.url }}",
+      "date"    : "{{ page.date | date: site.date.format }}",
       "content" : "{{ page.content | strip_html | strip_newlines | remove_chars | escape }}"
     {%- elsif page.title -%}
       "title"   : "{{ page.title | escape }}",
       "desc"    : "{{ page.description | escape }}",
       "tags"    : "{{ page.tags | join: ', ' }}",
       "url"     : "{{ site.baseurl }}{{ page.url }}",
+      "date"    : "{{ page.date | date: site.date.format }}",
       "content" : "{{ page.content | strip_html | strip_newlines | remove_chars | escape }}"
     {%- endif -%}
   } {%- unless forloop.last -%},{%- endunless -%}
+  {%- endunless -%}
   {%- endfor -%}
   ,
   {%- for post in site.blog reversed -%}

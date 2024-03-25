@@ -1,11 +1,15 @@
 ---
 layout: page
 permalink: /content-styles
+searchExclusion: false
 menuIndex: 800
 
-title: Content Styles
-description: This post demonstrates post content styles.
+date: 2024-03-07
+
+title:       "Content Styles"
+description: "This post demonstrates post content styles."
 ---
+
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
 

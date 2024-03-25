@@ -4,7 +4,7 @@ layout: base
 
 <h1>{{ page.title | escape }}</h1>
 <blockquote>
-  <input type="text" id="search-input" placeholder="Type..." autofocus autocomplete="off">
+  <input type="text" id="search-input" placeholder="{{ page.description | escape }}" autofocus autocomplete="off">
 </blockquote>
 
 <div id="search-results-container" style="min-height: 100px;"></div>
