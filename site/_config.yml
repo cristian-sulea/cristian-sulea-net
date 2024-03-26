@@ -15,10 +15,11 @@ copyright: >- # this means to ignore newlines until next key
   Powered by <a href="https://jekyllrb.com">Jekyll</a>
   and <a href="https://github.com/cristian-sulea/jekyll-theme-pwkbb">pwkbb</a>.
 
-social_links:
-  - { platform: linkedin, title: LinkedIn, link: "https://www.linkedin.com/in/cristiansulea" }
-  - { platform: github,   title: GitHub,   link: "https://github.com/cristian-sulea" }
-  - { platform: twitter,  title: Twitter,  link: "https://twitter.com/cristian_sulea" }
+social:
+  links:
+    - { platform: linkedin, title: LinkedIn, link: "https://www.linkedin.com/in/cristiansulea" }
+    - { platform: github,   title: GitHub,   link: "https://github.com/cristian-sulea" }
+    - { platform: twitter,  title: Twitter,  link: "https://twitter.com/cristian_sulea" }
 
 date:
   format: "%b %-d, %Y"

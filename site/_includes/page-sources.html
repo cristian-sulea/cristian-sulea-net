@@ -1,0 +1,11 @@
+{%- if page.sources -%}
+<footer>
+  <hr>
+  Sources:
+  <ul>
+    {%- for source in page.sources -%}
+    <li>{{ source | markdownify | strip_newlines | remove: '<p>' | remove: '</p>' }}</li>
+    {%- endfor -%}
+  </ul>
+</footer>
+{%- endif -%}

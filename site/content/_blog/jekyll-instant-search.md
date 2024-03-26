@@ -1,10 +1,12 @@
 ---
-
 date: 2024-03-23
 
-title: Jekyll Instant Search
-tags:  website, jekyll, search
+title: "Jekyll Instant Search"
+tags:  "website, jekyll, search"
 
+sources:
+  - "<https://github.com/christian-fei/Simple-Jekyll-Search>"
+  - "[http://en.wikipedia.org/wiki/Spring_Framework](http://en.wikipedia.org/wiki/Spring_Framework)"
 ---
 
 - <https://github.com/christian-fei/Simple-Jekyll-Search/?tab=readme-ov-file>

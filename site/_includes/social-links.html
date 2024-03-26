@@ -1,6 +1,6 @@
-{%- if site.social_links and site.social_links.size > 0 -%}
+{%- if site.social.links and site.social.links.size > 0 -%}
 <ul class="social-links-list">
-  {%- for entry in site.social_links -%}
+  {%- for entry in site.social.links -%}
   <li>
     <a rel="me" target="_blank" href="{{ entry.link }}">
       {%- include svg/{{ entry.platform }}.svg -%}<span>{{ entry.title }}</span>

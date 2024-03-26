@@ -2,31 +2,19 @@
 layout: base
 ---
 
-<article itemscope itemtype="http://schema.org/BlogPosting">
+<article>
 
   <header>
-    <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+    <h1>{{ page.title | escape }}</h1>
     <blockquote>
-      <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">
-        {{ page.date | date: site.date.format }}
-      </time>
+      <time>{{ page.date | date: site.date.format }}</time>
     </blockquote>
   </header>
 
-  <div itemprop="articleBody">
-
+  <section>
     {{ content }}
+  </section>
 
-    {% if page.resources %}
-      <hr>
-      <strong><em>Sources</em></strong>
-      <ul>
-        {% for resource in page.resources %}
-        <li>{{ resource | markdownify | strip_newlines | remove: '<p>' | remove: '</p>' }}</li>
-        {% endfor %}
-      </ul>
-    {% endif %}
-
-  </div>
+  {%- include page-sources.html -%}
 
 </article>

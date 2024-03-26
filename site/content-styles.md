@@ -8,6 +8,11 @@ date: 2024-03-07
 
 title:       "Content Styles"
 description: "This post demonstrates post content styles."
+
+sources:
+  - "<https://jekyllrb.com/>"
+  - "<https://github.com/jekyll/minima>"
+  - "<https://jekyll.github.io/minima/>"
 ---
 
 
@@ -129,17 +134,28 @@ lorem ipsum dolor sit amet | lorem ipsum dolor sit amet consectetur | lorem ipsu
 lorem ipsum dolor | lorem ipsum | lorem | lorem ipsum
 lorem ipsum dolor | lorem ipsum dolor sit | lorem ipsum dolor sit amet | lorem ipsum dolor sit amet consectetur
 
----
+Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc.
 
-    {{ site.collections[0].title }}
-    <br>
-    {{ site.collections[0].description }}
+### Collections code
 
-    {% for collection in site.collections %}
-    <h2>Items from {{ collection.label }}</h2>
-    <ul>
-      {% for item in site[collection.label] reversed %}
-      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-      {% endfor %}
-    </ul>
-    {% endfor %}
+{% highlight liquid %}
+{% raw %}
+
+{{ site.collections[0].title }}
+<br>
+{{ site.collections[0].description }}
+
+{% for collection in site.collections %}
+<h2>Items from {{ collection.label }}</h2>
+<ul>
+  {% for item in site[collection.label] reversed %}
+  <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+  {% endfor %}
+</ul>
+{% endfor %}
+
+{% endraw %}
+{% endhighlight %}
+
+Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.

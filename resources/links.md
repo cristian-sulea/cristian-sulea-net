@@ -6,6 +6,8 @@
 - https://shopify.github.io/liquid/filters/sort/
 - https://weblog.west-wind.com/posts/2023/Apr/17/Preventing-iOS-Safari-Textbox-Zooming
 - https://quickref.me/yaml
+- https://stackoverflow.com/questions/8554043/what-is-a-clearfix
+- https://www.w3schools.com/Css/css_combinators.asp
 - 
 
 Shell
