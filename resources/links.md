@@ -14,6 +14,8 @@
 - https://mademistakes.com/about/
 - https://dequeuniversity.com/rules/axe/4.8/color-contrast
 - https://stackoverflow.com/questions/51683761/how-to-fix-lighthouse-links-do-not-have-a-discernible-name
+- https://m2.material.io/inline-tools/color/
+- https://stackoverflow.com/questions/5265544/intellij-shortcut-to-convert-code-to-upper-or-lower-case
 - 
 
 Shell
