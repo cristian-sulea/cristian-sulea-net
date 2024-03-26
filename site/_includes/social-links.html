@@ -2,7 +2,7 @@
 <ul class="social-links-list">
   {%- for entry in site.social.links -%}
   <li>
-    <a rel="me" target="_blank" href="{{ entry.link }}">
+    <a rel="me" target="_blank" href="{{ entry.link }}" aria-label="{{ entry.title }}">
       {%- include svg/{{ entry.platform }}.svg -%}<span>{{ entry.title }}</span>
     </a>
   </li>

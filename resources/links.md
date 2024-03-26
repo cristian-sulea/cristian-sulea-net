@@ -8,6 +8,12 @@
 - https://quickref.me/yaml
 - https://stackoverflow.com/questions/8554043/what-is-a-clearfix
 - https://www.w3schools.com/Css/css_combinators.asp
+- https://shopify.github.io/liquid/tags/template/
+- https://jsonld.com/website/
+- https://json-ld.org/playground/
+- https://mademistakes.com/about/
+- https://dequeuniversity.com/rules/axe/4.8/color-contrast
+- https://stackoverflow.com/questions/51683761/how-to-fix-lighthouse-links-do-not-have-a-discernible-name
 - 
 
 Shell

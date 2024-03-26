@@ -7,7 +7,7 @@ author:
   name: Cristian Sulea
   url: https://cristian.sulea.net
 
-url: "" # the base hostname & protocol, e.g. http://example.com
+url: "http://cristian-sulea.github.io" # the base hostname & protocol, e.g. http://example.com
 baseurl: "" # the subpath, e.g. /blog
 
 copyright: >- # this means to ignore newlines until next key
@@ -25,9 +25,9 @@ date:
   format: "%b %-d, %Y"
 
 #theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+#plugins:
+#  - jekyll-feed
+#  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
