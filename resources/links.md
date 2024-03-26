@@ -16,6 +16,14 @@
 - https://stackoverflow.com/questions/51683761/how-to-fix-lighthouse-links-do-not-have-a-discernible-name
 - https://m2.material.io/inline-tools/color/
 - https://stackoverflow.com/questions/5265544/intellij-shortcut-to-convert-code-to-upper-or-lower-case
+- https://ogp.me/
+- https://htaccessbook.com/htaccess-redirect-https-www/
+- https://stackoverflow.com/questions/234723/generic-htaccess-redirect-www-to-non-www
+- 
+
+Site checkers:
+- https://nibbler.insites.com/en
+- https://en.ryte.com/website-checker/
 - 
 
 Shell

@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /content-styles
+permalink: /content-styles/
 searchExclusion: false
 menuIndex: 800
 

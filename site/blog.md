@@ -1,6 +1,6 @@
 ---
 layout: blog
-permalink: /blog
+permalink: /blog/
 searchExclusion: true
 menuIndex: 100
 

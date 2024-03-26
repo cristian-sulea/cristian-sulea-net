@@ -1,6 +1,6 @@
 ---
 layout: search
-permalink: /search
+permalink: /search/
 searchExclusion: true
 menuIndex: 900
 

@@ -5,6 +5,12 @@
   {%- assign metaTitle = page.title | append: " - " | append: site.title | escape -%}
 {%- endif -%}
 
+{%- if page.description -%}
+{%- assign metaDescription = description | escape -%}
+{%- else -%}
+{%- assign metaDescription = page.content | strip_html | strip_newlines | escape | truncate: 155 -%}
+{%- endif -%}
+
 {%- assign metaDescription = page.content | strip_html | strip_newlines | escape | truncate: 155 -%}
 {%- assign authorName = page.author.name | default: site.author.name | escape -%}
 {%- assign authorURL = page.author.url | default: site.author.url | escape -%}
