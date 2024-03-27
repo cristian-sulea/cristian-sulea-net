@@ -6,12 +6,11 @@
 {%- endif -%}
 
 {%- if page.description -%}
-{%- assign metaDescription = description | escape -%}
+  {%- assign metaDescription = page.description | escape -%}
 {%- else -%}
-{%- assign metaDescription = page.content | strip_html | strip_newlines | escape | truncate: 155 -%}
+  {%- assign metaDescription = page.content | strip_html | strip_newlines | escape | truncate: 155 -%}
 {%- endif -%}
 
-{%- assign metaDescription = page.content | strip_html | strip_newlines | escape | truncate: 155 -%}
 {%- assign authorName = page.author.name | default: site.author.name | escape -%}
 {%- assign authorURL = page.author.url | default: site.author.url | escape -%}
 {%- assign canonicalURL = page.url | absolute_url | replace: 'index.html', '' -%}

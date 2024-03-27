@@ -1,6 +1,13 @@
 Mac shortcuts:
 https://support.apple.com/en-us/HT201236
 
+https://alex.pearwin.com/
+
+https://allejo.io/blog/a-jekyll-toc-without-plugins-or-javascript/
+
+https://www.freecodecamp.org/news/what-does-junior-senior-expert-lead-experienced-professional-and-specialist-software-c36563e946e2/
+https://adityatelange.github.io/hugo-index/new-post-3/
+
 - https://cri.dev
 - https://gwern.net/about
 - https://stackoverflow.com/questions/31171041/listing-all-collections-in-jekyll#52219979

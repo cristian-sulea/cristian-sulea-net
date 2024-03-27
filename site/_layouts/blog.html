@@ -7,9 +7,13 @@ layout: base
   <header>
     <h1>{{ page.title | escape }}</h1>
     <blockquote>
-      {{ page.description | escape }}
+      {{- page.description | escape -}}
     </blockquote>
   </header>
+
+  {{ content }}
+
+  <hr>
 
   {%- if site.blog.size > 0 -%}
   {%- for post in site.blog reversed -%}
@@ -22,7 +26,7 @@ layout: base
           {{ post.title | escape }}
         </a>
       </h2>
-      • <time>{{ post.date | date: site.date.format }}</time>
+      • <time class="blog-post-meta">{{ post.date | date: site.date.format }}</time>
     </header>
 
     <p>{{ post.content | strip_html | strip_newlines | truncate: 300 }}</p>

@@ -4,10 +4,10 @@ layout: base
 
 <h1>{{ page.title | escape }}</h1>
 <blockquote>
-  <input type="text" id="search-input" placeholder="{{ page.description | escape }}" autofocus autocomplete="off">
+  <input type="text" id="search-input" aria-label="{{ page.placeholder | escape }}" placeholder="{{ page.placeholder | escape }}" autofocus autocomplete="off">
 </blockquote>
 
-<div id="search-results-container" style="min-height: 100px;"></div>
+<div id="search-results-container" style="min-height: 10rem;"></div>
 
 <script src="/assets/simple-jekyll-search.js" type="text/javascript"></script>
 <script>
@@ -15,7 +15,6 @@ layout: base
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('search-results-container'),
     searchResultTemplate: '<article><header><h2 class="blog-post-title"><a href="{url}">{title}</a></h2>• <time class="blog-post-meta">{date}</time></header><p>{desc}</p></article>',
-    //limit: 3,
     json: '/search.json'
   })
 </script>

@@ -3,6 +3,11 @@ layout: index
 searchExclusion: true
 ---
 
+
+With over 24 years of building software, I guess one could say I'm a senior.
+And with my experience and understanding of how software is used to solve business problems, hopefully an expert as well.
+
+
 ## Experience
 
 ### Senior Java Developer (& Software Architect)
@@ -63,6 +68,7 @@ Craiova, Romania\
 Craiova, Romania\
 *January 2000 - January 2001 (1 year 1 month)*
 
+
 ## Skills & Expertise
 
 ### Technical skills and competences
@@ -97,6 +103,7 @@ Craiova, Romania\
 - MySQL
 - DB2
 - Linux (basic)
+
 
 ## Education
 

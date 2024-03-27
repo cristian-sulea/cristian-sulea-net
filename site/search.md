@@ -5,5 +5,6 @@ searchExclusion: true
 menuIndex: 900
 
 title:       "Search"
-description: "Type..."
+description: "Search the entire site..."
+placeholder: "Type..."
 ---

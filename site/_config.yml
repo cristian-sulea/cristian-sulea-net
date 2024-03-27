@@ -68,6 +68,10 @@ defaults:
       type: "blog"
     values:
       layout: "post"
+#  - scope:
+#      path: "search"
+#    values:
+#      description: "Search"
 
 #defaults:
 #  - scope:
