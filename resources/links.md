@@ -1,3 +1,5 @@
+Mac shortcuts:
+https://support.apple.com/en-us/HT201236
 
 - https://cri.dev
 - https://gwern.net/about
@@ -20,6 +22,10 @@
 - https://htaccessbook.com/htaccess-redirect-https-www/
 - https://stackoverflow.com/questions/234723/generic-htaccess-redirect-www-to-non-www
 - 
+
+www to https redirect:
+https://printedcss.com
+
 
 Site checkers:
 - https://nibbler.insites.com/en

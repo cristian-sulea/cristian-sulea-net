@@ -1,3 +1,21 @@
 @media print {
 
+  :root {
+    --default-text-size: 16px;
+    --default-text-weight: 300;
+  }
+
+  html * {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    //font-weight: normal !important;
+  }
+
+  body > header,
+  body > footer,
+  .social-links-list {
+    display: none !important;
+    border: 0;
+    padding: 0;
+  }
 }
