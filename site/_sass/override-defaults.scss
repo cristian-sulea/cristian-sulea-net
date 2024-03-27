@@ -1,2 +1,26 @@
 /* Placeholder to allow the override of the default variables. */
 
+//@media print {
+.social-links-list,
+  body > header,
+  body > footer {
+    display: none !important;
+    border: 0;
+    padding: 0;
+  }
+//}
+
+html * {
+		background-color: #ffffff !important;
+		color: #000000 !important;
+		//border: 0;
+		//font-size: 24px !important;
+		font-weight: normal !important;
+		//border: 0 !important;
+}
+
+
+:root {
+  --default-text-size: 16px;
+  //--default-text-weight: 300;
+}
