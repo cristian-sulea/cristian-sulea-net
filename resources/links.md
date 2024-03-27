@@ -30,6 +30,10 @@ https://adityatelange.github.io/hugo-index/new-post-3/
 - https://stackoverflow.com/questions/234723/generic-htaccess-redirect-www-to-non-www
 - 
 
+- <https://stackoverflow.com/questions/17118551/generating-a-list-of-pages-not-posts-in-a-given-category>
+- - <https://minima.jakelee.co.uk/search/>
+
+
 www to https redirect:
 https://printedcss.com
 

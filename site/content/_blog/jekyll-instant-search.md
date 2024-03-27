@@ -6,109 +6,151 @@ tags:  "website, jekyll, search"
 
 sources:
   - "<https://github.com/christian-fei/Simple-Jekyll-Search>"
-  - "[http://en.wikipedia.org/wiki/Spring_Framework](http://en.wikipedia.org/wiki/Spring_Framework)"
+  - "<https://kevquirk.com/how-to-add-search-jekyll>"
+  - "<https://blog.webjeda.com/instant-jekyll-search/>"
 ---
 
-- <https://github.com/christian-fei/Simple-Jekyll-Search/?tab=readme-ov-file>
-- <https://kevquirk.com/how-to-add-search-jekyll>
-- <https://blog.webjeda.com/instant-jekyll-search/>
-- <https://nachtimwald.com/2020/06/10/full-text-search-with-jekyll/>
-- <https://stackoverflow.com/questions/17118551/generating-a-list-of-pages-not-posts-in-a-given-category>
 
-- <https://jekyllcodex.org/without-plugin/search-lunr/>
-- <https://jekyllcodex.org/search/>
+To add search functionality to a static website (such as one created with Jekyll),
+a simple and fast solution is to create a local index and then search our keywords in it using a JavaScript.
+The simplest instant search available for Jekyll so far is Simple Jekyll Search developed by Christian Fei.
 
-- <https://minima.jakelee.co.uk/search/>
+How it works:
+1. all kinds of metadata from site pages is pulled;
+2. and compiled into the `search.json` file  at build time;
+3. and then a little bit of JavaScript parses that file for the searched keywords;
+4. which is then instantly displayed on-screen.
 
-A list of links with speed tests, tools and techniques to optimize page speed and the overall website performance.
-Managing page speed (the speed at which the website loads and reacts to user input) can drastically improve user experience (UX) and search engine optimization (SEO).
+## Create the data file
 
-## Speed
+Create the `search.json` file in the **root** of the Jekyll website.
 
-- [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
-  <br>
-  Analyzes the content of a web page, then generates suggestions to make that page faster.
+```json
+{%- raw -%}
+---
+layout: none
+---
+[
+  {% for post in site.posts %}
+    {
+      "title"    : "{{ post.title | escape }}",
+      "desc"     : "{{ post.content | strip_html | strip_newlines | escape | truncate: 300 }}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "date"     : "{{ post.date }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
+{% endraw %}
+```
 
-- [GTmetrix](https://gtmetrix.com/)
-  <br>
-  Gives insights on how well the site loads and provides actionable recommendations on how to optimize it.
+If you try it on a local machine, you can check `search.json` in the `_site` folder to see if all the values are generated or not.
 
-- [Pingdom Website Speed Test](https://tools.pingdom.com/)
-  <br>
-  Enter a URL to test the page load time, analyze it, and find bottlenecks.
+The output would look something like this:
 
-- [KeyCDN Website Speed Test](https://tools.keycdn.com/speed)
-  <br>
-  A page speed test that includes a waterfall breakdown and the website preview.
-
-- [Varvy SEO tool](https://varvy.com/)
-  <br>
-  See how well a page follows the Google guidelines.
-
-
-## Validation
-
-- [W3C Markup Validation Service (HTML Validator)](https://validator.w3.org/)
-  <br>
-  Checks the markup (HTML, XHTML, ...) of Web documents.
-
-- [W3C CSS Validation Service (CSS Validator)](https://jigsaw.w3.org/css-validator/)
-  <br>
-  Checks Cascading Style Sheets (CSS) and (X)HTML documents with style sheets.
-
-- [W3C Feed Validation Service (Feed Validator)](https://validator.w3.org/feed/)
-  <br>
-  Checks the syntax of syndicated feeds (Atom or RSS feeds).
-
-- [PowerMapper](https://www.powermapper.com/products/sortsite/try/)
-  <br>
-  Checks any website for broken links, spelling errors, browser compatibility, accessibility, web standards validation and search engine issues.
-
-- [IONOS Website Checker](https://www.ionos.com/tools/website-checker)
-  <br>
-  Reviews the four most important aspects for your website's online success: website presentation, search engine visibility, website security, website's performance.
+```json
+[
+  {
+    "title"   : "Website Validation, Speed and Performance Optimization",
+    "desc"    : "A list of links with speed tests, tools and techniques to optimize page speed and the overall website performance.Managing page speed (the speed at which the website loads and reacts to user input) can drastically improve user experience (UX) and search engine optimization (SEO).Speed      Google...",
+    "url"     : "/blog/website-validation-speed-performance-optimization/",
+    "date"    : "Jan 7, 2019"
+  },{
+    "title"   : "Spring - Quick start tutorial",
+    "desc"    : "The Spring Framework is an open source application framework and inversion of control container for the Java platform.The framework’s core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE platform.Although the framework doe...",
+    "url"     : "/blog/spring-quick-start-tutorial/",
+    "date"    : "May 27, 2013"
+  }
+]
+```
 
 
-## Test Tools
+## Add the JavaScript & HTML Form
 
-- [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly)
-  <br>
-  Tests how easily a visitor can use your page on a mobile device.
+The instructions on Chris's repository recommend pulling the JS from NPM's CDN via a <script> element
+in the <head> of the site's default layout. But:
+1. we don't want to load a JavaScript on every single page if it's only needed on one (search) page;
+2. we also dont want to add any third party requests on page load.
 
-- [Find Broken Links, Redirects and Site Crawl Tool](https://www.internetmarketingninjas.com/seo-tools/google-sitemap-generator/)
-  <br>
-  Check All the Links on a Website
+So instead download the search script
+([GitHub direct link](https://raw.githubusercontent.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.js))
+and save it as `search-script.js` (or any other name you prefer).
 
-- [Broken Link Checker](https://www.brokenlinkcheck.com/broken-links.php)
-  <br>
-  Scans webpages for dead hyperlinks.
+Then, inside the '_includes' folder, create another file named `search-form.html` (or any other name you prefer) with
+the following content:
 
-- [W3C Link Checker](https://validator.w3.org/checklink)
-  <br>
-  Checks your web pages for broken links.
+```html
+<!-- Html Elements for Search -->
+<div id="search-container">
+<input type="text" id="search-input" placeholder="Search...">
+<ul id="results-container"></ul>
+</div>
+
+<!-- Script pointing to search-script.js -->
+<script src="/path/to/search-script.js" type="text/javascript"></script>
+
+<!-- Configuration -->
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json'
+  })
+</script>
+```
+
+What this code does is call the `search-script.js` file,
+add the actual search field, and finally configure the results that are displayed.
+
+Since this is in the '_includes' folder and contains everything needed to perform a search,
+it can be added anywhere on the page knowing that the JS will only be loaded where it is needed.
+
+To embed the search field into any page, simply add the following code wherever you want it to appear:
+
+```html
+{% raw %}
+{% include search-form.html %}
+{% endraw %}
+```
 
 
-## Other Tools
+## Customization
 
-- [CSS Sprites Generator #1](https://www.toptal.com/developers/css/sprite-generator/)
-- [CSS Sprites Generator #2](https://www.giftofspeed.com/sprite-generator/)
+The default Jekyll search result will be in this format:
 
-- [Base 64 Image Encoder](https://varvy.com/tools/base64/)
-  <br>
-  Create data streams for embedding images.
+```html
+<li><a href="{url}">{title}</a></li>
+```
 
-- [TinyJPG](https://tinyjpg.com/)
-  <br>
-  Compress JPEG images intelligently.
+But it can be changed in the configuration script:
 
-- [HTML Minifier](https://kangax.github.io/html-minifier/)
-  <br>
-  A highly configurable, JavaScript-based HTML minifier.
+```html
+searchResultTemplate: '<div><a href="{url}"><h1>{title}</h1></a><span>{date}</span></div>'
+```
 
-- [HTTP Header Check](https://tools.keycdn.com/curl)
-  <br>
-  Online curl test to analyze HTTP Response Headers.
+The {url}, {title}, {date} are the respective data found in the JSON file.
 
-- [Easy Counter](https://www.easycounter.com/)
-  <br>
-  Get a website analyzed and accurately described in terms of WHOIS record, traffic stats, metadata, safety, subdomains, server details and more.
+A custom message can also be displayed when no result is found by adding this line to the configuration script:
+
+```html
+noResultsText ("No result found!")
+```
+
+There are many other configurations that can be tweaked, for example:
+
+```html
+<!-- Configuration -->
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    limit: 10,
+    fuzzy: false
+  })
+</script>
+```
+
+Visit the [GitHub / Simple-Jekyll-Search](https://github.com/christian-fei/Simple-Jekyll-Search) repository
+to learn more.
