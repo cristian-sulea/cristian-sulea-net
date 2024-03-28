@@ -23,7 +23,7 @@ How it works:
 
 ## Create the data file
 
-Create the `search.json` file in the **root** of the Jekyll website.
+Create the `search.json` file in the **root of the Jekyll website**.
 
 ```json
 {%- raw -%}
@@ -66,8 +66,8 @@ The output would look something like this:
 
 ## Add the JavaScript & HTML Form
 
-The instructions on Chris's repository recommend pulling the JS from NPM's CDN via a <script> element
-in the <head> of the site's default layout. But:
+The instructions on Chris's repository recommend pulling the JS from NPM's CDN via a `<script>` element
+in the `<head>` of the site's default layout. But:
 1. we don't want to load a JavaScript on every single page if it's only needed on one (search) page;
 2. we also dont want to add any third party requests on page load.
 
@@ -75,7 +75,7 @@ So instead download the search script
 ([GitHub direct link](https://raw.githubusercontent.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.js))
 and save it as `search-script.js` (or any other name you prefer).
 
-Then, inside the '_includes' folder, create another file named `search-form.html` (or any other name you prefer) with
+Then, inside the `_includes` folder, create another file named `search-form.html` (or any other name you prefer) with
 the following content:
 
 ```html
@@ -101,7 +101,7 @@ the following content:
 What this code does is call the `search-script.js` file,
 add the actual search field, and finally configure the results that are displayed.
 
-Since this is in the '_includes' folder and contains everything needed to perform a search,
+Since this is in the `_includes` folder and contains everything needed to perform a search,
 it can be added anywhere on the page knowing that the JS will only be loaded where it is needed.
 
 To embed the search field into any page, simply add the following code wherever you want it to appear:

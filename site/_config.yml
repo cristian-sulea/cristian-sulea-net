@@ -7,7 +7,7 @@ author:
   name: Cristian Sulea
   url: https://cristian.sulea.net
 
-url: "http://cristian-sulea.github.io" # the base hostname & protocol, e.g. http://example.com
+url: "http://tests.sulea.net" # the base hostname & protocol, e.g. http://example.com
 baseurl: "" # the subpath, e.g. /blog
 
 copyright: >- # this means to ignore newlines until next key
