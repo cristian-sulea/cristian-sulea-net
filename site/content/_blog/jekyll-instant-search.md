@@ -107,7 +107,7 @@ it can be added anywhere on the page knowing that the JS will only be loaded whe
 To embed the search field into any page, simply add the following code wherever you want it to appear:
 
 ```html
-{% raw %}
+{%- raw -%}
 {% include search-form.html %}
 {% endraw %}
 ```

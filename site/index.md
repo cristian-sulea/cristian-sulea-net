@@ -5,7 +5,7 @@ searchExclusion: true
 
 
 With over 24 years of building software, I guess one could say I'm a senior.
-And with my experience and understanding of how software is used to solve business problems, hopefully an expert as well.
+And with the experience and understanding of how software is used to solve business problems, hopefully an expert as well.
 
 
 ## Experience

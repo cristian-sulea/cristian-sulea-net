@@ -19,7 +19,8 @@
   --default-link-color-visited: var(--default-link-color);
   --default-code-color: #000;
   --default-code-background-color: #EADAB9;
-  --default-code-size: 16px;
+  --default-code-size: 15px;
+  --default-code-line-height: 1.2;
   --default-quote-color: #727272;
   --default-quote-style: italic;
   --default-border-color: #C2C2C2;
@@ -68,6 +69,10 @@ body {
 
 body > header {
   margin-bottom: 1rem;
+}
+
+h1 {
+  line-height: 1;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -139,16 +144,16 @@ code {
 pre {
   font-family: var(--default-code-font);
   font-size: var(--default-code-size);
+  line-height: var(--default-code-line-height);
   display: block;
   overflow: auto;
-  padding: var(--default-code-size) var(--default-code-size);
+  padding: var(--default-border-size-bold) var(--default-border-size-bold);
   overflow-x: auto;
-  //box-shadow: 0 0 6px var(--default-border-color);
 }
 
 code {
   font-family: var(--default-text-font);
-  font-size: var(--default-text-size);
+  font-family: var(--default-text-size);
   padding-left: 1px;
   padding-right: 1px;
 }
@@ -156,6 +161,7 @@ code {
 pre > code {
   font-family: var(--default-code-font);
   font-size: var(--default-code-size);
+  line-height: var(--default-code-line-height);
   border: 0;
   padding-left: 0;
   padding-right: 0;
