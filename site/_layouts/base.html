@@ -9,7 +9,7 @@
       <div class="site-wrapper">
 
         {%- if page.layout != "index" -%}
-        <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+        <a class="site-title" href="{{ "/" | relative_url }}">{{ site.url | remove: 'http://' }}</a>
         {%- endif -%}
 
         <nav class="site-nav">
