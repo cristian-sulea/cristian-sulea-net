@@ -1,9 +1,6 @@
-FROM ruby:3.1-slim-bullseye as jekyll
+FROM alpine
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    build-essential \
-    git \
-    && rm -rf /var/lib/apt/lists/*
+RUN apk --no-cache add ca-certificates openssh
 
 # used in the jekyll-server image, which is FROM this image
 COPY docker/create-image-jekyll-serve-entrypoint.sh /usr/local/bin/
