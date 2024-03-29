@@ -135,7 +135,7 @@ code {
   color: var(--default-code-color);
   background-color: var(--default-code-background-color);
   border: var(--default-border-size) solid var(--default-border-color);
-  border-radius: var(--default-border-radius);
+//   border-radius: var(--default-border-radius);
 }
 
 pre {
@@ -143,9 +143,9 @@ pre {
   font-size: var(--default-code-size);
   line-height: var(--default-code-line-height);
   display: block;
-  overflow: auto;
-  padding: 1em 1em;
   overflow-x: auto;
+  padding: var(--default-border-size-bold);
+  border-left-width: var(--default-border-size-bold);
 }
 
 code {
@@ -153,6 +153,7 @@ code {
   font-family: var(--default-text-size);
   padding-left: 1px;
   padding-right: 1px;
+  white-space: nowrap;
 }
 
 pre > code {
@@ -162,12 +163,14 @@ pre > code {
   border: 0;
   padding-left: 0;
   padding-right: 0;
+  white-space: pre;
 }
 
 table {
   width: 100%;
   text-align: left;
   border: var(--default-border-size) solid var(--default-border-color);
+  border-top-width: var(--default-border-size-bold);
   border-collapse: collapse;
 }
 table th, table td {
@@ -199,19 +202,5 @@ textarea {
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
-  }
-}
-
-@media (max-width: 600px) {
-
-  h1 { font-size: 2rem; font-weight: var(--default-headings-weight); }
-  h2 { font-size: 1.5rem; }
-  h3 { font-size: 1.3rem; }
-  h4 { font-size: 1.2rem; }
-  h5 { font-size: 1.1rem; }
-  h6 { font-size: 1rem; }
-
-  pre {
-    padding: 0;
   }
 }
