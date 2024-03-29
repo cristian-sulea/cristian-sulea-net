@@ -24,3 +24,4 @@ mirror --delete -P 10 /site/_site/ / --reverse;
 ls;
 exit;
 EOF
+
