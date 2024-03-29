@@ -71,12 +71,9 @@ body > header {
   margin-bottom: 1rem;
 }
 
-h1 {
-  line-height: 1;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-weight: var(--default-headings-weight);
+  line-height: 1;
 }
 
 h1 { font-size: 3rem; font-weight: calc(var(--default-headings-weight) - 100); }

@@ -10,4 +10,4 @@ description: "An archive of my personal knowledge base (created and saved as a b
 
 
 Welcome and I hope you find what you're looking for.
-While I mainly build it for myself, I hope that some of what I collect will be useful for others.
+While I build it mainly for myself, I hope that some of what I collect will be useful to others too.
