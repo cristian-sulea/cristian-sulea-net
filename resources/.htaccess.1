@@ -1,4 +1,8 @@
+
 RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^www\.tests\.sulea\.net [NC]
+RewriteRule ^(.*)$ http://tests.sulea.net/$1 [L,R=301]
 
 RewriteCond %{HTTPS} off
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

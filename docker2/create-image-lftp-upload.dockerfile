@@ -1,16 +1,26 @@
-FROM alpine
 
-RUN apk --no-cache add ca-certificates openssh
 
-# used in the jekyll-server image, which is FROM this image
-COPY docker/create-image-jekyll-serve-entrypoint.sh /usr/local/bin/
+docker run -d --entrypoint watch --name upload-tests -v ${PWD}/../site/_site:/site alpine "date"
 
-RUN gem update --system && gem install jekyll && gem cleanup
 
-EXPOSE 4000
+docker run -d --entrypoint watch --name upload-tests -v /Users/cristi/IdeaProjects/cristian-sulea-net/site:/site alpine "date"
 
-WORKDIR /site
+docker exec -it container-name sh
 
-ENTRYPOINT [ "jekyll" ]
+apk --no-cache add lftp
 
-CMD [ "--help" ]
+lftp ftp.sulea.net
+
+login cristi@tests.sulea.net c@tsn/1
+
+set ssl:verify-certificate false
+
+mirror --delete -P 10 /site/_site/ / --reverse
+
+lftp -u "cristi@tests.sulea.net","c@tsn/1" ftp.sulea.net <<EOF
+set ssl:verify-certificate false;
+ls;
+mirror --delete -P 10 /site/_site/ / --reverse;
+ls;
+exit;
+EOF
