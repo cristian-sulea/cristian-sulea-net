@@ -25,7 +25,7 @@ How it works:
 
 Create the `search.json` file in the **root of the Jekyll website**.
 
-```json
+```liquid
 {%- raw -%}
 ---
 layout: none
@@ -106,7 +106,7 @@ it can be added anywhere on the page knowing that the JS will only be loaded whe
 
 To embed the search field into any page, simply add the following code wherever you want it to appear:
 
-```html
+```liquid
 {%- raw -%}
 {% include search-form.html %}
 {% endraw %}
@@ -131,8 +131,8 @@ The {url}, {title}, {date} are the respective data found in the JSON file.
 
 A custom message can also be displayed when no result is found by adding this line to the configuration script:
 
-```html
-noResultsText ("No result found!")
+```js
+noResultsText ('No result found!')
 ```
 
 There are many other configurations that can be tweaked, for example:
