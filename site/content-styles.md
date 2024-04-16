@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /content-styles/
-searchExclusion: false
+searchExclusion: true
 menuIndex: 800
 
 date: 2024-03-07

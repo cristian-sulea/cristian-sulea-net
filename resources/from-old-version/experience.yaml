@@ -1,0 +1,64 @@
+
+title: Experience
+
+otherRolesTitle:      Other roles
+otherActivitiesTitle: Other activities and responsibilities
+
+positions:
+
+  - title: Senior Java Developer (& Software Architect)
+    company: PSS Prosoft Solutions
+    period: February 2008 - Present
+    location: Bucharest, Romania
+    otherRoles:
+      - Technical Lead
+      - Development Lead
+    otherActivities:
+      - analysis and design for new projects
+      - analysis and integration for the new features and change requests for current projects
+      - develop and manage pilot projects
+      - develop and manage prototype projects to test the integration of various technologies
+      - technical proposals
+      - performance improvements
+
+  - title: Senior Java Developer
+    company: Entrust
+    period: July 2007 - February 2008 (8 months)
+    location: Craiova, Romania
+    otherRoles:
+      - Firm Administrator (and Partner)
+      - Technical Lead
+      - Development Lead
+    otherActivities:
+      - analysis and design for new projects
+      - analysis and integration for the new features and change requests for current projects
+
+  - title: Senior Java Developer
+    company: echoSoft
+    period: May 2005 - July 2007 (2 years 3 months)
+    location: Craiova, Romania
+    otherRoles:
+      - Firm Administrator (and Owner)
+      - Technical Lead
+      - Development Lead
+    otherActivities:
+      - analysis and design for new projects
+      - analysis and integration for the new features and change requests for current projects
+      - develop and manage pilot projects
+      - develop and manage prototype projects to test the integration of various technologies
+      - technical proposals
+
+  - title: Java Developer
+    company: ITtrading S.r.l.
+    period: June 2003 - May 2005 (2 years)
+    location: Torino, Italy
+
+  - title: Java Developer
+    company: Blue Software
+    period: January 2001 - June 2003 (2 years 6 months)
+    location: Craiova, Romania
+
+  - title: Network Administrator
+    company: Ritz
+    period: January 2000 - January 2001 (1 year 1 month)
+    location: Craiova, Romania

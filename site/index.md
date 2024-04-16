@@ -1,6 +1,55 @@
 ---
 layout: index
 searchExclusion: true
+
+languages:
+  - title: English
+    level: professional working proficiency
+  - title: Italian
+    level: limited working proficiency
+
+educations:
+  - school: Facultatea de Matematică și Informatică
+    degree: Software Engineer
+    period: 2000 - 2004
+  - school: Facultatea de Automatică și Calculatoare
+    degree: Computer Science
+    period: 1998 - 2000
+  - school: Liceul de Informatică "Ștefan Odobleja"
+    degree: Programmer Analyst
+    period: 1994 - 1998
+
+skills:
+  - Subversion
+  - Git, 5
+  - Java, 9
+  - Docker, 4
+  - CI, 3
+  - Spring, 5
+  - Hibernate, 2
+  - SQL, 6
+  - JUnit, 5
+  - Log4j, 3
+  - Apache Commons, 5
+  - XStream
+  - Swing
+  - XML
+  - HTML, 5
+  - CSS, 6
+  - JavaScript, 4
+  - PHP, 4
+  - Eclipse, 7
+  - IntelliJ IDEA, 4
+  - Maven
+  - Ant
+  - IBM Rational
+  - WebSphere
+  - Tomcat
+  - Jetty
+  - MySQL
+  - DB2
+  - Linux
+  - MacOS
 ---
 
 
@@ -13,12 +62,13 @@ And with the experience and understanding of how software is used to solve busin
 ### Senior Java Developer (& Software Architect)
 **PSS Prosoft Solutions**\
 Bucharest, Romania\
-*February 2008 - Present*
+*February 2008 - November 2021 (13 years 3 months)*
 
 Other roles:
 - Technical Lead
 - Development Lead
-  Other activities and responsibilities:
+
+Other activities and responsibilities:
 - analysis and design for new projects
 - analysis and integration for the new features and change requests for current projects
 - develop and manage pilot projects
@@ -35,7 +85,8 @@ Other roles:
 - Firm Administrator (and Partner)
 - Technical Lead
 - Development Lead
-  Other activities and responsibilities:
+
+Other activities and responsibilities:
 - analysis and design for new projects
 - analysis and integration for the new features and change requests for current projects
 
@@ -48,15 +99,17 @@ Other roles:
 - Firm Administrator (and Owner)
 - Technical Lead
 - Development Lead
-  Other activities and responsibilities:
+
+Other activities and responsibilities:
 - analysis and design for new projects
 - analysis and integration for the new features and change requests for current projects
 - develop and manage pilot projects
 - develop and manage prototype projects to test the integration of various technologies
 - technical proposals
-  Java Developer
-  ITtrading S.r.l. | Torino, Italy
-  June 2003 - May 2005 (2 years)
+
+### Java Developer
+ITtrading S.r.l. | Torino, Italy
+June 2003 - May 2005 (2 years)
 
 ### Java Developer
 **Blue Software**\
@@ -67,42 +120,6 @@ Craiova, Romania\
 **Ritz**\
 Craiova, Romania\
 *January 2000 - January 2001 (1 year 1 month)*
-
-
-## Skills & Expertise
-
-### Technical skills and competences
-
-- Software Design
-- Software Development
-- Software Engineering
-- Spring
-- Hibernate
-- SQL
-- JUnit
-- Log4j
-- Apache Commons
-- XStream
-- Swing
-- XML
-- HTML
-- CSS
-- JavaScript
-- PHP
-
-### Computer skills and competences
-
-- Eclipse
-- Maven
-- SVN
-- Ant
-- IBM Rational
-- WebSphere
-- Tomcat
-- Jetty
-- MySQL
-- DB2
-- Linux (basic)
 
 
 ## Education

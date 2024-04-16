@@ -5,6 +5,7 @@ title:       "Website Validation, Speed and Performance Optimization"
 tags: [website, test, tools]
 ---
 
+
 A list of links with speed tests, tools and techniques to optimize page speed and the overall website performance.
 Managing page speed (the speed at which the website loads and reacts to user input) can drastically improve user experience (UX) and search engine optimization (SEO).
 
