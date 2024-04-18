@@ -2,25 +2,8 @@
 layout: index
 searchExclusion: true
 
-languages:
-  - title: English
-    level: professional working proficiency
-  - title: Italian
-    level: limited working proficiency
-
-educations:
-  - school: Facultatea de Matematică și Informatică
-    degree: Software Engineer
-    period: 2000 - 2004
-  - school: Facultatea de Automatică și Calculatoare
-    degree: Computer Science
-    period: 1998 - 2000
-  - school: Liceul de Informatică "Ștefan Odobleja"
-    degree: Programmer Analyst
-    period: 1994 - 1998
-
 skills:
-  - Subversion
+  - Subversion, 1
   - Git, 5
   - Java, 9
   - Docker, 4

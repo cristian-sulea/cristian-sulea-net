@@ -1,27 +1,2 @@
 /* Placeholder to allow the override of the default styles or defining custom new ones. */
 
-.word-cloud {
-
-// border-width: 1px;
-// border-style: solid;
-
-  display: flex;
-  align-items: center;
-//   justify-content: space-between;
-
-  flex-wrap: wrap;
-
-    //background-color: var(--default-code-background-color);
-    border: 0 solid var(--default-border-color);
-    border-left-width: var(--default-border-size-bold);
-//     margin-left: var(--default-border-size-bold);
-    //padding:0;
-    padding-left: var(--default-border-size-bold);
-
-li {
-  padding-right: 1rem;
-// padding-left: 1rem;
-  list-style-type: none;
-}
-}
-

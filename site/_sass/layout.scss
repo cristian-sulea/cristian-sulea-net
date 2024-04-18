@@ -267,6 +267,50 @@ blockquote > input:focus {
 }
 
 //
+// word cloud
+
+.word-cloud {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+
+  border: var(--default-border-size) solid var(--default-border-color);
+  border-left-width: var(--default-border-size-bold);
+  padding-left: var(--default-border-size-bold);
+
+  li {
+    padding-right: 1rem;
+    list-style-type: none;
+  }
+}
+
+.word-cloud-w0 { font-size: 1rem; }
+.word-cloud-w1 { font-size: 1.05rem; }
+.word-cloud-w2 { font-size: 1.10rem; }
+.word-cloud-w3 { font-size: 1.15rem; }
+.word-cloud-w4 { font-size: 1.2rem; }
+.word-cloud-w5 { font-size: 1.3rem; }
+.word-cloud-w6 { font-size: 1.4rem; }
+.word-cloud-w7 { font-size: 1.5rem; }
+.word-cloud-w8 { font-size: 1.7rem; }
+.word-cloud-w9 { font-size: 1.9rem; }
+
+@media (max-width: 600px) {
+  .word-cloud-w0 { font-size: 1rem; }
+  .word-cloud-w1 { font-size: 1.025rem; }
+  .word-cloud-w2 { font-size: 1.050rem; }
+  .word-cloud-w3 { font-size: 1.075rem; }
+  .word-cloud-w4 { font-size: 1.10rem; }
+  .word-cloud-w5 { font-size: 1.20rem; }
+  .word-cloud-w6 { font-size: 1.25rem; }
+  .word-cloud-w7 { font-size: 1.3rem; }
+  .word-cloud-w8 { font-size: 1.4rem; }
+  .word-cloud-w9 { font-size: 1.5rem; }
+}
+
+//
 // borland style
 
 .highlight .hll { background-color: #ffffcc }
