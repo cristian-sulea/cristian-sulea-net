@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ metaTitle }}",
+  "headline": "{{ metaTitle }}",
+  "description": "{{ metaDescription }}",
+  "url": "{{ canonicalURL }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ authorName }}",
+    "url": "{{ authorURL }}"
+  }
+}

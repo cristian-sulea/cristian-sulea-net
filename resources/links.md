@@ -3,10 +3,15 @@ https://support.apple.com/en-us/HT201236
 
 https://alex.pearwin.com/
 
+https://devopsx.com/jekyll-check-if-file-exists/
+
 https://allejo.io/blog/a-jekyll-toc-without-plugins-or-javascript/
 
 https://www.freecodecamp.org/news/what-does-junior-senior-expert-lead-experienced-professional-and-specialist-software-c36563e946e2/
 https://adityatelange.github.io/hugo-index/new-post-3/
+
+https://stackoverflow.com/questions/23541185/jekyll-liquid-include-files-dynamically
+https://apple.stackexchange.com/questions/74797/can-i-force-a-cache-refresh-in-safari-running-on-ios
 
 - https://cri.dev
 - https://gwern.net/about
