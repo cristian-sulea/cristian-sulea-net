@@ -1,12 +1,12 @@
 ---
-layout: index
+layout: resume
 searchExclusion: true
 
 skills:
   - Subversion, 1
   - Git, 5
   - Java, 9
-  - Docker, 4
+  - Docker, 5
   - CI, 3
   - Spring, 5
   - Hibernate, 2
@@ -15,15 +15,15 @@ skills:
   - Log4j, 3
   - Apache Commons, 5
   - XStream
-  - Swing
+  - Swing, 2
   - XML
   - HTML, 5
   - CSS, 6
   - JavaScript, 4
-  - PHP, 4
+  - PHP, 3
   - Eclipse, 7
   - IntelliJ IDEA, 4
-  - Maven
+  - Maven, 5
   - Ant
   - IBM Rational
   - WebSphere
