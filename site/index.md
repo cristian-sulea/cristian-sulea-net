@@ -3,28 +3,31 @@ layout: resume
 searchExclusion: true
 
 skills:
-  - Subversion, 1
+  - Subversion
   - Git, 5
   - Java, 9
   - Docker, 5
   - CI, 3
-  - Spring, 5
+  - Spring Framework, 5
   - Hibernate, 2
   - SQL, 6
   - JUnit, 5
   - Log4j, 3
   - Apache Commons, 5
   - XStream
+  - GWT
   - Swing, 2
   - XML
   - HTML, 5
   - CSS, 6
+  - Jekyll, 4
   - JavaScript, 4
   - PHP, 3
   - Eclipse, 7
   - IntelliJ IDEA, 4
   - Maven, 5
   - Ant
+  - WSAD
   - IBM Rational
   - WebSphere
   - Tomcat
