@@ -11,6 +11,7 @@
   --default-headings-weight: var(--default-text-weight);
 
   --default-line-height: 1.5;
+  --default-spacer: 1rem;
 
   --default-text-color: #000;
   --default-text-background-color: #FFF7E8;
@@ -51,7 +52,7 @@ pre, code,
 figure,
 table,
 input, button, select, optgroup, textarea {
-  margin-bottom: 1rem;
+  margin-bottom: var(--default-spacer);
 }
 
 body {
@@ -68,7 +69,7 @@ body {
 }
 
 body > header {
-  margin-bottom: 1rem;
+  margin-bottom: var(--default-spacer);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -93,7 +94,7 @@ blockquote {
   font-style: var(--default-quote-style);
   color: var(--default-quote-color);
   border-left: var(--default-border-size-bold) solid var(--default-border-color);
-  padding-left: 1rem;
+  padding-left: var(--default-spacer);
 }
 
 ol,
@@ -106,7 +107,7 @@ ol ol,
 ul ul,
 ol ul,
 ul ol {
-  padding-left: 1rem;
+  padding-left: var(--default-spacer);
   margin-bottom: 0;
 }
 

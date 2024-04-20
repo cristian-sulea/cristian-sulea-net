@@ -7,8 +7,8 @@
   max-width: 1080px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: var(--default-spacer);
+  padding-left: var(--default-spacer);
 }
 
 @media (max-width: 600px) {
@@ -83,7 +83,7 @@ body > header {
     margin-right: 0.4rem;
 
     > svg {
-      width: 1rem;
+      width: var(--default-spacer);
       > path {
         fill: var(--default-quote-color);
       }
@@ -118,7 +118,7 @@ body > header {
     padding: 0;
     position: relative;
     //float: right;
-    top: calc(var(--site-title-text-size) - 1rem + var(--default-border-size-bold) + var(--default-border-size) + 0px);
+    top: calc(var(--site-title-text-size) - var(--default-spacer) + var(--default-border-size-bold) + var(--default-border-size) + 0px);
     right: 0;
 
     label[for="site-nav-trigger"] {
@@ -137,7 +137,7 @@ body > header {
       display: inline;
 
       &:not(:last-child) {
-        margin-right: 1rem;
+        margin-right: var(--default-spacer);
       }
       margin-left: auto;
       margin-right: 0;
@@ -180,7 +180,7 @@ body > header {
 body > footer {
 
   border-top: var(--default-border-size) solid var(--default-border-color);
-  padding-top: 1rem;
+  padding-top: var(--default-spacer);
 
   a {
     color: var(--default-quote-color);
@@ -225,11 +225,18 @@ body > footer .social-links-list {
   }
 }
 
-// h1:has(+blockquote) {
-//   margin-bottom: 0;
-// }
+//
+// page meta
 
-blockquote > input {
+.page-meta {
+  font-style: var(--default-quote-style);
+  color: var(--default-quote-color);
+  border-left: var(--default-border-size-bold) solid var(--default-border-color);
+  padding-left: var(--default-spacer);
+  margin-bottom: var(--default-spacer);
+}
+
+.page-meta > input {
   margin: 0;
   padding: 0;
   border: 0;
@@ -239,9 +246,13 @@ blockquote > input {
   background-color: var(--default-text-background-color);
 }
 
-blockquote > input:focus {
+.page-meta > input:focus {
   outline: none;
 }
+
+
+//
+// blog post
 
 .blog-post-title {
   margin: 0;
@@ -281,7 +292,7 @@ blockquote > input:focus {
   padding-left: var(--default-border-size-bold);
 
   li {
-    padding-right: 1rem;
+    padding-right: var(--default-spacer);
     list-style-type: none;
   }
 }
@@ -311,7 +322,7 @@ blockquote > input:focus {
 }
 
 //
-// borland style
+// code - borland style
 
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #008800; font-style: italic } /* Comment */

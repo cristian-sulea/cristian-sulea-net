@@ -3,10 +3,10 @@ layout: base
 ---
 
 <h1>{{ site.title | escape }}</h1>
-<blockquote>
+<div class="page-meta">
   {{- site.description | escape -}}
   {%- include social-links.html -%}
-</blockquote>
+</div>
 
 {{ content }}
 
