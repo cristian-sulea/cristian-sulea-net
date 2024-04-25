@@ -11,14 +11,14 @@ layout: none
       "desc"    : "{{ site.description | escape }}",
       "url"     : "{{ site.baseurl }}{{ page.url }}",
       "date"    : "{{ page.date | date: site.date.format }}",
-      "content" : "{{ page.content | strip_html | strip_newlines | remove_chars | escape }}"
+      "content" : "{{ page.content | strip | strip_html | strip_newlines | remove_chars | remove: "\" | escape }}"
     {%- elsif page.title -%}
       "title"   : "{{ page.title | escape }}",
       "desc"    : "{{ page.description | escape }}",
       "tags"    : "{{ page.tags | join: ', ' }}",
       "url"     : "{{ site.baseurl }}{{ page.url }}",
       "date"    : "{{ page.date | date: site.date.format }}",
-      "content" : "{{ page.content | strip_html | strip_newlines | remove_chars | escape }}"
+      "content" : "{{ page.content | strip | strip_html | strip_newlines | remove_chars | remove: "\" | escape }}"
     {%- endif -%}
   } {%- unless forloop.last -%},{%- endunless -%}
   {%- endunless -%}
@@ -31,7 +31,7 @@ layout: none
       "tags"    : "{{ post.tags | join: ', ' }}",
       "url"     : "{{ site.baseurl }}{{ post.url }}",
       "date"    : "{{ post.date | date: site.date.format }}",
-      "content" : "{{ post.content | strip_html | strip_newlines | remove_chars | escape }}"
+      "content" : "{{ post.content | strip | strip_html | strip_newlines | remove_chars | remove: "\" | escape }}"
   } {%- unless forloop.last -%},{%- endunless -%}
   {%- endfor -%}
 ]
